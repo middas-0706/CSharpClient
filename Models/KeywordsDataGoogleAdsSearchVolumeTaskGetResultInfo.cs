@@ -11,7 +11,7 @@ namespace DataForSeo.Client.Models
 
         /// <summary>
         /// keyword
-        /// <br/>keyword is returned with decoded %## (plus character ‘+’ will be decoded to a space character)
+        /// <br/>keyword is returned with decoded %## (plus character '+' will be decoded to a space character)
         /// </summary>
         [JsonProperty("keyword", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string Keyword { get; set; }
@@ -19,21 +19,21 @@ namespace DataForSeo.Client.Models
         /// <summary>
         /// correct spelling of the keyword
         /// <br/>Note:if the keyword in the POST array appears to be misspelled, data will be returned for the correctly spelled keyword;
-        /// <br/>we use the functionality of Google Ads API to check and validate the spelling of keywords, learn more by this link
+        /// <br/>we use the functionality of Google Ads API to check and validate the spelling of keywords, <see href="https://support.google.com/google-ads/answer/7476658">learn more by this link</see>
         /// </summary>
         [JsonProperty("spell", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string Spell { get; set; }
 
         /// <summary>
         /// location code in a POST array
-        /// <br/>if there is no data, then the value is null
+        /// <br/>if there is no data, then the value is_<c>null</c>n
         /// </summary>
         [JsonProperty("location_code", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public int? LocationCode { get; set; }
 
         /// <summary>
         /// language code in a POST array
-        /// <br/>if there is no data, then the value is null
+        /// <br/>if there is no data, then the value is_<c>null</c>n
         /// </summary>
         [JsonProperty("language_code", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string LanguageCode { get; set; }
@@ -47,9 +47,9 @@ namespace DataForSeo.Client.Models
         /// <summary>
         /// competition
         /// <br/>represents the relative amount of competition associated with the given keyword in paid SERP only;
-        /// <br/>this value is based on Google Ads data and can take the following values: HIGH, MEDIUM, LOW;
-        /// <br/>if there is no data the value is null;
-        /// <br/>learn more about the metric in this help center article
+        /// <br/>this value is based on Google Ads data and can take the following values: <c>HIGH</c>, <c>MEDIUM</c>, <c>LOW</c>;
+        /// <br/>if there is no data the value is <c>null</c>;
+        /// <br/>learn more about the metric in <see href="https://dataforseo.com/help-center/what-is-competition">this help center article</see>
         /// </summary>
         [JsonProperty("competition", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string Competition { get; set; }
@@ -58,8 +58,8 @@ namespace DataForSeo.Client.Models
         /// competition
         /// <br/>represents the relative amount of competition associated with the given keyword in paid SERP only;
         /// <br/>this value is based on Google Ads data and can be between 0 and 100 (inclusive);
-        /// <br/>if there is no data the value is null;
-        /// <br/>learn more about the metric in this help center article
+        /// <br/>if there is no data the value is <c>null</c>;
+        /// <br/>learn more about the metric in <see href="https://dataforseo.com/help-center/what-is-competition">this help center article</see>
         /// </summary>
         [JsonProperty("competition_index", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public int? CompetitionIndex { get; set; }
@@ -96,7 +96,7 @@ namespace DataForSeo.Client.Models
         /// <summary>
         /// monthly searches
         /// <br/>represents the (approximate) number of searches on this keyword idea (as available for the past twelve months by default), targeted to the specified geographic locations;
-        /// <br/>if there is no data then the value is null
+        /// <br/>if there is no data then the value is_<c>null</c>n
         /// </summary>
         [JsonProperty("monthly_searches", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public IEnumerable<MonthlySearchesInfo> MonthlySearches { get; set; }

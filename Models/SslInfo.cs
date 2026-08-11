@@ -32,14 +32,14 @@ namespace DataForSeo.Client.Models
 
         /// <summary>
         /// ssl certificate version
-        /// <br/>indicates the version of X.509 used by an ssl certificate
+        /// <br/>indicates the version of <see href="https://en.wikipedia.org/wiki/X.509">X.509</see> used by an ssl certificate
         /// </summary>
         [JsonProperty("certificate_version", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public int? CertificateVersion { get; set; }
 
         /// <summary>
         /// ssl certificate hash
-        /// <br/>the version of the ssl certificate’s hash function
+        /// <br/>the version of the ssl certificate's hash function
         /// </summary>
         [JsonProperty("certificate_hash", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string CertificateHash { get; set; }
@@ -49,7 +49,7 @@ namespace DataForSeo.Client.Models
         /// <br/>the date and time when the ssl certificate expires
         /// <br/>in the UTC format: “yyyy-mm-dd hh-mm-ss +00:00”
         /// <br/>example:
-        /// <br/>2019-11-15 12:57:46 +00:00
+        /// <br/><c>2019-11-15 12:57:46 +00:00</c>
         /// </summary>
         [JsonProperty("certificate_expiration_date", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string CertificateExpirationDate { get; set; }

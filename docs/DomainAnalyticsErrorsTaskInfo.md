@@ -5,4 +5,4 @@
 
 | Name | Type | Description | Notes |
 |------------ | ------------- | ------------- | -------------|
-**Result** | **IEnumerable<DomainAnalyticsErrorsResultInfo>** | array of results |[optional]|
+**Result** | **IEnumerable<DomainAnalyticsErrorsResultInfo>** | <em>array of results</em> |[optional]|

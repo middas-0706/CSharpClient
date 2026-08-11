@@ -6,6 +6,6 @@
 | Name | Type | Description | Notes |
 |------------ | ------------- | ------------- | -------------|
 **Type** | **string** | type of element |[optional]|
-**Position** | **int?** | the alignment of the element in Google Trends<br>can take the following values: 1, 2, 3, 4, etc. |[optional]|
-**Title** | **string** | title of the element in Google Trends |[optional]|
-**Keywords** | **IEnumerable<string>** | relevant keywords<br>the data included in the google_trends_graph element is based on the keywords listed in this array |[optional]|
+**Position** | **int?** | <em>the alignment of the element in Google Trends</em><br>can take the following values: <code>1</code>, <code>2</code>, <code>3</code>, <code>4</code>, etc. |[optional]|
+**Title** | **string** | <em>title of the element in Google Trends</em> |[optional]|
+**Keywords** | **IEnumerable<string>** | <em>relevant keywords</em><br>the data included in the <code>google_trends_graph</code> element is based on the keywords listed in this array |[optional]|

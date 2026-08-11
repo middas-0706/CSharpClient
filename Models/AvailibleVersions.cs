@@ -17,7 +17,7 @@ namespace DataForSeo.Client.Models
 
         /// <summary>
         /// the version is used by default
-        /// <br/>if false, the version is not used by default and should be specified in the corresponding field of the POST request if necessary
+        /// <br/>if <c>false</c>, the version is not used by default and should be specified in the corresponding field of the POST request if necessary
         /// </summary>
         [JsonProperty("default", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public bool? Default_ { get; set; }

@@ -6,14 +6,14 @@
 | Name | Type | Description | Notes |
 |------------ | ------------- | ------------- | -------------|
 **Type** | **string** | type of element |[optional]|
-**RankGroup** | **int?** | position within a group of elements with identical type values<br>positions of elements with different type values are omitted from rank_group |[optional]|
-**RankAbsolute** | **int?** | absolute rank in SERP<br>absolute position among all the elements in SERP |[optional]|
-**Position** | **string** | the alignment of the element in SERP<br>can take the following values:<br>left, right |[optional]|
-**AppId** | **string** | id of the app in a POST array |[optional]|
-**Title** | **string** | title of the app |[optional]|
-**Url** | **string** | URL to the app page on App Store |[optional]|
-**Icon** | **string** | URL to the app icon |[optional]|
-**ReviewsCount** | **long?** | the total number of reviews of the app |[optional]|
-**Rating** | **RatingInfo** | average rating of the app |[optional]|
-**IsFree** | **bool?** | indicates whether the app is free |[optional]|
-**Price** | **PriceInfo** | price of the app |[optional]|
+**RankGroup** | **int?** | <em>position within a group of elements with identical <code>type</code> values</em><br>positions of elements with different <code>type</code> values are omitted from <code>rank_group</code> |[optional]|
+**RankAbsolute** | **int?** | <em>absolute rank in SERP</em><br>absolute position among all the elements in SERP |[optional]|
+**Position** | **string** | <em>the alignment of the element in SERP</em><br>can take the following values:<br><code>left</code>, <code>right</code> |[optional]|
+**AppId** | **string** | <em>id of the app in a POST array</em> |[optional]|
+**Title** | **string** | <em>title of the app</em> |[optional]|
+**Url** | **string** | <em>URL to the app page on App Store</em> |[optional]|
+**Icon** | **string** | <em>URL to the app icon</em> |[optional]|
+**ReviewsCount** | **long?** | <em>the total number of reviews of the app</em> |[optional]|
+**Rating** | **RatingInfo** | <em>average rating of the app</em> |[optional]|
+**IsFree** | **bool?** | <em>indicates whether the app is free</em> |[optional]|
+**Price** | **PriceInfo** | <em>pricing information for the app</em> |[optional]|

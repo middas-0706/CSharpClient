@@ -5,4 +5,4 @@
 
 | Name | Type | Description | Notes |
 |------------ | ------------- | ------------- | -------------|
-**Result** | **IEnumerable<DomainAnalyticsTechnologiesDomainsByTechnologyLiveResultInfo>** | array of results |[optional]|
+**Result** | **IEnumerable<DomainAnalyticsTechnologiesDomainsByTechnologyLiveResultInfo>** | <em>array of results</em> |[optional]|

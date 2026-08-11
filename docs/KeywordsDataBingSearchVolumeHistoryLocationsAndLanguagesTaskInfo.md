@@ -5,4 +5,4 @@
 
 | Name | Type | Description | Notes |
 |------------ | ------------- | ------------- | -------------|
-**Result** | **IEnumerable<KeywordsDataBingSearchVolumeHistoryLocationsAndLanguagesResultInfo>** | array of results |[optional]|
+**Result** | **IEnumerable<KeywordsDataBingSearchVolumeHistoryLocationsAndLanguagesResultInfo>** | <em>array of results</em> |[optional]|

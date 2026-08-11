@@ -5,4 +5,4 @@
 
 | Name | Type | Description | Notes |
 |------------ | ------------- | ------------- | -------------|
-**Tasks** | **IEnumerable<OnPageLighthouseTasksReadyTaskInfo>** | array of tasks |[optional]|
+**Tasks** | **IEnumerable<OnPageLighthouseTasksReadyTaskInfo>** | <em>array of tasks</em> |[optional]|

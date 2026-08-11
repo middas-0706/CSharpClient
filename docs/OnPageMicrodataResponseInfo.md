@@ -5,4 +5,4 @@
 
 | Name | Type | Description | Notes |
 |------------ | ------------- | ------------- | -------------|
-**Tasks** | **IEnumerable<OnPageMicrodataTaskInfo>** | array of tasks |[optional]|
+**Tasks** | **IEnumerable<OnPageMicrodataTaskInfo>** | <em>array of tasks</em> |[optional]|

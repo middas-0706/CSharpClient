@@ -43,7 +43,7 @@ namespace DataForSeo.Client.Models
         /// merchant account provider
         /// <br/>commerce site that hosts products or websites of individual sellers under the same merchant account
         /// <br/>example:
-        /// <br/>by Google
+        /// <br/><c>by Google</c>
         /// </summary>
         [JsonProperty("marketplace", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string Marketplace { get; set; }
@@ -62,9 +62,9 @@ namespace DataForSeo.Client.Models
         public string Url { get; set; }
 
         /// <summary>
-        /// the item’s rating 
+        /// the item's rating 
         /// <br/>the popularity rate based on reviews and displayed in SERP;
-        /// <br/>if there is none, equals null
+        /// <br/>if there is none, equals <c>null</c>
         /// </summary>
         [JsonProperty("rating", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public RatingInfo Rating { get; set; }

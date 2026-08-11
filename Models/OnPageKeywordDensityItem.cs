@@ -17,14 +17,14 @@ namespace DataForSeo.Client.Models
 
         /// <summary>
         /// keyword frequency
-        /// <br/>number of times the keyword appears on the website (or webpage if you specified a url)
+        /// <br/>number of times the keyword appears on the website (or webpage if you specified a <c>url</c>)
         /// </summary>
         [JsonProperty("frequency", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public int? Frequency { get; set; }
 
         /// <summary>
         /// keyword density
-        /// <br/>calculated as a ratio of frequency to the total count of keywords with the set keyword_length on the web page or website
+        /// <br/>calculated as a ratio of <c>frequency</c> to the total count of keywords with the set <c>keyword_length</c> on the web page or website
         /// </summary>
         [JsonProperty("density", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public double? Density { get; set; }

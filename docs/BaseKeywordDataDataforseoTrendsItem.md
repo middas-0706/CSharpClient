@@ -6,5 +6,5 @@
 | Name | Type | Description | Notes |
 |------------ | ------------- | ------------- | -------------|
 **Type** | **string** | type of element |[optional]|
-**Position** | **int?** | the alignment of the element<br>can take the following values: 1, 2, 3, 4, etc. |[optional]|
-**Keywords** | **IEnumerable<string>** | keywords in a POST array |[optional]|
+**Position** | **int?** | <em>the alignment of the element</em><br>can take the following values: <code>1</code>, <code>2</code>, <code>3</code>, <code>4</code>, etc. |[optional]|
+**Keywords** | **IEnumerable<string>** | <em>keywords in a POST array</em> |[optional]|

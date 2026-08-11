@@ -12,14 +12,14 @@
 **Description** | **string** | <em>description of the results element in SERP</em> |[optional]|
 **Url** | **string** | <em> relevant URL in SERP</em> |[optional]|
 **Breadcrumb** | **string** | <em>breadcrumb in SERP</em> |[optional]|
-**WebsiteName** | **string** | name of the website in SERP |[optional]|
-**IsImage** | **bool?** | indicates whether the element contains an image<br>Note: this check no longer appears in SERP |[optional]|
-**IsVideo** | **bool?** | indicates whether the element contains a video<br>Note: this check no longer appears in SERP |[optional]|
-**Checks** | **IEnumerable<string>** | array of properties detected for the SERP element<br>lists the properties that are true for this element<br>each value in the array represents a detected property<br>example:<br>if is_image is present in the array, the element contains an image<br>possible values in the array:<br>is_image, is_video, is_featured_snippet, amp_version, is_malicious, is_web_story, is_highly_cited<br>equals null if none of the properties are detected for the element<br>learn more about the checks array in this Help Center article |[optional]|
-**Images** | **IEnumerable<AiModeImagesElementInfo>** | images of the element<br>if there are none, equals null |[optional]|
-**Highlighted** | **IEnumerable<string>** | words highlighted in bold within the results description |[optional]|
-**Extra** | **IDictionary<string, string>** | additional information about the result |[optional]|
-**DescriptionRows** | **IEnumerable<string>** | extended description<br>if there is none, equals null |[optional]|
-**Links** | **IEnumerable<AdLinkElement>** | link of the element |[optional]|
-**Price** | **PriceInfo** | pricing details<br>contains the pricing details of the product or service featured in the result;<br>if there is none, equals null |[optional]|
-**Rating** | **RatingInfo** | the item’s rating <br>the popularity rate based on reviews and displayed in SERP<br>if there is none, equals null |[optional]|
+**WebsiteName** | **string** | <em>name of the website in SERP</em> |[optional]|
+**IsImage** | **bool?** | <em>indicates whether the element contains an_<code class='prettyprint'>image</code></em><br><strong>Note:</strong> this check no longer appears in SERPn |[optional]|
+**IsVideo** | **bool?** | <em>indicates whether the element contains a <code class='prettyprint'>video</code></em><br><strong>Note:</strong> this check no longer appears in SERP |[optional]|
+**Checks** | **IEnumerable<string>** | <em>array of properties detected for the SERP element</em><br>lists the properties that are true for this element<br>each value in the array represents a detected property <br>example:<br>if <code>is_image</code> is present in the array, the element contains an image<br>possible values in the array:<br><code>is_image</code>, <code>is_video</code>, <code>is_featured_snippet</code>, <code>amp_version</code>, <code>is_malicious</code>, <code>is_web_story</code>, <code>is_highly_cited</code><br>equals <code>null</code> if none of the properties are detected for the element<br>learn more about the <code>checks</code> array in <a href='https://dataforseo.com/help-center/whats-a-checks-array-in-the-google-organic-serp-api' target='_blank'>this Help Center article</a> |[optional]|
+**Images** | **IEnumerable<AiModeImagesElementInfo>** | <em>images of the element</em><br>if there are none, equals <code>null</code> |[optional]|
+**Highlighted** | **IEnumerable<string>** | <em>words highlighted in bold within the results <code>description</code></em> |[optional]|
+**Extra** | **IDictionary<string, string>** | <em>additional information about the result</em> |[optional]|
+**DescriptionRows** | **IEnumerable<string>** | <em>extended description</em><br>if there is none, equals <code>null</code> |[optional]|
+**Links** | **IEnumerable<AdLinkElement>** | <em>link of the element</em> |[optional]|
+**Price** | **PriceInfo** | <em>pricing details</em><br>contains the pricing details of the product or service featured in the result;<br>if there is none, equals <code>null</code> |[optional]|
+**Rating** | **RatingInfo** | <em>the item's rating </em><br>the popularity rate based on reviews and displayed in SERP<br>if there is none, equals <code>null</code> |[optional]|

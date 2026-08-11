@@ -60,7 +60,7 @@ namespace DataForSeo.Client.Models
         /// <summary>
         /// video badges
         /// <br/>example:
-        /// <br/>New, CC, 4K
+        /// <br/><c>New</c>, <c>CC</c>, <c>4K</c>
         /// </summary>
         [JsonProperty("badges", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public IEnumerable<string> Badges { get; set; }
@@ -99,7 +99,7 @@ namespace DataForSeo.Client.Models
         /// date and time when the result is published
         /// <br/>in the UTC format: “yyyy-mm-dd hh-mm-ss +00:00”
         /// <br/>example:
-        /// <br/>2022-11-15 12:57:46 +00:00
+        /// <br/><c>2022-11-15 12:57:46 +00:00</c>
         /// </summary>
         [JsonProperty("timestamp", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string Timestamp { get; set; }

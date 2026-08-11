@@ -5,4 +5,4 @@
 
 | Name | Type | Description | Notes |
 |------------ | ------------- | ------------- | -------------|
-**Tasks** | **IEnumerable<KeywordsDataBingAudienceEstimationLiveTaskInfo>** | array of tasks |[optional]|
+**Tasks** | **IEnumerable<KeywordsDataBingAudienceEstimationLiveTaskInfo>** | <em>array of tasks</em> |[optional]|

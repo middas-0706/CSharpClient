@@ -10,7 +10,7 @@ namespace DataForSeo.Client.Models
     {
 
         /// <summary>
-        /// Time To Interactive (TTI) metric
+        /// <see href="https://web.dev/interactive/">Time To Interactive (TTI)</see> metric
         /// <br/>the time it takes until the user can interact with a page (in milliseconds)
         /// </summary>
         [JsonProperty("time_to_interactive", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
@@ -25,14 +25,14 @@ namespace DataForSeo.Client.Models
 
         /// <summary>
         /// Core Web Vitals metric measuring how fast the largest above-the-fold content element is displayed
-        /// <br/>The amount of time (in milliseconds) to render the largest content element visible in the viewport, from when the user requests the URL. Learn more.
+        /// <br/>The amount of time (in milliseconds) to render the largest content element visible in the viewport, from when the user requests the URL. <see href="https://web.dev/lcp/">Learn more</see>.
         /// </summary>
         [JsonProperty("largest_contentful_paint", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public double? LargestContentfulPaint { get; set; }
 
         /// <summary>
         /// Core Web Vitals metric indicating the responsiveness of a page
-        /// <br/>The time (in milliseconds) from when a user first interacts with your page to the time when the browser responds to that interaction. Learn more.
+        /// <br/>The time (in milliseconds) from when a user first interacts with your page to the time when the browser responds to that interaction. <see href="https://web.dev/fid/">Learn more</see>.
         /// </summary>
         [JsonProperty("first_input_delay", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public double? FirstInputDelay { get; set; }
@@ -59,7 +59,7 @@ namespace DataForSeo.Client.Models
         public int? RequestSentTime { get; set; }
 
         /// <summary>
-        /// time to first byte (TTFB) in milliseconds
+        /// time to first byte <see href="https://en.wikipedia.org/wiki/Time_to_first_byte">(TTFB)</see> in milliseconds
         /// </summary>
         [JsonProperty("waiting_time", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public int? WaitingTime { get; set; }

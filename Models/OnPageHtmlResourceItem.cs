@@ -11,7 +11,7 @@ namespace DataForSeo.Client.Models
 
         /// <summary>
         /// page properties
-        /// <br/>the value depends on the resource_type
+        /// <br/>the value depends on the <c>resource_type</c>
         /// </summary>
         [JsonProperty("meta", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public PageMetaInfo Meta { get; set; }
@@ -25,30 +25,30 @@ namespace DataForSeo.Client.Models
         /// <summary>
         /// shows how page is optimized on a 100-point scale
         /// <br/>this field shows how page is optimized considering critical on-page issues and warnings detected;
-        /// <br/>100 is the highest possible score that means the page does not have any critical on-page issues and important warnings;
-        /// <br/>learn more about how the metric is calculated in this help center article
+        /// <br/><c>100</c> is the highest possible score that means the page does not have any critical on-page issues and important warnings;
+        /// <br/>learn more about how the metric is calculated in <see href="https://dataforseo.com/help-center/how-on-page-seo-score-is-calculated">this help center article</see>
         /// </summary>
         [JsonProperty("onpage_score", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public double? OnpageScore { get; set; }
 
         /// <summary>
-        /// total DOM size of a page
+        /// total <see href="https://developers.google.com/web/tools/chrome-devtools/dom">DOM</see> size of a page
         /// </summary>
         [JsonProperty("total_dom_size", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public long? TotalDomSize { get; set; }
 
         /// <summary>
         /// the result of executing a specified JS script
-        /// <br/>note that you should specify a custom_js field when setting a task to receive this data and the field type and its value will totally depend on the script you specified;
-        /// <br/>you can also filter the results by this value specifying filters in the following way:
-        /// <br/>['custom_js_response.url', 'like', 'pixel']
+        /// <br/>note that you should specify a <c>custom_js</c> field when <see href="/v3/on_page/task_post/">setting a task</see> to receive this data and the field type and its value will totally depend on the script you specified;
+        /// <br/>you can also filter the results by this value specifying <c>filters</c> in the following way:
+        /// <br/><c>['custom_js_response.url', 'like', 'pixel']</c>
         /// </summary>
         [JsonProperty("custom_js_response", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public object CustomJsResponse { get; set; }
 
         /// <summary>
         /// error when executing a custom js
-        /// <br/>if the error occurred when executing the script you specified in the custom_js field, the error message would be displayed here
+        /// <br/>if the error occurred when executing the script you specified in the <c>custom_js</c> field, the error message would be displayed here
         /// </summary>
         [JsonProperty("custom_js_client_exception", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string CustomJsClientException { get; set; }
@@ -66,7 +66,7 @@ namespace DataForSeo.Client.Models
         public bool? BrokenLinks { get; set; }
 
         /// <summary>
-        /// indicates whether a page has duplicate title tags
+        /// indicates whether a page has duplicate <c>title</c> tags
         /// </summary>
         [JsonProperty("duplicate_title", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public bool? DuplicateTitle { get; set; }

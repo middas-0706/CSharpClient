@@ -62,14 +62,14 @@ namespace DataForSeo.Client.Models
         public string WebsiteName { get; set; }
 
         /// <summary>
-        /// indicates whether the element contains an image
-        /// <br/>Note: this check no longer appears in SERP
+        /// indicates whether the element contains an_<c>image</c>
+        /// <br/>Note: this check no longer appears in SERPn
         /// </summary>
         [JsonProperty("is_image", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public bool? IsImage { get; set; }
 
         /// <summary>
-        /// indicates whether the element contains a video
+        /// indicates whether the element contains a <c>video</c>
         /// <br/>Note: this check no longer appears in SERP
         /// </summary>
         [JsonProperty("is_video", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
@@ -78,26 +78,26 @@ namespace DataForSeo.Client.Models
         /// <summary>
         /// array of properties detected for the SERP element
         /// <br/>lists the properties that are true for this element
-        /// <br/>each value in the array represents a detected property
+        /// <br/>each value in the array represents a detected property 
         /// <br/>example:
-        /// <br/>if is_image is present in the array, the element contains an image
+        /// <br/>if <c>is_image</c> is present in the array, the element contains an image
         /// <br/>possible values in the array:
-        /// <br/>is_image, is_video, is_featured_snippet, amp_version, is_malicious, is_web_story, is_highly_cited
-        /// <br/>equals null if none of the properties are detected for the element
-        /// <br/>learn more about the checks array in this Help Center article
+        /// <br/><c>is_image</c>, <c>is_video</c>, <c>is_featured_snippet</c>, <c>amp_version</c>, <c>is_malicious</c>, <c>is_web_story</c>, <c>is_highly_cited</c>
+        /// <br/>equals <c>null</c> if none of the properties are detected for the element
+        /// <br/>learn more about the <c>checks</c> array in <see href="https://dataforseo.com/help-center/whats-a-checks-array-in-the-google-organic-serp-api">this Help Center article</see>
         /// </summary>
         [JsonProperty("checks", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public IEnumerable<string> Checks { get; set; }
 
         /// <summary>
         /// images of the element
-        /// <br/>if there are none, equals null
+        /// <br/>if there are none, equals <c>null</c>
         /// </summary>
         [JsonProperty("images", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public IEnumerable<AiModeImagesElementInfo> Images { get; set; }
 
         /// <summary>
-        /// words highlighted in bold within the results description
+        /// words highlighted in bold within the results <c>description</c>
         /// </summary>
         [JsonProperty("highlighted", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public IEnumerable<string> Highlighted { get; set; }
@@ -110,7 +110,7 @@ namespace DataForSeo.Client.Models
 
         /// <summary>
         /// extended description
-        /// <br/>if there is none, equals null
+        /// <br/>if there is none, equals <c>null</c>
         /// </summary>
         [JsonProperty("description_rows", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public IEnumerable<string> DescriptionRows { get; set; }
@@ -124,15 +124,15 @@ namespace DataForSeo.Client.Models
         /// <summary>
         /// pricing details
         /// <br/>contains the pricing details of the product or service featured in the result;
-        /// <br/>if there is none, equals null
+        /// <br/>if there is none, equals <c>null</c>
         /// </summary>
         [JsonProperty("price", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public PriceInfo Price { get; set; }
 
         /// <summary>
-        /// the item’s rating 
+        /// the item's rating 
         /// <br/>the popularity rate based on reviews and displayed in SERP
-        /// <br/>if there is none, equals null
+        /// <br/>if there is none, equals <c>null</c>
         /// </summary>
         [JsonProperty("rating", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public RatingInfo Rating { get; set; }

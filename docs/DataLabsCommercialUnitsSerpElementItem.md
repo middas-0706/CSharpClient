@@ -5,5 +5,5 @@
 
 | Name | Type | Description | Notes |
 |------------ | ------------- | ------------- | -------------|
-**Title** | **string** | title of the result in SERP |[optional]|
-**Items** | **IEnumerable<CommercialUnitsElement>** | historical SERPs and related data found in the database |[optional]|
+**Title** | **string** | <em>title of the result in SERP</em> |[optional]|
+**Items** | **IEnumerable<CommercialUnitsElement>** | <em>historical SERPs and related data found in the database</em> |[optional]|

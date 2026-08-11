@@ -5,4 +5,4 @@
 
 | Name | Type | Description | Notes |
 |------------ | ------------- | ------------- | -------------|
-**Tasks** | **IEnumerable<KeywordsDataGoogleTrendsCategoriesTaskInfo>** | array of tasks |[optional]|
+**Tasks** | **IEnumerable<KeywordsDataGoogleTrendsCategoriesTaskInfo>** | <em>array of tasks</em> |[optional]|

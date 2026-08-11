@@ -11,7 +11,7 @@ namespace DataForSeo.Client.Models
 
         /// <summary>
         /// array of results
-        /// <br/>the array includes objects with SERPs for each month within the specified time frame
+        /// <br/>            the array includes objects with SERPs for each month within the specified time frame
         /// </summary>
         [JsonProperty("result", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public IEnumerable<DataforseoLabsGoogleHistoricalSerpsLiveResultInfo> Result { get; set; }

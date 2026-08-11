@@ -11,71 +11,71 @@ namespace DataForSeo.Client.Models.Requests
 
         /// <summary>
         /// target technology paths
-        /// <br/>required field if you don’t specify groups, technologies, keywords or categories
-        /// <br/>at least one field (technology_paths, groups, technologies, keywords or categories) must be set;
-        /// <br/>each technology path should be specified as a separate object containing “path” and “name”, where “path” is specified as “$group_id.$category_id” and “name” – as the name of the target technology;
+        /// <br/>required field if you don't specify <c>groups</c>, <c>technologies</c>, <c>keywords</c> or <c>categories</c>
+        /// <br/>at least one field (<c>technology_paths</c>, <c>groups</c>, <c>technologies</c>, <c>keywords</c> or <c>categories</c>) must be set;
+        /// <br/>each technology path should be specified as a separate object containing 'path' and 'name', where 'path' is specified as '$group_id.$category_id' and 'name' - as the name of the target technology; 
         /// <br/>each object with a technology path should be separated with a comma
-        /// <br/>you can find the full list of technology group ids, category ids and technology names on this page
+        /// <br/>you can find the full list of technology group ids, category ids and technology names <see href="/v3/domain_analytics/technologies/technologies">on this page</see>
         /// <br/>note: you can specify up to 10 technology paths in this array
         /// <br/>example:
-        /// <br/>[{'path': 'content.cms','name': 'wordpress'}, {'path': 'marketing.crm','name': 'salesforce'}]
+        /// <br/><c>[{'path': 'content.cms','name': 'wordpress'}, {'path': 'marketing.crm','name': 'salesforce'}]</c>
         /// </summary>
-        [JsonProperty("technology_paths", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
+        [JsonProperty("technology_paths", Required = Required.DisallowNull, NullValueHandling = NullValueHandling.Ignore)]
         public IEnumerable<string> TechnologyPaths { get; set; }
 
         /// <summary>
         /// ids of the target technology groups
-        /// <br/>required field if you don’t specify technologies, technology_paths, keywords or categories
-        /// <br/>you can find the full list of technology group ids on this page
+        /// <br/>required field if you don't specify <c>technologies</c>, <c>technology_paths</c>, <c>keywords</c> or <c>categories</c>
+        /// <br/>you can find the full list of technology group ids <see href="/v3/domain_analytics/technologies/technologies">on this page</see>
         /// <br/>note: you can specify up to 10 technology groups in this array
         /// <br/>example:
-        /// <br/>['sales', 'marketing']
+        /// <br/><c>['sales', 'marketing']</c>
         /// </summary>
-        [JsonProperty("groups", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
+        [JsonProperty("groups", Required = Required.DisallowNull, NullValueHandling = NullValueHandling.Ignore)]
         public IEnumerable<string> Groups { get; set; }
 
         /// <summary>
         /// ids of the target technology categories
-        /// <br/>required field if you don’t specify groups, technology_paths, keywords or technologies
-        /// <br/>you can find the full list of technology category ids on this page
+        /// <br/>required field if you don't specify <c>groups</c>, <c>technology_paths</c>, <c>keywords</c> or <c>technologies</c>
+        /// <br/>you can find the full list of technology category ids <see href="/v3/domain_analytics/technologies/technologies">on this page</see>
         /// <br/>note: you can specify up to 10 technology categories in this array
         /// <br/>example:
-        /// <br/>['payment_processors','crm']
+        /// <br/><c>['payment_processors','crm']</c>
         /// </summary>
-        [JsonProperty("categories", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
+        [JsonProperty("categories", Required = Required.DisallowNull, NullValueHandling = NullValueHandling.Ignore)]
         public IEnumerable<string> Categories { get; set; }
 
         /// <summary>
         /// target technologies
-        /// <br/>required field if you don’t specify groups, technology_paths, keywords or categories
-        /// <br/>you can find the full list of technologies you can specify here on this page
+        /// <br/>required field if you don't specify <c>groups</c>, <c>technology_paths</c>, <c>keywords</c> or <c>categories</c>
+        /// <br/>you can find the full list of technologies you can specify here <see href="/v3/domain_analytics/technologies/technologies">on this page</see>
         /// <br/>note: you can specify up to 10 technologies in this array
         /// <br/>example:
-        /// <br/>['Google Pay','Salesforce']
+        /// <br/><c>['Google Pay','Salesforce']</c>
         /// </summary>
-        [JsonProperty("technologies", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
+        [JsonProperty("technologies", Required = Required.DisallowNull, NullValueHandling = NullValueHandling.Ignore)]
         public IEnumerable<string> Technologies { get; set; }
 
         /// <summary>
-        /// target keywords in the domain’s title, description or meta keywords
-        /// <br/>required field if you don’t specify groups, technology_paths, technologies or categories
+        /// target keywords in the domain's title, description or meta keywords
+        /// <br/>required field if you don't specify <c>groups</c>, <c>technology_paths</c>, <c>technologies</c> or <c>categories</c>
         /// <br/>optional field
         /// <br/>you can specify the maximum of 10 keywords;
         /// <br/>UTF-8 encoding;
         /// <br/>example:
-        /// <br/>['seo','software']
-        /// <br/>learn more about rules and limitations of keyword and keywords fields in DataForSEO APIs in this Help Center article
+        /// <br/><c>['seo','software']</c>
+        /// <br/>learn more about rules and limitations of <c>keyword</c> and <c>keywords</c> fields in DataForSEO APIs in this <see href="https://dataforseo.com/help-center/rules-and-limitations-of-keyword-and-keywords-fields-in-dataforseo-apis">Help Center article</see>
         /// </summary>
-        [JsonProperty("keywords", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
+        [JsonProperty("keywords", Required = Required.DisallowNull, NullValueHandling = NullValueHandling.Ignore)]
         public IEnumerable<string> Keywords { get; set; }
 
         /// <summary>
         /// search mode
         /// <br/>optional field
         /// <br/>possible search mode types:
-        /// <br/>as_is – search for results exactly matching the specified group ids, category ids, or technology names
-        /// <br/>entry – search for results matching a part of the specified group ids, category ids, or technology names
-        /// <br/>default value: as_is
+        /// <br/><c>as_is</c> - search for results exactly matching the specified group ids, category ids, or technology names
+        /// <br/><c>entry</c> - search for results matching a part of the specified group ids, category ids, or technology names
+        /// <br/>default value: <c>as_is</c>
         /// </summary>
         [JsonProperty("mode", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string Mode { get; set; }
@@ -84,19 +84,15 @@ namespace DataForSeo.Client.Models.Requests
         /// array of results filtering parameters
         /// <br/>optional field
         /// <br/>you can add several filters at once (8 filters maximum)
-        /// <br/>you should set a logical operator and, or between the conditions
+        /// <br/>you should set a logical operator <c>and</c>, <c>or</c> between the conditions
         /// <br/>the following operators are supported:
-        /// <br/>, &gt;=, =, &lt;&gt;, in, not_in, like, not_like
-        /// <br/>you can use the % operator with like and not_like to match any string of zero or more characters
+        /// <br/><c>&lt;</c>, <c>&lt;=</c>, <c>&gt;</c>, <c>&gt;=</c>, <c>=</c>, <c>&lt;&gt;</c>, <c>in</c>, <c>not_in</c>, <c>like</c>, <c>not_like</c>
+        /// <br/>you can use the <c>%</c> operator with <c>like</c> and <c>not_like</c> to match any string of zero or more characters
         /// <br/>example:
-        /// <br/>['country_iso_code','=','US']
-        /// <br/>[['country_iso_code','=','US'],
-        /// <br/>'and',
-        /// <br/>['domain_rank','&gt;',100]]
-        /// <br/>[['domain_rank','&gt;',100],
-        /// <br/>'and',
-        /// <br/>[['country_iso_code','=','US'],'or',['country_iso_code','=','CA']]]
-        /// <br/>for more information about filters, please refer to Domain Analytics Technologies API – Filters
+        /// <br/><c>['country_iso_code','=','US']</c>
+        /// <br/><c>[['country_iso_code','=','US'],'and',['domain_rank','&gt;',100]]</c>
+        /// <br/><c>[['domain_rank','&gt;',100],'and',[['country_iso_code','=','US'],'or',['country_iso_code','=','CA']]]</c>
+        /// <br/>for more information about filters, please refer to <see href="/v3/domain_analytics/technologies/filters">Domain Analytics Technologies API - Filters</see>
         /// </summary>
         [JsonProperty("filters", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public IEnumerable<object> Filters { get; set; }
@@ -104,20 +100,20 @@ namespace DataForSeo.Client.Models.Requests
         /// <summary>
         /// results sorting rules
         /// <br/>optional field
-        /// <br/>available fields:
-        /// <br/>domain_rank, domain, last_visited, country_iso_code, language_code, content_language_code
+        /// <br/>available fields: 
+        /// <br/><c>domain_rank</c>, <c>domain</c>, <c>last_visited</c>, <c>country_iso_code</c>, <c>language_code</c>, <c>content_language_code</c>
         /// <br/>possible sorting types:
-        /// <br/>asc – results will be sorted in the ascending order
-        /// <br/>desc – results will be sorted in the descending order
+        /// <br/><c>asc</c> - results will be sorted in the ascending order
+        /// <br/><c>desc</c> - results will be sorted in the descending order
         /// <br/>you should use a comma to set up a sorting type
         /// <br/>example:
-        /// <br/>['last_visited,desc']
+        /// <br/><c>['last_visited,desc']</c>
         /// <br/>default rule:
-        /// <br/>['domain_rank,desc']
+        /// <br/><c>['domain_rank,desc']</c>
         /// <br/>note that you can set no more than three sorting rules in a single request
         /// <br/>you should use a comma to separate several sorting rules
         /// <br/>example:
-        /// <br/>['last_visited,desc','domain_rank,desc']
+        /// <br/><c>['last_visited,desc','domain_rank,desc']</c>
         /// </summary>
         [JsonProperty("order_by", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public IEnumerable<string> OrderBy { get; set; }
@@ -125,8 +121,8 @@ namespace DataForSeo.Client.Models.Requests
         /// <summary>
         /// the maximum number of returned domains
         /// <br/>optional field
-        /// <br/>default value: 100
-        /// <br/>maximum value: 10000
+        /// <br/>default value: <c>100</c>
+        /// <br/>maximum value: <c>10000</c>
         /// </summary>
         [JsonProperty("limit", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public int? Limit { get; set; }
@@ -134,10 +130,10 @@ namespace DataForSeo.Client.Models.Requests
         /// <summary>
         /// offset in the results array of returned domains
         /// <br/>optional field
-        /// <br/>default value: 0
-        /// <br/>if you specify the 10 value, the first ten domains in the results array will be omitted and the data will be provided for the successive domains;
-        /// <br/>Note: the maximum value is 9999, the sum of limit and offset must not exceed 10000;
-        /// <br/>use the offset_token if you would like to offset more results
+        /// <br/>default value: <c>0</c>
+        /// <br/>if you specify the <c>10</c> value, the first ten domains in the results array will be omitted and the data will be provided for the successive domains;
+        /// <br/>Note: the maximum value is <c>9999</c>, the sum of <c>limit</c> and <c>offset</c> must not exceed <c>10000</c>;
+        /// <br/>use the <c>offset_token</c> if you would like to offset more results
         /// </summary>
         [JsonProperty("offset", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public int? Offset { get; set; }
@@ -147,10 +143,10 @@ namespace DataForSeo.Client.Models.Requests
         /// <br/>optional field
         /// <br/>provided in the identical filed of the response to each request;
         /// <br/>use this parameter to avoid timeouts while trying to obtain over 100,000 results in a single request;
-        /// <br/>by specifying the unique offset_token value from the response array, you will get the subsequent results of the initial task;
-        /// <br/>offset_token values are unique for each subsequent task
-        /// <br/>Note: if the offset_token is specified in the request, all other parameters should be identical to the previous request
-        /// <br/>learn more about this parameter on our Help Center
+        /// <br/>by specifying the unique <c>offset_token</c> value from the response array, you will get the subsequent results of the initial task;
+        /// <br/><c>offset_token</c> values are unique for each subsequent task 
+        /// <br/>Note: if the <c>offset_token</c> is specified in the request, all other parameters should be identical to the previous request
+        /// <br/>learn more about this parameter on our <see href="https://dataforseo.com/help-center/what-is-the-difference-between-the-offset-and-offset_token-parameters#offset_token">Help Center</see>
         /// </summary>
         [JsonProperty("offset_token", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string OffsetToken { get; set; }

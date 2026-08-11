@@ -52,7 +52,7 @@ namespace DataForSeo.Client.Models
         public IEnumerable<LinkElement> Links { get; set; }
 
         /// <summary>
-        /// words highlighted in bold within the results description
+        /// words highlighted in bold within the results <c>description</c>
         /// </summary>
         [JsonProperty("highlighted", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public IEnumerable<string> Highlighted { get; set; }

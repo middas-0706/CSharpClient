@@ -5,4 +5,4 @@
 
 | Name | Type | Description | Notes |
 |------------ | ------------- | ------------- | -------------|
-**Tasks** | **IEnumerable<KeywordsDataBingSearchVolumeHistoryTaskPostTaskInfo>** | array of tasks |[optional]|
+**Tasks** | **IEnumerable<KeywordsDataBingSearchVolumeHistoryTaskPostTaskInfo>** | <em>array of tasks</em> |[optional]|

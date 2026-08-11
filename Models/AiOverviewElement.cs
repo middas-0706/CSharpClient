@@ -35,7 +35,7 @@ namespace DataForSeo.Client.Models
 
         /// <summary>
         /// references relevant to the element
-        /// <br/>includes references to webpages that were used to generate the ai_overview_element
+        /// <br/>includes references to webpages that were used to generate the <c>ai_overview_element</c>
         /// </summary>
         [JsonProperty("references", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public IEnumerable<AiModeAiOverviewReferenceInfo> References { get; set; }

@@ -41,7 +41,7 @@ namespace DataForSeo.Client.Models
 
         /// <summary>
         /// backlink rank of the target domain
-        /// <br/>learn more about the metric and how it is calculated in this help center article
+        /// <br/>learn more about the metric and how it is calculated in <see href="https://dataforseo.com/help-center/what_is_rank_in_backlinks_api">this help center article</see>
         /// </summary>
         [JsonProperty("domain_rank", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public int? DomainRank { get; set; }
@@ -50,7 +50,7 @@ namespace DataForSeo.Client.Models
         /// most recent date when our crawler visited the domain
         /// <br/>in the UTC format: “yyyy-mm-dd hh-mm-ss +00:00”
         /// <br/>example:
-        /// <br/>2022-10-10 12:57:46 +00:00
+        /// <br/><c>2022-10-10 12:57:46 +00:00</c>
         /// </summary>
         [JsonProperty("last_visited", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string LastVisited { get; set; }
@@ -100,7 +100,7 @@ namespace DataForSeo.Client.Models
         /// <summary>
         /// technologies used by target domain
         /// <br/>contains objects with the names of technologies used on the website
-        /// <br/>see the full list of available technologies structured by groups and categories
+        /// <br/><see href="/v3/domain_analytics/technologies/technologies/">see the full list of available technologies structured by groups and categories</see>
         /// </summary>
         [JsonProperty("technologies", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public TechnologiesInfo Technologies { get; set; }

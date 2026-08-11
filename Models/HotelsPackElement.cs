@@ -36,7 +36,7 @@ namespace DataForSeo.Client.Models
         /// <summary>
         /// unique hotel identifier
         /// <br/>unique hotel identifier assigned by Google;
-        /// <br/>example: 'CgoIjaeSlI6CnNpVEAE'
+        /// <br/>example: <c>'CgoIjaeSlI6CnNpVEAE'</c>
         /// </summary>
         [JsonProperty("hotel_identifier", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string HotelIdentifier { get; set; }
@@ -60,9 +60,9 @@ namespace DataForSeo.Client.Models
         public bool? IsPaid { get; set; }
 
         /// <summary>
-        /// the item’s rating 
+        /// the item's rating 
         /// <br/>the popularity rate based on reviews and displayed in SERP;
-        /// <br/>if there is none, equals null
+        /// <br/>if there is none, equals <c>null</c>
         /// </summary>
         [JsonProperty("rating", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public RatingInfo Rating { get; set; }

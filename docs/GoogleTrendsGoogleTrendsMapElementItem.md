@@ -5,4 +5,4 @@
 
 | Name | Type | Description | Notes |
 |------------ | ------------- | ------------- | -------------|
-**Data** | **IEnumerable<TrendsMapDataInfo>** | Google Trends data from the corresponding item |[optional]|
+**Data** | **IEnumerable<TrendsMapDataInfo>** | <em>Google Trends data from the corresponding item</em> |[optional]|

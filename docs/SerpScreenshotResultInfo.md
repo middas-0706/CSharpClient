@@ -5,5 +5,5 @@
 
 | Name | Type | Description | Notes |
 |------------ | ------------- | ------------- | -------------|
-**ItemsCount** | **long?** | number of items in the results array |[optional]|
-**Items** | **IEnumerable<ScreenshotItem>** | items array |[optional]|
+**ItemsCount** | **long?** | <em>number of items in the results array</em> |[optional]|
+**Items** | **IEnumerable<ScreenshotItem>** | <em>items array</em> |[optional]|

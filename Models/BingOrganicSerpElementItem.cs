@@ -47,7 +47,7 @@ namespace DataForSeo.Client.Models
 
         /// <summary>
         /// URL to a similar search
-        /// <br/>URL to a new search for the same keyword(s) on related sites
+        /// <br/>            URL to a new search for the same keyword(s) on related sites
         /// </summary>
         [JsonProperty("related_search_url", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string RelatedSearchUrl { get; set; }
@@ -59,19 +59,19 @@ namespace DataForSeo.Client.Models
         public string WebsiteName { get; set; }
 
         /// <summary>
-        /// indicates whether the element contains an image
+        /// indicates whether the element contains an <c>image</c>
         /// </summary>
         [JsonProperty("is_image", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public bool? IsImage { get; set; }
 
         /// <summary>
-        /// indicates whether the element contains a video
+        /// indicates whether the element contains a <c>video</c>
         /// </summary>
         [JsonProperty("is_video", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public bool? IsVideo { get; set; }
 
         /// <summary>
-        /// indicates whether the element is a featured_snippet
+        /// indicates whether the element is a <c>featured_snippet</c>
         /// </summary>
         [JsonProperty("is_featured_snippet", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public bool? IsFeaturedSnippet { get; set; }
@@ -110,43 +110,43 @@ namespace DataForSeo.Client.Models
 
         /// <summary>
         /// Accelerated Mobile Pages
-        /// <br/>indicates whether an item has the Accelerated Mobile Page (AMP) version
+        /// <br/>            indicates whether an item has the Accelerated Mobile Page (AMP) version
         /// </summary>
         [JsonProperty("amp_version", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public bool? AmpVersion { get; set; }
 
         /// <summary>
-        /// the item’s rating 
-        /// <br/>the popularity rate based on reviews and displayed in SERP
+        /// the item's rating 
+        /// <br/>            the popularity rate based on reviews and displayed in SERP
         /// </summary>
         [JsonProperty("rating", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public RatingInfo Rating { get; set; }
 
         /// <summary>
         /// pricing details
-        /// <br/>contains the pricing details of the product or service featured in the result
+        /// <br/>            contains the pricing details of the product or service featured in the result
         /// </summary>
         [JsonProperty("price", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public PriceInfo Price { get; set; }
 
         /// <summary>
-        /// words highlighted in bold within the results description
+        /// words highlighted in bold within the results <c>description</c>
         /// </summary>
         [JsonProperty("highlighted", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public IEnumerable<string> Highlighted { get; set; }
 
         /// <summary>
         /// sitelinks
-        /// <br/>the links shown below some search results
-        /// <br/>if there are none, equals null
+        /// <br/>            the links shown below some search results
+        /// <br/>            if there are none, equals <c>null</c>
         /// </summary>
         [JsonProperty("links", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public IEnumerable<LinkElement> Links { get; set; }
 
         /// <summary>
         /// frequently asked questions
-        /// <br/>questions and answers extension shown below some search results
-        /// <br/>if there are none, equals null
+        /// <br/>            questions and answers extension shown below some search results
+        /// <br/>            if there are none, equals <c>null</c>
         /// </summary>
         [Obsolete]
         [JsonProperty("faq", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
@@ -154,15 +154,15 @@ namespace DataForSeo.Client.Models
 
         /// <summary>
         /// extension of the organic element
-        /// <br/>extension of the organic result containing related search queries
-        /// <br/>Note: extension appears in SERP upon clicking on the result and then bouncing back to search results
+        /// <br/>            extension of the organic result containing related search queries
+        /// <br/>            Note: extension appears in SERP upon clicking on the result and then bouncing back to search results
         /// </summary>
         [JsonProperty("extended_people_also_search", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public IEnumerable<string> ExtendedPeopleAlsoSearch { get; set; }
 
         /// <summary>
-        /// contains information from the ‘About this result’ panel
-        /// <br/>note: about_this_result feature is not available in Bing search engine, that’s why it always equals null
+        /// contains information from the 'About this result' panel
+        /// <br/>            note: <c>about_this_result</c> feature is not available in Bing search engine, that’s why it always equals <c>null</c>
         /// </summary>
         [Obsolete]
         [JsonProperty("about_this_result", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
@@ -170,17 +170,17 @@ namespace DataForSeo.Client.Models
 
         /// <summary>
         /// related result from the same domain
-        /// <br/>related result from the same domain appears as a part of the main result snippet;
-        /// <br/>note: related_result feature is not available in Bing search engine, that’s why it always equals null
+        /// <br/>            related result from the same domain appears as a part of the main result snippet;
+        /// <br/>            note: <c>related_result</c> feature is not available in Bing search engine, that’s why it always equals <c>null</c>
         /// </summary>
         [JsonProperty("related_result", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public IEnumerable<RelatedResult> RelatedResult { get; set; }
 
         /// <summary>
         /// date and time when the result was published
-        /// <br/>in the UTC format: “yyyy-mm-dd hh-mm-ss +00:00”
-        /// <br/>example:
-        /// <br/>2019-11-15 12:57:46 +00:00
+        /// <br/>            in the UTC format: “yyyy-mm-dd hh-mm-ss +00:00”
+        /// <br/>            example:
+        /// <br/>            <c>2019-11-15 12:57:46 +00:00</c>
         /// </summary>
         [JsonProperty("timestamp", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string Timestamp { get; set; }

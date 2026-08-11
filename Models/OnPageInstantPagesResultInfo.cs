@@ -11,14 +11,14 @@ namespace DataForSeo.Client.Models
 
         /// <summary>
         /// status of the crawling session
-        /// <br/>possible values: in_progress, finished
+        /// <br/>possible values: <c>in_progress</c>, <c>finished</c>
         /// </summary>
         [JsonProperty("crawl_progress", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string CrawlProgress { get; set; }
 
         /// <summary>
         /// details of the crawling session
-        /// <br/>in this case the value will be null
+        /// <br/>in this case the value will be <c>null</c>
         /// </summary>
         [JsonProperty("crawl_status", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public object CrawlStatus { get; set; }
@@ -26,7 +26,7 @@ namespace DataForSeo.Client.Models
         /// <summary>
         /// crawler ip address
         /// <br/>displays the IP address used by the crawler to initiate the current crawling session
-        /// <br/>you can find the full list of IPs used by our crawler in the Overview section
+        /// <br/>you can find the full list of IPs used by our crawler in the <see href="/v3/on_page/overview">Overview section</see>
         /// </summary>
         [JsonProperty("crawl_gateway_address", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string CrawlGatewayAddress { get; set; }

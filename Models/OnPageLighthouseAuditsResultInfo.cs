@@ -13,7 +13,7 @@ namespace DataForSeo.Client.Models
         /// the list of available lighthouse audits
         /// <br/>an array containing the titles of available audits;
         /// <br/>Note: the titles can change depending on if the audit passed or failed and may contain markdown code;
-        /// <br/>Note #2: if you’re using the audit that contains a slash (/) in its name, search by the last word after the slash
+        /// <br/>Note #2: if you're using the audit that contains a slash (<c>/</c>) in its name, search by the last word after the slash
         /// </summary>
         [JsonProperty("audits", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public IEnumerable<string> Audits { get; set; }

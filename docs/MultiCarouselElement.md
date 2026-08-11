@@ -6,5 +6,5 @@
 | Name | Type | Description | Notes |
 |------------ | ------------- | ------------- | -------------|
 **Type** | **string** | type of element |[optional]|
-**Title** | **string** | title of a given link element |[optional]|
-**MultiCarouselSnippets** | **IEnumerable<SerpApiCarouselElement>** | multi_carousel_snippet results<br>if there are none, equals null |[optional]|
+**Title** | **string** | <em>title of a given link element</em> |[optional]|
+**MultiCarouselSnippets** | **IEnumerable<SerpApiCarouselElement>** | <em><code>multi_carousel_snippet</code> results</em><br>if there are none, equals <code>null</code> |[optional]|

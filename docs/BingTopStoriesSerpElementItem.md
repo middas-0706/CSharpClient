@@ -5,5 +5,5 @@
 
 | Name | Type | Description | Notes |
 |------------ | ------------- | ------------- | -------------|
-**Title** | **string** | title of the item |[optional]|
-**Items** | **IEnumerable<TopStoriesElement>** | contains results featured in the ‘hotels_pack’ element of SERP |[optional]|
+**Title** | **string** | <em>title of the item</em> |[optional]|
+**Items** | **IEnumerable<TopStoriesElement>** | <em>contains results featured in the 'hotels_pack' element of SERP</em> |[optional]|

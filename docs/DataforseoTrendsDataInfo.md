@@ -5,5 +5,5 @@
 
 | Name | Type | Description | Notes |
 |------------ | ------------- | ------------- | -------------|
-**Keyword** | **string** | relevant keyword for which demographic data is provided |[optional]|
-**Values** | **IEnumerable<DemographyItemValueInfo>** | contains age range and corresponding keyword popularity values |[optional]|
+**Keyword** | **string** | <em>relevant keyword for which demographic data is provided</em> |[optional]|
+**Values** | **IEnumerable<DemographyItemValueInfo>** | <em>contains age range and corresponding keyword popularity values</em> |[optional]|

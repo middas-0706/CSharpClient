@@ -5,20 +5,20 @@
 
 | Name | Type | Description | Notes |
 |------------ | ------------- | ------------- | -------------|
-**Title** | **string** | title of the video |[optional]|
-**VideoId** | **string** | ID of the video |[optional]|
-**ThumbnailUrl** | **string** | the URL of the page where the thumbnail is hosted |[optional]|
-**ChannelName** | **string** | the name of the channel where the video is published |[optional]|
-**ChannelUrl** | **string** | the URL of the channel where the video is published |[optional]|
-**ChannelLogo** | **string** | the URL of the page where the logo image of the channel is hosted |[optional]|
-**Description** | **string** | description of the channel |[optional]|
-**Highlighted** | **IEnumerable<string>** | highlighted keywords in the description |[optional]|
-**Badges** | **IEnumerable<string>** | video badges<br>example:<br>New, CC, 4K |[optional]|
-**IsLive** | **bool?** | indicates whether the video is a live broadcast |[optional]|
-**IsShorts** | **bool?** | indicates whether the video is shorts |[optional]|
-**IsMovie** | **bool?** | indicates whether the video is a movie |[optional]|
-**ViewsCount** | **long?** | number of views of the video |[optional]|
-**PublicationDate** | **string** | the date when the video is published |[optional]|
-**Timestamp** | **string** | date and time when the result is published<br>in the UTC format: “yyyy-mm-dd hh-mm-ss +00:00”<br>example:<br>2022-11-15 12:57:46 +00:00 |[optional]|
-**DurationTime** | **string** | duration of the video |[optional]|
-**DurationTimeSeconds** | **int?** | duration of the video in seconds |[optional]|
+**Title** | **string** | <em>title of the video</em> |[optional]|
+**VideoId** | **string** | <em>ID of the video</em> |[optional]|
+**ThumbnailUrl** | **string** | <em>the URL of the page where the thumbnail is hosted</em> |[optional]|
+**ChannelName** | **string** | <em>the name of the channel where the video is published</em> |[optional]|
+**ChannelUrl** | **string** | <em>the URL of the channel where the video is published</em> |[optional]|
+**ChannelLogo** | **string** | <em>the URL of the page where the logo image of the channel is hosted</em> |[optional]|
+**Description** | **string** | <em>description of the channel</em> |[optional]|
+**Highlighted** | **IEnumerable<string>** | <em>highlighted keywords in the description</em> |[optional]|
+**Badges** | **IEnumerable<string>** | <em>video badges</em><br>example:<br><code>New</code>, <code>CC</code>, <code>4K</code> |[optional]|
+**IsLive** | **bool?** | <em>indicates whether the video is a live broadcast</em> |[optional]|
+**IsShorts** | **bool?** | <em>indicates whether the video is shorts</em> |[optional]|
+**IsMovie** | **bool?** | <em>indicates whether the video is a movie</em> |[optional]|
+**ViewsCount** | **long?** | <em>number of views of the video</em> |[optional]|
+**PublicationDate** | **string** | <em>the date when the video is published</em> |[optional]|
+**Timestamp** | **string** | <em>date and time when the result is published</em><br>in the UTC format: “yyyy-mm-dd hh-mm-ss +00:00”<br>example:<br><code>2022-11-15 12:57:46 +00:00</code> |[optional]|
+**DurationTime** | **string** | <em>duration of the video</em> |[optional]|
+**DurationTimeSeconds** | **int?** | <em>duration of the video in seconds</em> |[optional]|

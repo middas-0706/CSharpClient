@@ -5,13 +5,13 @@
 
 | Name | Type | Description | Notes |
 |------------ | ------------- | ------------- | -------------|
-**Keyword** | **string** | keyword in a POST array |[optional]|
-**LocationCode** | **int?** | location code in a POST array<br>if there is no data, then the value is null |[optional]|
-**LanguageCode** | **string** | language code in a POST array<br>if there is no data, then the value is null |[optional]|
-**SearchPartners** | **bool?** | indicates whether data from partner networks included in the response |[optional]|
-**Device** | **string** | device type in a POST array<br>if there is no data, then the value is null |[optional]|
-**Competition** | **double?** | competition<br>represents the relative amount of competition associated with the given keyword in paid SERP only. This value is based on Bing Ads data.<br>Possible values: 0.1, 0.5,0.90.1 – low competition,<br>0.5 – medium competition,<br>0.9 – high competition;<br>if there is no data the value is null |[optional]|
-**Cpc** | **double?** | cost-per-click<br>represents the average cost per click (USD) historically paid for the keyword.<br>if there is no data then the value is null |[optional]|
-**SearchVolume** | **long?** | monthly average search volume rate<br>represents either the (approximate) number of searches for the given keyword idea on bing search engine depending on the user’s targeting;<br>search volume is rounded to the nearest tens;<br>if there is no data, the value is null |[optional]|
-**Categories** | **IEnumerable<string>** | product and service categories<br>our API doesn’t return categories for this endpoint: the parameter will always equal null |[optional]|
-**MonthlySearches** | **IEnumerable<MonthlySearchesInfo>** | monthly searches<br>represents the (approximate) number of searches on this keyword idea (as available for the past twelve months), targeted to the specified geographic locations<br>if there is no data then the value is null |[optional]|
+**Keyword** | **string** | <em>keyword in a POST array</em> |[optional]|
+**LocationCode** | **int?** | <em>location code in a POST array</em><br>if there is no data, then the value is_<code>null</code>n |[optional]|
+**LanguageCode** | **string** | <em>language code in a POST array</em><br>if there is no data, then the value is_<code>null</code>n |[optional]|
+**SearchPartners** | **bool?** | <em>indicates whether data from partner networks included in the response</em> |[optional]|
+**Device** | **string** | <em>device type in a POST array</em><br>if there is no data, then the value is_<code>null</code>n |[optional]|
+**Competition** | **double?** | <em>competition</em><br>represents the relative amount of competition associated with the given keyword in paid SERP only. This value is based on Bing Ads data.<br>Possible values: <code>0.1</code>, <code>0.5</code>,<code>0.9</code><code>0.1</code> - low competition,<br><code>0.5</code> - medium competition,<br><code>0.9</code> - high competition;<br>if there is no data the value is <code>null</code> |[optional]|
+**Cpc** | **double?** | <em>cost-per-click</em><br>represents the average cost per click (USD) historically paid for the keyword.<br>if there is no data then the value is_<code>null</code>n |[optional]|
+**SearchVolume** | **long?** | <em>monthly average search volume rate<br></em>represents either the (approximate) number of searches for the given keyword idea on bing search engine depending on the user’s targeting;<br>search volume is rounded to the nearest tens;<br>if there is no data, the value is_<code>null</code>n |[optional]|
+**Categories** | **IEnumerable<string>** | <em>product and service categories</em><br>our API doesn't return categories for this endpoint: the parameter will always equal <code>null</code> |[optional]|
+**MonthlySearches** | **IEnumerable<MonthlySearchesInfo>** | <em>monthly searches</em><br>represents the (approximate) number of searches on this keyword idea (as available for the past twelve months), targeted to the specified geographic locations<br>if there is no data then the value is_<code>null</code>n |[optional]|

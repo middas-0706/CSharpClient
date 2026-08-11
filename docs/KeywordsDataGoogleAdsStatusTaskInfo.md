@@ -5,4 +5,4 @@
 
 | Name | Type | Description | Notes |
 |------------ | ------------- | ------------- | -------------|
-**Result** | **IEnumerable<KeywordsDataGoogleAdsStatusResultInfo>** | array of results |[optional]|
+**Result** | **IEnumerable<KeywordsDataGoogleAdsStatusResultInfo>** | <em>array of results</em> |[optional]|

@@ -5,4 +5,4 @@
 
 | Name | Type | Description | Notes |
 |------------ | ------------- | ------------- | -------------|
-**Tasks** | **IEnumerable<KeywordsDataBingLanguagesTaskInfo>** | array of tasks |[optional]|
+**Tasks** | **IEnumerable<KeywordsDataBingLanguagesTaskInfo>** | <em>array of tasks</em> |[optional]|

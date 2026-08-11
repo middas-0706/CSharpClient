@@ -5,4 +5,4 @@
 
 | Name | Type | Description | Notes |
 |------------ | ------------- | ------------- | -------------|
-**Tasks** | **IEnumerable<KeywordsDataGoogleAdsAdTrafficByKeywordsTasksReadyTaskInfo>** | array of tasks |[optional]|
+**Tasks** | **IEnumerable<KeywordsDataGoogleAdsAdTrafficByKeywordsTasksReadyTaskInfo>** | <em>array of tasks</em> |[optional]|

@@ -17,14 +17,14 @@ namespace DataForSeo.Client.Models
     {
 
         /// <summary>
-        /// type of the returned resource = ‘html’
+        /// type of the returned resource = 'html'
         /// </summary>
         [JsonProperty("resource_type", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string ResourceType { get; set; }
 
         /// <summary>
         /// general status code
-        /// <br/>you can find the full list of the response codes here
+        /// <br/>you can find the full list of the response codes <see href="/v3/appendix/errors">here</see>
         /// <br/>Note: we strongly recommend designing a necessary system for handling related exceptional or error conditions
         /// </summary>
         [JsonProperty("status_code", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
@@ -74,7 +74,7 @@ namespace DataForSeo.Client.Models
         /// date and time when a resource was fetched
         /// <br/>in the UTC format: “yyyy-mm-dd hh-mm-ss +00:00”
         /// <br/>example:
-        /// <br/>2019-11-15 12:57:46 +00:00
+        /// <br/><c>2019-11-15 12:57:46 +00:00</c>
         /// </summary>
         [JsonProperty("fetch_time", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string FetchTime { get; set; }
@@ -112,7 +112,7 @@ namespace DataForSeo.Client.Models
 
         /// <summary>
         /// contains data on changes related to the resource
-        /// <br/>if there is no data, the value will be null
+        /// <br/>if there is no data, the value will be <c>null</c>
         /// </summary>
         [JsonProperty("last_modified", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public LastModified LastModified { get; set; }

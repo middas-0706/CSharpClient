@@ -40,19 +40,19 @@ namespace DataForSeo.Client.Models
         public string WebsiteName { get; set; }
 
         /// <summary>
-        /// indicates whether the element contains an image
+        /// indicates whether the element contains an <c>image</c>
         /// </summary>
         [JsonProperty("is_image", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public bool? IsImage { get; set; }
 
         /// <summary>
-        /// indicates whether the element contains a video
+        /// indicates whether the element contains a <c>video</c>
         /// </summary>
         [JsonProperty("is_video", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public bool? IsVideo { get; set; }
 
         /// <summary>
-        /// indicates whether the element is a featured_snippet
+        /// indicates whether the element is a <c>featured_snippet</c>
         /// </summary>
         [JsonProperty("is_featured_snippet", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public bool? IsFeaturedSnippet { get; set; }
@@ -83,36 +83,36 @@ namespace DataForSeo.Client.Models
 
         /// <summary>
         /// Accelerated Mobile Pages
-        /// <br/>indicates whether an item has the Accelerated Mobile Page (AMP) version
+        /// <br/>            indicates whether an item has the Accelerated Mobile Page (AMP) version
         /// </summary>
         [JsonProperty("amp_version", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public bool? AmpVersion { get; set; }
 
         /// <summary>
-        /// the item’s rating 
-        /// <br/>the popularity rate based on reviews and displayed in SERP
+        /// the item's rating 
+        /// <br/>            the popularity rate based on reviews and displayed in SERP
         /// </summary>
         [JsonProperty("rating", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public RatingInfo Rating { get; set; }
 
         /// <summary>
-        /// words highlighted in bold within the results description
+        /// words highlighted in bold within the results <c>description</c>
         /// </summary>
         [JsonProperty("highlighted", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public IEnumerable<string> Highlighted { get; set; }
 
         /// <summary>
         /// sitelinks
-        /// <br/>the links shown below some of Google’s search results
-        /// <br/>if there are none, equals null
+        /// <br/>            the links shown below some of Google's search results
+        /// <br/>            if there are none, equals <c>null</c>
         /// </summary>
         [JsonProperty("links", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public IEnumerable<LinkElement> Links { get; set; }
 
         /// <summary>
-        /// contains information from the ‘About this result’ panel
-        /// <br/>‘About this result’ panel provides additional context about why Google returned this result for the given query;
-        /// <br/>this feature appears after clicking on the three dots next to most results
+        /// contains information from the 'About this result' panel
+        /// <br/>            <see href="https://blog.google/products/search/learn-more-and-get-more-from-search/">'About this result' panel</see> provides additional context about why Google returned this result for the given query;
+        /// <br/>            this feature appears after clicking on the three dots next to most results
         /// </summary>
         [Obsolete]
         [JsonProperty("about_this_result", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
@@ -132,34 +132,34 @@ namespace DataForSeo.Client.Models
 
         /// <summary>
         /// estimated traffic volume
-        /// <br/>estimated organic monthly traffic to the domain or webpage;
-        /// <br/>calculated as the product of CTR (click-through-rate) and search volume values of all keywords the domain or webpage rank for;
-        /// <br/>learn more about how the metric is calculated in this help center article
+        /// <br/>            estimated organic monthly traffic to the domain or webpage;
+        /// <br/>            calculated as the product of CTR (click-through-rate) and search volume values of all keywords the domain or webpage rank for;
+        /// <br/>            learn more about how the metric is calculated in <see href="https://dataforseo.com/help-center/how-is-etv-calculated">this help center article</see>
         /// </summary>
         [JsonProperty("etv", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public double? Etv { get; set; }
 
         /// <summary>
         /// estimated cost of converting organic search traffic into paid
-        /// <br/>represents the estimated monthly cost of running ads for all keywords that a domain or webpage ranks for;
-        /// <br/>the metric is calculated as the product of organic etv and paid cpc values and indicates the cost of driving the estimated volume of monthly organic traffic through PPC advertising in Google Search;
-        /// <br/>learn more about how the metric is calculated in this help center article
+        /// <br/>            represents the estimated monthly cost of running ads for all keywords that a domain or webpage ranks for;
+        /// <br/>            the metric is calculated as the product of organic <c>etv</c> and paid <c>cpc</c> values and indicates the cost of driving the estimated volume of monthly organic traffic through PPC advertising in Google Search;
+        /// <br/>            learn more about how the metric is calculated in <see href="https://dataforseo.com/help-center/how-is-traffic-cost-calculated">this help center article</see>
         /// </summary>
         [JsonProperty("estimated_paid_traffic_cost", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public double? EstimatedPaidTrafficCost { get; set; }
 
         /// <summary>
         /// estimated traffic volume based on clickstream data
-        /// <br/>calculated as the product of click-through-rate and clickstream search volume values of all keywords the domain or webpage ranks for;
-        /// <br/>to retrieve results for this field, the parameter include_clickstream_data must be set to true;
-        /// <br/>learn more about how the metric is calculated in this help center article
+        /// <br/>            calculated as the product of click-through-rate and clickstream search volume values of all keywords the domain or webpage ranks for;
+        /// <br/>            to retrieve results for this field, the parameter <c>include_clickstream_data</c> must be set to <c>true</c>;
+        /// <br/>            learn more about how the metric is calculated in this <see href="https://dataforseo.com/help-center/whats-clickstream-estimated-traffic-volume-and-how-is-it-calculated">help center article</see>
         /// </summary>
         [JsonProperty("clickstream_etv", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public double? ClickstreamEtv { get; set; }
 
         /// <summary>
         /// changes in rankings
-        /// <br/>contains information about the ranking changes of the SERP element since the previous_updated_time
+        /// <br/>            contains information about the ranking changes of the SERP element since the <c>previous_updated_time</c>
         /// </summary>
         [JsonProperty("rank_changes", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public RankChanges RankChanges { get; set; }

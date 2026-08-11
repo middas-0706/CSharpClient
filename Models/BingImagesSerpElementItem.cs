@@ -22,14 +22,14 @@ namespace DataForSeo.Client.Models
         public string Url { get; set; }
 
         /// <summary>
-        /// contains results featured in the ‘hotels_pack’ element of SERP
+        /// contains results featured in the 'hotels_pack' element of SERP
         /// </summary>
         [JsonProperty("items", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public IEnumerable<AiModeImagesElementInfo> Items { get; set; }
 
         /// <summary>
         /// contains keywords and images related to the specified search term
-        /// <br/>if there are none, equals null
+        /// <br/>            if there are none, equals <c>null</c>
         /// </summary>
         [Obsolete]
         [JsonProperty("related_image_searches", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]

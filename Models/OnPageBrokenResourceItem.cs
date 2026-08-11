@@ -23,18 +23,18 @@ namespace DataForSeo.Client.Models
 
         /// <summary>
         /// resource properties
-        /// <br/>the value depends on the resource_type
-        /// <br/>note that if you do not indicate a url when setting a task, resource’s meta is returned based on the data from the page where our crawler first saw the resource;
-        /// <br/>to obtain resource’s meta from a particular url, specify that URL when setting a task
+        /// <br/>the value depends on the <c>resource_type</c>
+        /// <br/>note that if you do not indicate a <c>url</c> when setting a task, resource's <c>meta</c> is returned based on the data from the page where our crawler first saw the resource;
+        /// <br/>to obtain resource's <c>meta</c> from a particular <c>url</c>, specify that URL when setting a task
         /// </summary>
         [JsonProperty("meta", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public PageMetaInfo Meta { get; set; }
 
         /// <summary>
         /// indicates the expected type of resource
-        /// <br/>for example, if 'resource_type': 'broken', accept_type will indicate the type of the broken resource
-        /// <br/>possible values:
-        /// <br/>any, none, image, sitemap, robots, script, stylesheet, redirect, html, text, other, font
+        /// <br/>for example, if <c>'resource_type': 'broken'</c>, <c>accept_type</c> will indicate the type of the broken resource
+        /// <br/>possible values: 
+        /// <br/><c>any</c>, <c>none</c>, <c>image</c>, <c>sitemap</c>, <c>robots</c>, <c>script</c>, <c>stylesheet</c>, <c>redirect</c>, <c>html</c>, <c>text</c>, <c>other</c>, <c>font</c>
         /// </summary>
         [JsonProperty("accept_type", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string AcceptType { get; set; }

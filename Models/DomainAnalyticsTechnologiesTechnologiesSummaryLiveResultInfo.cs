@@ -32,7 +32,7 @@ namespace DataForSeo.Client.Models
 
         /// <summary>
         /// distribution of websites by keywords
-        /// <br/>contains keywords found in the websites’ titles, descriptions or meta keywords, and number of websites using each keyword
+        /// <br/>contains keywords found in the websites' titles, descriptions or meta keywords, and number of websites using each keyword
         /// </summary>
         [JsonProperty("keywords", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public IDictionary<string, long?> Keywords { get; set; }

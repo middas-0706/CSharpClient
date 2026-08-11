@@ -5,5 +5,5 @@
 
 | Name | Type | Description | Notes |
 |------------ | ------------- | ------------- | -------------|
-**Link** | **LinkElement** | link of the element |[optional]|
-**Items** | **IEnumerable<KnowledgeGraphImagesElement>** | historical SERPs and related data found in the database |[optional]|
+**Link** | **LinkElement** | <em>link of the element</em> |[optional]|
+**Items** | **IEnumerable<KnowledgeGraphImagesElement>** | <em>historical SERPs and related data found in the database</em> |[optional]|

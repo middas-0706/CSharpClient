@@ -5,5 +5,5 @@
 
 | Name | Type | Description | Notes |
 |------------ | ------------- | ------------- | -------------|
-**Age** | **IEnumerable<DataforseoTrendsDataInfo>** | distribution of keyword popularity by age |[optional]|
-**Gender** | **IEnumerable<DataforseoTrendsDataInfo>** | distribution of keyword popularity by gender |[optional]|
+**Age** | **IEnumerable<DataforseoTrendsDataInfo>** | <em>distribution of keyword popularity by age</em> |[optional]|
+**Gender** | **IEnumerable<DataforseoTrendsDataInfo>** | <em>distribution of keyword popularity by gender</em> |[optional]|

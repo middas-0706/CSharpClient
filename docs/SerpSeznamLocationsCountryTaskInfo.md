@@ -5,4 +5,4 @@
 
 | Name | Type | Description | Notes |
 |------------ | ------------- | ------------- | -------------|
-**Result** | **IEnumerable<SerpSeznamLocationsCountryResultInfo>** | array of results |[optional]|
+**Result** | **IEnumerable<SerpSeznamLocationsCountryResultInfo>** | <em>array of results</em> |[optional]|

@@ -19,8 +19,8 @@ namespace DataForSeo.Client.Models
         public string Type { get; set; }
 
         /// <summary>
-        /// position within a group of elements with identical type values
-        /// <br/>positions of elements with different type values are omitted from rank_group
+        /// position within a group of elements with identical <c>type</c> values
+        /// <br/>positions of elements with different <c>type</c> values are omitted from <c>rank_group</c>
         /// </summary>
         [JsonProperty("rank_group", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public int? RankGroup { get; set; }
@@ -35,13 +35,13 @@ namespace DataForSeo.Client.Models
         /// <summary>
         /// the alignment of the element in Google Shopping SERP
         /// <br/>possible values:
-        /// <br/>left, right
+        /// <br/><c>left</c>, <c>right</c>
         /// </summary>
         [JsonProperty("position", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string Position { get; set; }
 
         /// <summary>
-        /// XPath of the element
+        /// <see href="https://en.wikipedia.org/wiki/XPath">XPath</see> of the element
         /// </summary>
         [JsonProperty("xpath", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string Xpath { get; set; }
@@ -60,14 +60,14 @@ namespace DataForSeo.Client.Models
 
         /// <summary>
         /// Google Shopping URL forwarding to the product page on the seller’s website
-        /// <br/>if you want to obtain a URL of the advertisement forwarding to the product page on the seller’s website, please refer to the Google Shopping Sellers Ad URL endpoint
+        /// <br/>if you want to obtain a URL of the advertisement forwarding to the product page on the seller's website, please refer to the <see href="/v3/merchant/google/sellers/ad_url/">Google Shopping Sellers Ad URL</see> endpoint
         /// </summary>
         [JsonProperty("url", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string Url { get; set; }
 
         /// <summary>
         /// details and special offers
-        /// <br/>if there are no details, the value will be null
+        /// <br/>if there are no details, the value will be <c>null</c>
         /// </summary>
         [JsonProperty("details", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string Details { get; set; }
@@ -98,9 +98,9 @@ namespace DataForSeo.Client.Models
         public double? TotalPrice { get; set; }
 
         /// <summary>
-        /// currency in the ISO format
+        /// currency in the <see href="https://en.wikipedia.org/wiki/ISO_4217">ISO</see> format
         /// <br/>example:
-        /// <br/>USD
+        /// <br/><c>USD</c>
         /// </summary>
         [JsonProperty("currency", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string Currency { get; set; }
@@ -114,7 +114,7 @@ namespace DataForSeo.Client.Models
 
         /// <summary>
         /// unique ad click referral parameter
-        /// <br/>using this parameter you can get a URL of the advertisement in Google Shopping Sellers Ad URL
+        /// <br/>using this parameter you can get a URL of the advertisement in <see href="/v3/merchant/google/sellers/ad_url/">Google Shopping Sellers Ad URL</see>
         /// </summary>
         [JsonProperty("shop_ad_aclk", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string ShopAdAclk { get; set; }

@@ -103,10 +103,10 @@ namespace DataForSeo.Client.Models.Requests
         /// <summary>
         /// include or exclude data from clickstream-based metrics in the result
         /// <br/>optional field
-        /// <br/>if the parameter is set to_<c>true</c>, you will receive <c>clickstream_keyword_info</c>, <c>keyword_info_normalized_with_clickstream</c>, and <c>keyword_info_normalized_with_bing</c> fields in the response
+        /// <br/>if the parameter is set to <c>true</c>, you will receive <c>clickstream_keyword_info</c>, <c>keyword_info_normalized_with_clickstream</c>, and <c>keyword_info_normalized_with_bing</c> fields in the response
         /// <br/>default value: <c>false</c>
         /// <br/>with this parameter enabled, you will be charged double the price for the request
-        /// <br/>learn more about how clickstream-based metrics are calculated in this <see href="https://dataforseo.com/help-center/what-are-clickstream-based-metrics-and-how-do-we-calculate-them">help center article</see>n
+        /// <br/>learn more about how clickstream-based metrics are calculated in this <see href="https://dataforseo.com/help-center/what-are-clickstream-based-metrics-and-how-do-we-calculate-them">help center article</see>
         /// </summary>
         [JsonProperty("include_clickstream_data", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public bool? IncludeClickstreamData { get; set; }

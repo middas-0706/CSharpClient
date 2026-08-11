@@ -5,6 +5,6 @@
 
 | Name | Type | Description | Notes |
 |------------ | ------------- | ------------- | -------------|
-**Accumulator** | **string** | contains the value of duplicated tag |[optional]|
-**TotalCount** | **long?** | total count of duplicate pages |[optional]|
-**Pages** | **IEnumerable<OnPageHtmlResourceItem>** | pages with duplicate tags |[optional]|
+**Accumulator** | **string** | <em>contains the value of duplicated tag</em> |[optional]|
+**TotalCount** | **long?** | <em>total count of duplicate pages</em> |[optional]|
+**Pages** | **IEnumerable<OnPageHtmlResourceItem>** | <em>pages with duplicate tags</em> |[optional]|

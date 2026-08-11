@@ -17,14 +17,14 @@ namespace DataForSeo.Client.Models
 
         /// <summary>
         /// location code in a POST array
-        /// <br/>if there is no data, then the value is null
+        /// <br/>if there is no data, then the value is_<c>null</c>n
         /// </summary>
         [JsonProperty("location_code", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public int? LocationCode { get; set; }
 
         /// <summary>
         /// language code in a POST array
-        /// <br/>if there is no data, then the value is null
+        /// <br/>if there is no data, then the value is_<c>null</c>n
         /// </summary>
         [JsonProperty("language_code", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string LanguageCode { get; set; }
@@ -38,7 +38,7 @@ namespace DataForSeo.Client.Models
         /// <summary>
         /// include Google search partners
         /// <br/>the value you specified when setting the task
-        /// <br/>Note: parameter deprecated, the value is always false
+        /// <br/>Note: parameter deprecated, the value is always <c>false</c>
         /// </summary>
         [JsonProperty("search_partners", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public bool? SearchPartners { get; set; }
@@ -48,14 +48,14 @@ namespace DataForSeo.Client.Models
         /// <br/>the bid you have specified when setting the task
         /// <br/>represents the price you are willing to pay for an ad
         /// <br/>the higher value you have specified, the higher metrics and cost you receive in response
-        /// <br/>learn more in this help center article
+        /// <br/>learn more in <see href="https://dataforseo.com/help-center/configuring-bid">this help center article</see>
         /// </summary>
         [JsonProperty("bid", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public double? Bid { get; set; }
 
         /// <summary>
         /// keywords match-type
-        /// <br/>can take the following values: exact, broad, phrase
+        /// <br/>can take the following values: <c>exact</c>, <c>broad</c>, <c>phrase</c>
         /// </summary>
         [JsonProperty("match", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string Match { get; set; }
@@ -63,7 +63,7 @@ namespace DataForSeo.Client.Models
         /// <summary>
         /// projected number of ad impressions
         /// <br/>number of impressions an ad is projected to get within the specified time period
-        /// <br/>Note: parameter deprecated, the value is always null
+        /// <br/>Note: parameter deprecated, the value is always <c>null</c>
         /// </summary>
         [JsonProperty("impressions", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public int? Impressions { get; set; }
@@ -71,7 +71,7 @@ namespace DataForSeo.Client.Models
         /// <summary>
         /// projected click through rate (CTR) of the advertisement
         /// <br/>number of clicks an ad is projected to receive divided by the number of ad impressions; the CTR is projected for the specified time period
-        /// <br/>Note: parameter deprecated, the value is always null
+        /// <br/>Note: parameter deprecated, the value is always <c>null</c>
         /// </summary>
         [JsonProperty("ctr", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public double? Ctr { get; set; }
@@ -79,7 +79,7 @@ namespace DataForSeo.Client.Models
         /// <summary>
         /// the average cost-per-click value
         /// <br/>represents the cost-per-click (USD) estimated for a keyword based on the specified time period and historical data;
-        /// <br/>if there is no data, then the value is null
+        /// <br/>if there is no data, then the value is_<c>null</c>n
         /// </summary>
         [JsonProperty("average_cpc", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public double? AverageCpc { get; set; }
@@ -93,7 +93,7 @@ namespace DataForSeo.Client.Models
         /// <summary>
         /// number of clicks on an ad
         /// <br/>number of clicks an ad is projected to get within the specified time period
-        /// <br/>if there is no data, then the value is null
+        /// <br/>if there is no data, then the value is_<c>null</c>n
         /// </summary>
         [JsonProperty("clicks", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public double? Clicks { get; set; }

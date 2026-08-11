@@ -5,10 +5,10 @@
 
 | Name | Type | Description | Notes |
 |------------ | ------------- | ------------- | -------------|
-**SeType** | **string** | search engine type in a POST array |[optional]|
-**Keyword** | **string** | keyword received in a POST array<br>the keyword is returned with decoded %## (plus character ‘+’ will be decoded to a space character) |[optional]|
-**LocationCode** | **int?** | location code in a POST array |[optional]|
-**LanguageCode** | **string** | language code in a POST array |[optional]|
-**TotalCount** | **long?** | the total amount of results in our database relevant to your request |[optional]|
-**ItemsCount** | **long?** | the number of results returned in the items array |[optional]|
-**Items** | **IEnumerable<DataforseoLabsGoogleHistoricalSerpsLiveItem>** | historical SERPs and related data found in the database |[optional]|
+**SeType** | **string** | <em>search engine type in a POST array</em> |[optional]|
+**Keyword** | **string** | <em>keyword received in a POST array</em><br>            <strong>the keyword is returned with decoded %## (plus character ‘+’ will be decoded to a space character)</strong> |[optional]|
+**LocationCode** | **int?** | <em>location code in a POST array</em> |[optional]|
+**LanguageCode** | **string** | <em>language code in a POST array</em> |[optional]|
+**TotalCount** | **long?** | <em>the total amount of results in our database relevant to your request</em> |[optional]|
+**ItemsCount** | **long?** | <em>the number of results returned in the <code>items</code> array</em> |[optional]|
+**Items** | **IEnumerable<DataforseoLabsGoogleHistoricalSerpsLiveItem>** | <em>historical SERPs and related data found in the database</em> |[optional]|

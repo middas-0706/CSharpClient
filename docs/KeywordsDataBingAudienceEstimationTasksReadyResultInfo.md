@@ -5,9 +5,9 @@
 
 | Name | Type | Description | Notes |
 |------------ | ------------- | ------------- | -------------|
-**Id** | **string** | task identifier of the completed task<br>unique task identifier in our system in the UUID format |[optional]|
-**Se** | **string** | search engine specified when setting the task |[optional]|
+**Id** | **string** | <em>task identifier of the completed task</em><br><strong>unique task identifier in our system in the <a href='https://en.wikipedia.org/wiki/Universally_unique_identifier'>UUID</a> format</strong> |[optional]|
+**Se** | **string** | <em>search engine specified when setting the task</em> |[optional]|
 **SeType** | **string** |  |[optional]|
-**DatePosted** | **string** | date when the task was posted (in the UTC format) |[optional]|
-**Tag** | **string** | user-defined task identifier |[optional]|
-**Endpoint** | **string** | URL for collecting the results of the task |[optional]|
+**DatePosted** | **string** | <em>date when the task was posted (in the UTC format)</em> |[optional]|
+**Tag** | **string** |  |[optional]|
+**Endpoint** | **string** | <em>URL for collecting the results of the task</em> |[optional]|

@@ -11,7 +11,7 @@ namespace DataForSeo.Client.Models
 
         /// <summary>
         /// relevant keyword
-        /// <br/>the data included in the values element is based on this keyword
+        /// <br/>the data included in the <c>values</c> element is based on this keyword
         /// </summary>
         [JsonProperty("keyword", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string Keyword { get; set; }

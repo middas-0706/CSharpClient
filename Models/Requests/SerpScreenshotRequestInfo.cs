@@ -12,7 +12,7 @@ namespace DataForSeo.Client.Models.Requests
         /// <summary>
         /// task identifier
         /// <br/>required field
-        /// <br/>unique identifier of the associated task in the UUID format
+        /// <br/>unique identifier of the associated task in the <see href="https://en.wikipedia.org/wiki/Universally_unique_identifier">UUID</see> format
         /// <br/>you will be able to use it within 7 days to request the results of the task at any time
         /// </summary>
         [JsonProperty("task_id", Required = Required.DisallowNull, NullValueHandling = NullValueHandling.Ignore)]
@@ -22,7 +22,7 @@ namespace DataForSeo.Client.Models.Requests
         /// browser resolution preset
         /// <br/>optional field
         /// <br/>browser preset associated with a certain device type
-        /// <br/>can take the following values: desktop, tablet, mobile
+        /// <br/>can take the following values: <c>desktop</c>, <c>tablet</c>, <c>mobile</c> 
         /// <br/>Note: by default, browser preset corresponds to the device type specified in the POST request
         /// </summary>
         [JsonProperty("browser_preset", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
@@ -31,10 +31,10 @@ namespace DataForSeo.Client.Models.Requests
         /// <summary>
         /// width of the browser resolution
         /// <br/>optional field
-        /// <br/>can be specified in the following range: 240-9999
-        /// <br/>default value for desktop: 1920
-        /// <br/>default value for mobile: 390
-        /// <br/>default value for table: 1024
+        /// <br/>can be specified in the following range: <c>240-9999</c>
+        /// <br/>default value for <c>desktop</c>: 1920
+        /// <br/>default value for <c>mobile</c>: 390
+        /// <br/>default value for <c>table</c>: 1024
         /// </summary>
         [JsonProperty("browser_screen_width", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public long? BrowserScreenWidth { get; set; }
@@ -42,10 +42,10 @@ namespace DataForSeo.Client.Models.Requests
         /// <summary>
         /// height of the browser resolution
         /// <br/>optional field
-        /// <br/>can be specified in the following range: 240-9999
-        /// <br/>default value for desktop: 1080
-        /// <br/>default value for mobile: 844
-        /// <br/>default value for table: 1366
+        /// <br/>can be specified in the following range: <c>240-9999</c>
+        /// <br/>default value for <c>desktop</c>: 1080
+        /// <br/>default value for <c>mobile</c>: 844
+        /// <br/>default value for <c>table</c>: 1366
         /// </summary>
         [JsonProperty("browser_screen_height", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public int? BrowserScreenHeight { get; set; }
@@ -53,10 +53,10 @@ namespace DataForSeo.Client.Models.Requests
         /// <summary>
         /// browser scale factor
         /// <br/>optional field
-        /// <br/>can be specified in the following range: 0.5-3
-        /// <br/>default value for desktop: 1
-        /// <br/>default value for mobile: 3
-        /// <br/>default value for table: 2
+        /// <br/>can be specified in the following range: <c>0.5-3</c>
+        /// <br/>default value for <c>desktop</c>: 1
+        /// <br/>default value for <c>mobile</c>: 3
+        /// <br/>default value for <c>table</c>: 2
         /// </summary>
         [JsonProperty("browser_screen_scale_factor", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public double? BrowserScreenScaleFactor { get; set; }
@@ -64,8 +64,8 @@ namespace DataForSeo.Client.Models.Requests
         /// <summary>
         /// number of SERP pages
         /// <br/>optional field
-        /// <br/>if depth in the corresponding Task POST request exceeds 10 results (or 1 SERP page), specify the number of SERP pages to screenshot;
-        /// <br/>default value: 1
+        /// <br/>if <c>depth</c> in the corresponding Task POST request exceeds 10 results (or 1 SERP page), specify the number of SERP pages to screenshot;
+        /// <br/>default value: <c>1</c>
         /// </summary>
         [JsonProperty("page", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public int? Page { get; set; }

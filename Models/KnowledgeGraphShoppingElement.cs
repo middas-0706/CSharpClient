@@ -36,7 +36,7 @@ namespace DataForSeo.Client.Models
         /// <summary>
         /// pricing details
         /// <br/>contains the pricing details of the product or service featured in the result;
-        /// <br/>if there is none, equals null
+        /// <br/>if there is none, equals <c>null</c>
         /// </summary>
         [JsonProperty("price", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public PriceInfo Price { get; set; }
@@ -57,7 +57,7 @@ namespace DataForSeo.Client.Models
         /// merchant account provider
         /// <br/>ecommerce site that hosts products or websites of individual sellers under the same merchant account
         /// <br/>example:
-        /// <br/>by Google
+        /// <br/><c>by Google</c>
         /// </summary>
         [JsonProperty("marketplace", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string Marketplace { get; set; }

@@ -4785,9 +4785,6 @@ var result = await dfsClient.SerpApi.YoutubeVideoInfoTaskPostAsync(new List<Serp
 {
     new()
     {
-        LanguageCode = "en",
-        LocationCode = 2840,
-        VideoId = "vQXvyV0zIP4",
     }
 });
 ```
@@ -5007,9 +5004,6 @@ var result = await dfsClient.SerpApi.YoutubeOrganicTaskPostAsync(new List<SerpYo
 {
     new()
     {
-        LanguageCode = "en",
-        LocationCode = 2840,
-        Keyword = "audi",
     }
 });
 ```
@@ -5180,9 +5174,6 @@ var result = await dfsClient.SerpApi.YoutubeOrganicLiveAdvancedAsync(new List<Se
 {
     new()
     {
-        LanguageCode = "en",
-        LocationCode = 2840,
-        Keyword = "audi",
     }
 });
 ```
@@ -5229,9 +5220,6 @@ var result = await dfsClient.SerpApi.YoutubeVideoSubtitlesTaskPostAsync(new List
 {
     new()
     {
-        LanguageCode = "en",
-        LocationCode = 2840,
-        VideoId = "Y8Wu4rSNJms",
     }
 });
 ```
@@ -5402,9 +5390,6 @@ var result = await dfsClient.SerpApi.YoutubeVideoSubtitlesLiveAdvancedAsync(new 
 {
     new()
     {
-        LanguageCode = "en",
-        LocationCode = 2840,
-        VideoId = "Y8Wu4rSNJms",
     }
 });
 ```
@@ -5451,9 +5436,6 @@ var result = await dfsClient.SerpApi.YoutubeVideoCommentsTaskPostAsync(new List<
 {
     new()
     {
-        LanguageCode = "en",
-        LocationCode = 2840,
-        VideoId = "vQXvyV0zIP4",
     }
 });
 ```

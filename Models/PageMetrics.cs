@@ -57,7 +57,7 @@ namespace DataForSeo.Client.Models
 
         /// <summary>
         /// number of links present on the target website that may have a conflict
-        /// <br/>for example, if 'links_relation_conflict': 2, the target website is referring to the same source by at least one internal link with the rel='nofollow' attribute and by at least one dofollow link
+        /// <br/>for example, if <c>'links_relation_conflict': 2</c>, the target website is referring to the same source by at least one internal link with the <c>rel='nofollow'</c> attribute and by at least one dofollow link
         /// </summary>
         [JsonProperty("links_relation_conflict", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public int? LinksRelationConflict { get; set; }
@@ -72,9 +72,9 @@ namespace DataForSeo.Client.Models
         /// <summary>
         /// shows how website is optimized on a 100-point scale
         /// <br/>this field shows how website is optimized considering critical on-page issues and warnings detected;
-        /// <br/>100 is the highest possible score that means website does not have any critical on-page issues and important warnings;
+        /// <br/><c>100</c> is the highest possible score that means website does not have any critical on-page issues and important warnings;
         /// <br/>note that this value depends on the number of crawled pages;
-        /// <br/>learn more about how the metric is calculated in this help center article
+        /// <br/>learn more about how the metric is calculated in <see href="https://dataforseo.com/help-center/how-is-onpage-score-of-a-domain-calculated">this help center article</see>
         /// </summary>
         [JsonProperty("onpage_score", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public double? OnpageScore { get; set; }
@@ -82,7 +82,7 @@ namespace DataForSeo.Client.Models
         /// <summary>
         /// number of non-indexable pages
         /// <br/>number of pages that are blocked from being indexed by Google and other search engines by robots.txt, HTTP headers, or meta tags settings;
-        /// <br/>you can receive a list of non-indexable URLs using this endpoint
+        /// <br/>you can receive a list of non-indexable URLs using <see href="https://docs.dataforseo.com/v3/on_page/non_indexable/?bash">this endpoint</see>
         /// </summary>
         [JsonProperty("non_indexable", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public int? NonIndexable { get; set; }

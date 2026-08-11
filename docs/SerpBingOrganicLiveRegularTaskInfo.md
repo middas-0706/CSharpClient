@@ -5,4 +5,4 @@
 
 | Name | Type | Description | Notes |
 |------------ | ------------- | ------------- | -------------|
-**Result** | **IEnumerable<SerpBingOrganicLiveRegularResultInfo>** | array of results |[optional]|
+**Result** | **IEnumerable<SerpBingOrganicLiveRegularResultInfo>** | <em>array of results</em> |[optional]|

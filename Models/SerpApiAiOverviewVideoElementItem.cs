@@ -48,17 +48,17 @@ namespace DataForSeo.Client.Models
 
         /// <summary>
         /// date when the video was published or indexed
-        /// <br/>example:
-        /// <br/>Apr 26, 2024
+        /// <br/>example: 
+        /// <br/><c>Apr 26, 2024</c>
         /// </summary>
         [JsonProperty("date", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string Date { get; set; }
 
         /// <summary>
         /// date and time when the video was published or indexed
-        /// <br/>in the UTC format: “yyyy-mm-dd hh-mm-ss +00:00”
+        /// <br/>in the UTC format: 'yyyy-mm-dd hh-mm-ss +00:00'
         /// <br/>example:
-        /// <br/>2019-11-15 12:57:46 +00:00
+        /// <br/><c>2019-11-15 12:57:46 +00:00</c>
         /// </summary>
         [JsonProperty("timestamp", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string Timestamp { get; set; }

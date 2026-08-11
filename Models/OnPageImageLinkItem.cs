@@ -11,9 +11,9 @@ namespace DataForSeo.Client.Models
 
         /// <summary>
         /// link attribute added to external link
-        /// <br/>indicates link attributes added to the link_to on the page_from
+        /// <br/>indicates link attributes added to the <c>link_to</c> on the <c>page_from</c>
         /// <br/>example:
-        /// <br/>['ugc','noopener']
+        /// <br/><c>['ugc','noopener']</c>
         /// </summary>
         [JsonProperty("link_attribute", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public IEnumerable<string> LinkAttribute { get; set; }

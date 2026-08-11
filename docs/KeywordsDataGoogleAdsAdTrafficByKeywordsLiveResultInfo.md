@@ -5,15 +5,15 @@
 
 | Name | Type | Description | Notes |
 |------------ | ------------- | ------------- | -------------|
-**Keyword** | **string** | keyword in a POST array |[optional]|
-**LocationCode** | **int?** | location code in a POST array<br>if there is no data, then the value is null |[optional]|
-**LanguageCode** | **string** | language code in a POST array<br>if there is no data, then the value is null |[optional]|
-**DateInterval** | **string** | forecasting date interval in a POST array |[optional]|
-**SearchPartners** | **bool?** | include Google search partners<br>the value you specified when setting the task<br>Note: parameter deprecated, the value is always false |[optional]|
-**Bid** | **double?** | the maximum custom bid<br>the bid you have specified when setting the task<br>represents the price you are willing to pay for an ad<br>the higher value you have specified, the higher metrics and cost you receive in response<br>learn more in this help center article |[optional]|
-**Match** | **string** | keywords match-type<br>can take the following values: exact, broad, phrase |[optional]|
-**Impressions** | **int?** | projected number of ad impressions<br>number of impressions an ad is projected to get within the specified time period<br>Note: parameter deprecated, the value is always null |[optional]|
-**Ctr** | **double?** | projected click through rate (CTR) of the advertisement<br>number of clicks an ad is projected to receive divided by the number of ad impressions; the CTR is projected for the specified time period<br>Note: parameter deprecated, the value is always null |[optional]|
-**AverageCpc** | **double?** | the average cost-per-click value<br>represents the cost-per-click (USD) estimated for a keyword based on the specified time period and historical data;<br>if there is no data, then the value is null |[optional]|
-**Cost** | **double?** | total tasks cost, USD |[optional]|
-**Clicks** | **double?** | number of clicks on an ad<br>number of clicks an ad is projected to get within the specified time period<br>if there is no data, then the value is null |[optional]|
+**Keyword** | **string** | <em>keyword in a POST array</em> |[optional]|
+**LocationCode** | **int?** | <em>location code in a POST array</em><br>if there is no data, then the value is_<code>null</code>n |[optional]|
+**LanguageCode** | **string** | <em>language code in a POST array</em><br>if there is no data, then the value is_<code>null</code>n |[optional]|
+**DateInterval** | **string** | <em>forecasting date interval in a POST array</em> |[optional]|
+**SearchPartners** | **bool?** | <em>include Google search partners</em><br>the value you specified when setting the task<br><strong>Note:</strong> parameter deprecated, the value is always <code>false</code> |[optional]|
+**Bid** | **double?** | <em>the maximum custom bid</em><br>the bid you have specified when setting the task<br>represents the price you are willing to pay for an ad<br>the higher value you have specified, the higher metrics and cost you receive in response<br>learn more in <a href='https://dataforseo.com/help-center/configuring-bid'>this help center article</a> |[optional]|
+**Match** | **string** | <em>keywords match-type</em><br>can take the following values: <code>exact</code>, <code>broad</code>, <code>phrase</code> |[optional]|
+**Impressions** | **int?** | <em>projected number of ad impressions</em><br>number of impressions an ad is projected to get within the specified time period<br><strong>Note:</strong> parameter deprecated, the value is always <code>null</code> |[optional]|
+**Ctr** | **double?** | <em>projected click through rate (CTR) of the advertisement</em><br>number of clicks an ad is projected to receive divided by the number of ad impressions; the CTR is projected for the specified time period<br><strong>Note:</strong> parameter deprecated, the value is always <code>null</code> |[optional]|
+**AverageCpc** | **double?** | <em>the average cost-per-click value</em><br>represents the cost-per-click (USD) estimated for a keyword based on the specified time period and historical data;<br>if there is no data, then the value is_<code>null</code>n |[optional]|
+**Cost** | **double?** | <em>total <i>tasks</i> cost, USD</em> |[optional]|
+**Clicks** | **double?** | <em>number of clicks on an ad</em><br>number of clicks an ad is projected to get within the specified time period<br>if there is no data, then the value is_<code>null</code>n |[optional]|

@@ -5,4 +5,4 @@
 
 | Name | Type | Description | Notes |
 |------------ | ------------- | ------------- | -------------|
-**Result** | **IEnumerable<SerpYoutubeVideoCommentsLiveAdvancedResultInfo>** | array of results |[optional]|
+**Result** | **IEnumerable<SerpYoutubeVideoCommentsLiveAdvancedResultInfo>** | <em>array of results</em> |[optional]|

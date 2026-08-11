@@ -5,4 +5,4 @@
 
 | Name | Type | Description | Notes |
 |------------ | ------------- | ------------- | -------------|
-**Tasks** | **IEnumerable<OnPageIdListTaskInfo>** | array of tasks |[optional]|
+**Tasks** | **IEnumerable<OnPageIdListTaskInfo>** | <em>array of tasks</em> |[optional]|

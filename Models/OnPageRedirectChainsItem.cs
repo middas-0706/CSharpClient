@@ -10,8 +10,8 @@ namespace DataForSeo.Client.Models
     {
 
         /// <summary>
-        /// indicates if redirects in chain start and end at the same URL
-        /// <br/>if true, the last URL from the chain redirects back to the original URL
+        /// indicates if redirects in <c>chain</c> start and end at the same URL
+        /// <br/>if <c>true</c>, the last URL from the chain redirects back to the original URL
         /// </summary>
         [JsonProperty("is_redirect_loop", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public bool? IsRedirectLoop { get; set; }

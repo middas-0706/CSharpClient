@@ -5,23 +5,23 @@
 
 | Name | Type | Description | Notes |
 |------------ | ------------- | ------------- | -------------|
-**SeType** | **string** | search engine type |[optional]|
+**SeType** | **string** | <em>search engine type</em> |[optional]|
 **Type** | **string** | type of element |[optional]|
-**RankGroup** | **int?** | position within a group of elements with identical type values<br>positions of elements with different type values are omitted from rank_group |[optional]|
-**RankAbsolute** | **int?** | absolute rank in Amazon SERP<br>absolute position among all the elements in SERP |[optional]|
-**Position** | **string** | the alignment of the element in Amazon SERP<br>can take the following values:<br>left, right |[optional]|
-**Xpath** | **string** | the XPath of the element |[optional]|
-**Domain** | **string** | Amazon domain |[optional]|
-**Title** | **string** | product title |[optional]|
-**Url** | **string** | URL of the product page |[optional]|
-**Asin** | **string** | ASIN in a POST array |[optional]|
-**ImageUrl** | **string** | URL of the product image featured in the results |[optional]|
-**PriceFrom** | **double?** | the regular price of a product<br>example:<br>49.98 |[optional]|
-**PriceTo** | **double?** | the upper limit of the product price range<br>example:<br>384.99 |[optional]|
-**Currency** | **string** | currency in the ISO format<br>example:<br>USD |[optional]|
-**SpecialOffers** | **IEnumerable<string>** | special offer details<br>contains special offer details, including coupon and Subscribe & Save discounts |[optional]|
-**IsBestSeller** | **bool?** | “Best Seller” label<br>if the value is true, the product is marked with the “Best Seller” label |[optional]|
-**IsAmazonChoice** | **bool?** | “Amazon’s choice” label<br>if the value is true, the product is marked with the “Amazon’s choice” label |[optional]|
-**Rating** | **RatingInfo** | the item’s rating <br>the popularity rate based on reviews and displayed in SERP |[optional]|
-**DeliveryInfo** | **AmazonDeliveryInfo** | delivery information<br>delivery information including free and fast delivery date ranges |[optional]|
+**RankGroup** | **int?** | <em>position within a group of elements with identical <code>type</code> values</em><br>positions of elements with different <code>type</code> values are omitted from <code>rank_group</code> |[optional]|
+**RankAbsolute** | **int?** | <em>absolute rank in Amazon SERP</em><br>absolute position among all the elements in SERP |[optional]|
+**Position** | **string** | <em>the alignment of the element in Amazon SERP</em><br>can take the following values:<br><code>left</code>, <code>right</code> |[optional]|
+**Xpath** | **string** | <em>the <a href='https://en.wikipedia.org/wiki/XPath'>XPath</a> of the element</em> |[optional]|
+**Domain** | **string** | <em>Amazon domain</em> |[optional]|
+**Title** | **string** | <em>product title</em> |[optional]|
+**Url** | **string** | <em>URL of the product page</em> |[optional]|
+**Asin** | **string** | <em>ASIN in a POST array</em> |[optional]|
+**ImageUrl** | **string** | <em>URL of the product image featured in the results</em> |[optional]|
+**PriceFrom** | **double?** | <em>the regular price of a product</em><br>example:<br><code>49.98</code> |[optional]|
+**PriceTo** | **double?** | <em>the upper limit of the product price range</em><br>example:<br><code>384.99</code> |[optional]|
+**Currency** | **string** | <em>currency in the <a href='https://en.wikipedia.org/wiki/ISO_4217'>ISO</a> format</em><br>example:<br><code>USD</code> |[optional]|
+**SpecialOffers** | **IEnumerable<string>** | <em>special offer details</em><br>contains special offer details, including coupon and Subscribe & Save discounts |[optional]|
+**IsBestSeller** | **bool?** | <em>'Best Seller' label</em><br>if the value is <code>true</code>, the product is marked with the 'Best Seller' label |[optional]|
+**IsAmazonChoice** | **bool?** | <em>'Amazon's choice' label</em><br>if the value is <code>true</code>, the product is marked with the 'Amazon's choice' label |[optional]|
+**Rating** | **RatingInfo** | <em>the item's rating </em><br>the popularity rate based on reviews and displayed in SERP |[optional]|
+**DeliveryInfo** | **AmazonDeliveryInfo** | <em>delivery information</em><br>delivery information including free and fast delivery date ranges |[optional]|
 **BoughtPastMonth** | **int?** |  |[optional]|

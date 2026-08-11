@@ -6,5 +6,5 @@
 | Name | Type | Description | Notes |
 |------------ | ------------- | ------------- | -------------|
 **Type** | **string** | type of element |[optional]|
-**Title** | **string** | title of the result in SERP |[optional]|
-**SubTitle** | **string** | subtitle of the item |[optional]|
+**Title** | **string** | <em>title of the result in SERP</em> |[optional]|
+**SubTitle** | **string** | <em>subtitle of the item</em> |[optional]|

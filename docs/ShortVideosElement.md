@@ -6,7 +6,7 @@
 | Name | Type | Description | Notes |
 |------------ | ------------- | ------------- | -------------|
 **Type** | **string** | type of element |[optional]|
-**Title** | **string** | title of a given link element |[optional]|
-**Url** | **string** | source URL |[optional]|
-**Domain** | **string** | domain where a link points |[optional]|
-**Source** | **string** | reference source name or title |[optional]|
+**Title** | **string** | <em>title of a given link element</em> |[optional]|
+**Url** | **string** | <em>source URL</em> |[optional]|
+**Domain** | **string** | <em>domain where a link points</em> |[optional]|
+**Source** | **string** | <em>reference source name or title</em> |[optional]|

@@ -1239,7 +1239,6 @@ var result = await dfsClient.OnPageApi.InstantPagesAsync(new List<OnPageInstantP
     new()
     {
         Url = "https://dataforseo.com/blog",
-        EnableJavascript = true,
         CustomJs = "meta = {}; meta.url = document.URL; meta;",
     }
 });

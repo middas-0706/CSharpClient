@@ -11,7 +11,7 @@ namespace DataForSeo.Client.Models
 
         /// <summary>
         /// status of the crawling session
-        /// <br/>possible values: in_progress, finished
+        /// <br/>possible values: <c>in_progress</c>, <c>finished</c>
         /// </summary>
         [JsonProperty("crawl_progress", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string CrawlProgress { get; set; }
@@ -25,7 +25,7 @@ namespace DataForSeo.Client.Models
         /// <summary>
         /// crawler ip address
         /// <br/>displays the IP address used by the crawler to initiate the current crawling session
-        /// <br/>you can find the full list of IPs used by our crawler in the Overview section
+        /// <br/>you can find the full list of IPs used by our crawler in the <see href="/v3/on_page/overview">Overview section</see>
         /// </summary>
         [JsonProperty("crawl_gateway_address", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string CrawlGatewayAddress { get; set; }
@@ -34,10 +34,10 @@ namespace DataForSeo.Client.Models
         /// reason why the crawling stopped
         /// <br/>information about the reason why the crawling process stopped;
         /// <br/>possible values:
-        /// <br/>limit_exceeded – the limit set in the max_crawl_pages was exceeded;
-        /// <br/>empty_queue – all URLs in the queue were crawled;
-        /// <br/>force_stopped – the crawling process was halted using the On Page API Force Stop function;
-        /// <br/>unexpected_exception – an internal error was encountered while crawling the target, contact support for more info
+        /// <br/><c>limit_exceeded</c> - the limit set in the <c>max_crawl_pages</c> was exceeded;
+        /// <br/><c>empty_queue</c> - all URLs in the queue were crawled;
+        /// <br/><c>force_stopped</c> - the crawling process was halted using the<see href="/v3/on_page/force_stop">On Page API Force Stop</see> function;
+        /// <br/><c>unexpected_exception</c> - an internal error was encountered while crawling the <c>target</c>, contact support for more info
         /// </summary>
         [JsonProperty("crawl_stop_reason", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string CrawlStopReason { get; set; }

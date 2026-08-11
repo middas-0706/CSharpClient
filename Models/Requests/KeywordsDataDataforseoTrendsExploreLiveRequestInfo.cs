@@ -13,7 +13,7 @@ namespace DataForSeo.Client.Models.Requests
         /// keywords
         /// <br/>required field
         /// <br/>the maximum number of keywords you can specify: 5
-        /// <br/>learn more about rules and limitations of keyword and keywords fields in DataForSEO APIs in this Help Center article
+        /// <br/>learn more about rules and limitations of <c>keyword</c> and <c>keywords</c> fields in DataForSEO APIs in this <see href="https://dataforseo.com/help-center/rules-and-limitations-of-keyword-and-keywords-fields-in-dataforseo-apis">Help Center article</see>
         /// </summary>
         [JsonProperty("keywords", Required = Required.DisallowNull, NullValueHandling = NullValueHandling.Ignore)]
         public IEnumerable<string> Keywords { get; set; }
@@ -21,12 +21,12 @@ namespace DataForSeo.Client.Models.Requests
         /// <summary>
         /// full name of search engine location
         /// <br/>optional field
-        /// <br/>if you don’t use this field, you will recieve global results
-        /// <br/>if you use this field, you don’t need to specify location_code
-        /// <br/>you can receive the list of available locations of the search engine with their location_name by making a separate request to https://api.dataforseo.com/v3/keywords_data/dataforseo_trends/locations
-        /// <br/>note that the data will be provided for the country the specified location_name belongs to;
+        /// <br/>if you don't use this field, you will recieve global results
+        /// <br/>if you use this field, you don't need to specify <c>location_code</c>
+        /// <br/>you can receive the list of available locations of the search engine with their <c>location_name</c> by making a separate request to <c>https://api.dataforseo.com/v3/keywords_data/dataforseo_trends/locations</c>
+        /// <br/>note that the data will be provided for the country the specified <c>location_name</c> belongs to;
         /// <br/>example:
-        /// <br/>United Kingdom
+        /// <br/><c>United Kingdom</c>
         /// </summary>
         [JsonProperty("location_name", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string LocationName { get; set; }
@@ -34,12 +34,12 @@ namespace DataForSeo.Client.Models.Requests
         /// <summary>
         /// search engine location code
         /// <br/>optional field
-        /// <br/>if you don’t use this field, you will recieve global results
-        /// <br/>if you use this field, you don’t need to specify location_name
-        /// <br/>you can receive the list of available locations of the search engines with their location_code by making a separate request to https://api.dataforseo.com/v3/keywords_data/dataforseo_trends/locations
-        /// <br/>note that the data will be provided for the country the specified location_code belongs to;
+        /// <br/>if you don't use this field, you will recieve global results
+        /// <br/>if you use this field, you don't need to specify <c>location_name</c>
+        /// <br/>you can receive the list of available locations of the search engines with their <c>location_code</c> by making a separate request to <c>https://api.dataforseo.com/v3/keywords_data/dataforseo_trends/locations</c>
+        /// <br/>note that the data will be provided for the country the specified <c>location_code</c> belongs to;
         /// <br/>example:
-        /// <br/>2840
+        /// <br/><c>2840</c>
         /// </summary>
         [JsonProperty("location_code", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public int? LocationCode { get; set; }
@@ -53,12 +53,12 @@ namespace DataForSeo.Client.Models.Requests
         /// <summary>
         /// starting date of the time range
         /// <br/>optional field
-        /// <br/>if you don’t specify this field, the current day and month of the preceding year will be used by default
-        /// <br/>minimal value for the web type: 2004-01-01
-        /// <br/>minimal value for other types: 2008-01-01
-        /// <br/>date format: 'yyyy-mm-dd'
+        /// <br/>if you don't specify this field, the current day and month of the preceding year will be used by default
+        /// <br/>minimal value for the <c>web</c> type: <c>2004-01-01</c>
+        /// <br/>minimal value for other types: <c>2008-01-01</c>
+        /// <br/>date format: <c>'yyyy-mm-dd'</c>
         /// <br/>example:
-        /// <br/>'2019-01-15'
+        /// <br/><c>'2019-01-15'</c>
         /// </summary>
         [JsonProperty("date_from", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string DateFrom { get; set; }
@@ -66,10 +66,10 @@ namespace DataForSeo.Client.Models.Requests
         /// <summary>
         /// ending date of the time range
         /// <br/>optional field
-        /// <br/>if you don’t specify this field, the today’s date will be used by default
-        /// <br/>date format: 'yyyy-mm-dd'
+        /// <br/>if you don't specify this field, the today's date will be used by default
+        /// <br/>date format: <c>'yyyy-mm-dd'</c>
         /// <br/>example:
-        /// <br/>'2019-01-15'
+        /// <br/><c>'2019-01-15'</c>
         /// </summary>
         [JsonProperty("date_to", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string DateTo { get; set; }
@@ -77,9 +77,9 @@ namespace DataForSeo.Client.Models.Requests
         /// <summary>
         /// preset time ranges
         /// <br/>optional field
-        /// <br/>if you specify date_from or date_to parameters, this field will be ignored when setting a task
-        /// <br/>possible values for all type parameters:
-        /// <br/>past_4_hours, past_day, past_7_days, past_30_days, past_90_days, past_12_months, past_5_years
+        /// <br/>if you specify <c>date_from</c> or <c>date_to</c> parameters, this field will be ignored when setting a task
+        /// <br/>possible values for all <c>type</c> parameters:
+        /// <br/><c>past_4_hours</c>, <c>past_day</c>, <c>past_7_days</c>, <c>past_30_days</c>, <c>past_90_days</c>, <c>past_12_months</c>, <c>past_5_years</c>
         /// </summary>
         [JsonProperty("time_range", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string TimeRange { get; set; }
@@ -89,7 +89,7 @@ namespace DataForSeo.Client.Models.Requests
         /// <br/>optional field
         /// <br/>the character limit is 255
         /// <br/>you can use this parameter to identify the task and match it with the result
-        /// <br/>you will find the specified tag value in the data object of the response
+        /// <br/>you will find the specified <c>tag</c> value in the <c>data</c> object of the response
         /// </summary>
         [JsonProperty("tag", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string Tag { get; set; }

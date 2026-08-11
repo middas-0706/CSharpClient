@@ -5,4 +5,4 @@
 
 | Name | Type | Description | Notes |
 |------------ | ------------- | ------------- | -------------|
-**Items** | **IEnumerable<PeopleAlsoAskElement>** | historical SERPs and related data found in the database |[optional]|
+**Items** | **IEnumerable<PeopleAlsoAskElement>** | <em>historical SERPs and related data found in the database</em> |[optional]|

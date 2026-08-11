@@ -12,7 +12,7 @@ namespace DataForSeo.Client.Models
         /// <summary>
         /// id of the technology category
         /// <br/>example:
-        /// <br/>crm, cart_abandonment
+        /// <br/><c>crm</c>, <c>cart_abandonment</c>
         /// </summary>
         [JsonProperty("id", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string Id { get; set; }
@@ -20,7 +20,7 @@ namespace DataForSeo.Client.Models
         /// <summary>
         /// path to the technology category
         /// <br/>example:
-        /// <br/>user_generated_content.content_curation
+        /// <br/><c>user_generated_content.content_curation</c>
         /// </summary>
         [JsonProperty("path", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string Path { get; set; }
@@ -34,7 +34,7 @@ namespace DataForSeo.Client.Models
         /// <summary>
         /// list of technologies in this category
         /// <br/>example:
-        /// <br/>'Salesforce', 'CareCart'
+        /// <br/><c>'Salesforce'</c>, <c>'CareCart'</c>
         /// </summary>
         [JsonProperty("technologies", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public IEnumerable<string> Technologies { get; set; }

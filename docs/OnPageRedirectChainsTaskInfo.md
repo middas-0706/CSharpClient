@@ -5,4 +5,4 @@
 
 | Name | Type | Description | Notes |
 |------------ | ------------- | ------------- | -------------|
-**Result** | **IEnumerable<OnPageRedirectChainsResultInfo>** | array of results |[optional]|
+**Result** | **IEnumerable<OnPageRedirectChainsResultInfo>** | <em>array of results</em> |[optional]|

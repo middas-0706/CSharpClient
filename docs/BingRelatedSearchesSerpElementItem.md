@@ -5,4 +5,4 @@
 
 | Name | Type | Description | Notes |
 |------------ | ------------- | ------------- | -------------|
-**Items** | **IEnumerable<string>** | items in SERP |[optional]|
+**Items** | **IEnumerable<string>** | <em>items in SERP</em> |[optional]|

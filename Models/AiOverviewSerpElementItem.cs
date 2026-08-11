@@ -11,9 +11,9 @@ namespace DataForSeo.Client.Models
 
         /// <summary>
         /// group rank in SERP
-        /// <br/>position within a group of elements with identical type values;
-        /// <br/>positions of elements with different type values are omitted from rank_group;
-        /// <br/>always equals 0 for desktop
+        /// <br/>position within a group of elements with identical <c>type</c> values;
+        /// <br/>positions of elements with different <c>type</c> values are omitted from <c>rank_group</c>;
+        /// <br/>always equals <c>0</c> for <c>desktop</c>
         /// </summary>
         [JsonProperty("rank_group", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public int? RankGroup { get; set; }
@@ -21,23 +21,23 @@ namespace DataForSeo.Client.Models
         /// <summary>
         /// absolute rank in SERP
         /// <br/>absolute position among all the elements in SERP
-        /// <br/>always equals 0 for desktop
+        /// <br/>always equals <c>0</c> for <c>desktop</c>
         /// </summary>
         [JsonProperty("rank_absolute", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public int? RankAbsolute { get; set; }
 
         /// <summary>
         /// indicates whether the element is loaded asynchronously
-        /// <br/>if true, the ai_overview element is loaded asynchronously;
-        /// <br/>if false, the ai_overview element is loaded from cache;
-        /// <br/>to obtain the content of ai_overview elements, use the load_async_ai_overview parameter in the POST request
+        /// <br/>if <c>true</c>, the <c>ai_overview</c> element is loaded asynchronously;
+        /// <br/>if <c>false</c>, the <c>ai_overview</c> element is loaded from cache;
+        /// <br/>to obtain the content of <c>ai_overview</c> elements, use the <c>load_async_ai_overview</c> parameter in the POST request
         /// </summary>
         [JsonProperty("asynchronous_ai_overview", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public bool? AsynchronousAiOverview { get; set; }
 
         /// <summary>
         /// content of the element in markdown format
-        /// <br/>the text of the ai_overview formatted in the markdown markup language
+        /// <br/>the text of the <c>ai_overview</c> formatted in the <see href="https://en.wikipedia.org/wiki/Markdown">markdown markup language</see>
         /// </summary>
         [JsonProperty("markdown", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string Markdown { get; set; }
@@ -50,7 +50,7 @@ namespace DataForSeo.Client.Models
 
         /// <summary>
         /// references relevant to the element
-        /// <br/>includes references to webpages that were used to generate the ai_overview_element
+        /// <br/>includes references to webpages that were used to generate the <c>ai_overview_element</c>
         /// </summary>
         [JsonProperty("references", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public IEnumerable<AiModeAiOverviewReferenceInfo> References { get; set; }

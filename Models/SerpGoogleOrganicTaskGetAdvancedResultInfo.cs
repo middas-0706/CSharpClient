@@ -11,7 +11,7 @@ namespace DataForSeo.Client.Models
 
         /// <summary>
         /// keyword received in a POST array
-        /// <br/>the keyword is returned with decoded %## (plus symbol ‘+’ will be decoded to a space character)
+        /// <br/>the keyword is returned with decoded %## (plus symbol '+' will be decoded to a space character)
         /// </summary>
         [JsonProperty("keyword", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string Keyword { get; set; }
@@ -51,7 +51,7 @@ namespace DataForSeo.Client.Models
         /// date and time when the result was received
         /// <br/>in the UTC format: “yyyy-mm-dd hh-mm-ss +00:00”
         /// <br/>example:
-        /// <br/>2019-11-15 12:57:46 +00:00
+        /// <br/><c>2019-11-15 12:57:46 +00:00</c>
         /// </summary>
         [JsonProperty("datetime", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string Datetime { get; set; }
@@ -71,9 +71,9 @@ namespace DataForSeo.Client.Models
 
         /// <summary>
         /// types of search results in SERP
-        /// <br/>contains types of search results (items) found in SERP.
+        /// <br/>contains types of search results (<c>items</c>) found in SERP.
         /// <br/>possible item types:
-        /// <br/>answer_box, app, carousel, multi_carousel, featured_snippet, google_flights, google_reviews, third_party_reviews, images, jobs, knowledge_graph, local_pack, hotels_pack, map, organic, paid, people_also_ask, related_searches, people_also_search, shopping, top_stories, twitter, video, events, recipes, top_sights, scholarly_articles, popular_products,  questions_and_answers, find_results_on, stocks_box, commercial_units, local_services, google_hotels, math_solver, currency_box,product_considerations, short_videos, refine_products, perspectives, discussions_and_forums, compare_sites, ai_overview
+        /// <br/><see href="#answer_box">answer_box</see>, <see href="#app">app</see>, <see href="#carousel">carousel</see>, <see href="#multi_carousel">multi_carousel</see>, <see href="#featured_snippet">featured_snippet</see>, <see href="#google_flights">google_flights</see>, <see href="#google_reviews">google_reviews</see>, <see href="#third_party_reviews">third_party_reviews</see>, <see href="#images">images</see>, <see href="#jobs">jobs</see>, <see href="#knowledge_graph">knowledge_graph</see>, <see href="#local_pack">local_pack</see>, <see href="#hotels_pack">hotels_pack</see>, <see href="#map">map</see>, <see href="#organic">organic</see>, <see href="#paid">paid</see>, <see href="#people_also_ask">people_also_ask</see>, <see href="#related_searches">related_searches</see>, <see href="#people_also_search">people_also_search</see>, <see href="#shopping">shopping</see>, <see href="#top_stories">top_stories</see>, <see href="#twitter">twitter</see>, <see href="#video">video</see>, <see href="#events">events</see>, <see href="#recipes">recipes</see>, <see href="#top_sights">top_sights</see>, <see href="#scholarly_articles">scholarly_articles</see>, <see href="#popular_products">popular_products</see>,  <see href="#questions_and_answers">questions_and_answers</see>, <see href="#find_results_on">find_results_on</see>, <see href="#stocks_box">stocks_box</see>, <see href="#commercial_units">commercial_units</see>, <see href="#local_services">local_services</see>, <see href="#google_hotels">google_hotels</see>, <see href="#math_solver">math_solver</see>, <see href="#currency_box">currency_box</see>,<see href="#product_considerations">product_considerations</see>, <see href="#short_videos">short_videos</see>, <see href="#refine_products">refine_products</see>, <see href="#perspectives">perspectives</see>, <see href="#discussions_and_forums">discussions_and_forums</see>, <see href="#compare_sites">compare_sites</see>, <see href="#ai_overview">ai_overview</see>
         /// </summary>
         [JsonProperty("item_types", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public IEnumerable<string> ItemTypes { get; set; }
@@ -92,7 +92,7 @@ namespace DataForSeo.Client.Models
         public long? PagesCount { get; set; }
 
         /// <summary>
-        /// the number of results returned in the items array
+        /// the number of results returned in the <c>items</c> array
         /// </summary>
         [JsonProperty("items_count", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public long? ItemsCount { get; set; }

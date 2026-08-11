@@ -5,4 +5,4 @@
 
 | Name | Type | Description | Notes |
 |------------ | ------------- | ------------- | -------------|
-**Result** | **IEnumerable<OnPageDuplicateTagsResultInfo>** | array of results |[optional]|
+**Result** | **IEnumerable<OnPageDuplicateTagsResultInfo>** | <em>array of results</em> |[optional]|

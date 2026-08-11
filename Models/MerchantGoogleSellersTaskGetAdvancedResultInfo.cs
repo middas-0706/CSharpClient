@@ -10,8 +10,8 @@ namespace DataForSeo.Client.Models
     {
 
         /// <summary>
-        /// product_id received in a POST array
-        /// <br/>learn more about the parameter in this help center guide
+        /// <c>product_id</c> received in a POST array
+        /// <br/>learn more about the parameter in <see href="https://dataforseo.com/help-center/product-id-google-shopping">this help center guide</see>
         /// </summary>
         [JsonProperty("product_id", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string ProductId { get; set; }
@@ -51,7 +51,7 @@ namespace DataForSeo.Client.Models
         /// date and time when the result was received
         /// <br/>in the UTC format: “yyyy-mm-dd hh-mm-ss +00:00”
         /// <br/>example:
-        /// <br/>2019-11-15 12:57:46 +00:00
+        /// <br/><c>2019-11-15 12:57:46 +00:00</c>
         /// </summary>
         [JsonProperty("datetime", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string Datetime { get; set; }
@@ -83,15 +83,15 @@ namespace DataForSeo.Client.Models
 
         /// <summary>
         /// types of search results found in Google Shopping SERP
-        /// <br/>contains types of all search results (items) found in the returned SERP
+        /// <br/>contains types of all search results (<c>items</c>) found in the returned SERP
         /// <br/>possible item types:
-        /// <br/>shops_list, buy_on_google
+        /// <br/><c>shops_list</c>, <c>buy_on_google</c>
         /// </summary>
         [JsonProperty("item_types", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public IEnumerable<string> ItemTypes { get; set; }
 
         /// <summary>
-        /// the number of results returned in the items array
+        /// the number of results returned in the <c>items</c> array
         /// </summary>
         [JsonProperty("items_count", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public long? ItemsCount { get; set; }

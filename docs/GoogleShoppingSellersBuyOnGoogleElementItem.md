@@ -5,4 +5,4 @@
 
 | Name | Type | Description | Notes |
 |------------ | ------------- | ------------- | -------------|
-**Rating** | **RatingInfo** | shop rating<br>the shop popularity rate based on product reviews |[optional]|
+**Rating** | **RatingInfo** | <em>shop rating</em><br>the shop popularity rate based on product reviews |[optional]|

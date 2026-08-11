@@ -11,7 +11,7 @@ namespace DataForSeo.Client.Models
 
         /// <summary>
         /// status of the crawling session
-        /// <br/>possible values: in_progress, finished
+        /// <br/>possible values: <c>in_progress</c>, <c>finished</c>
         /// </summary>
         [JsonProperty("crawl_progress", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string CrawlProgress { get; set; }
@@ -24,7 +24,7 @@ namespace DataForSeo.Client.Models
 
         /// <summary>
         /// total number of relevant items
-        /// <br/>total number of keywords on the specified website or web page matching the set keyword_length and filters
+        /// <br/>total number of keywords on the specified website or web page matching the set <c>keyword_length</c> and <c>filters</c>
         /// </summary>
         [JsonProperty("total_items_count", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public long? TotalItemsCount { get; set; }

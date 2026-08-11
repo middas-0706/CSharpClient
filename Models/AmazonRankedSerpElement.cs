@@ -31,9 +31,9 @@ namespace DataForSeo.Client.Models
 
         /// <summary>
         /// direct URL to Amazon results
-        /// <br/>contains types of all search results (items) found in the returned SERP;
+        /// <br/>contains types of all search results (<c>items</c>) found in the returned SERP;
         /// <br/>possible item types:
-        /// <br/>amazon_serp, amazon_paid, editorial_recommendations, top_rated_from_our_brands, related_searches
+        /// <br/><c>amazon_serp</c>, <c>amazon_paid</c>, <c>editorial_recommendations</c>, <c>top_rated_from_our_brands</c>, <c>related_searches</c>
         /// </summary>
         [JsonProperty("serp_item_types", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public IEnumerable<string> SerpItemTypes { get; set; }
@@ -48,16 +48,16 @@ namespace DataForSeo.Client.Models
         /// date and time when keyword data was updated
         /// <br/>in the UTC format: “yyyy-mm-dd hh-mm-ss +00:00”;
         /// <br/>example:
-        /// <br/>2019-11-15 12:57:46 +00:00
+        /// <br/><c>2019-11-15 12:57:46 +00:00</c>
         /// </summary>
         [JsonProperty("last_updated_time", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string LastUpdatedTime { get; set; }
 
         /// <summary>
         /// previous to the most recent update of SERP data
-        /// <br/>in the ISO 8601 format: “YYYY-MM-DDThh:mm:ss.sssssssZ”
+        /// <br/>in the <see href="https://en.wikipedia.org/wiki/ISO_8601">ISO 860</see>1 format: “YYYY-MM-DDThh:mm:ss.sssssssZ”
         /// <br/>example:
-        /// <br/>2020-09-12T00:07:43.0733218Z
+        /// <br/><c>2020-09-12T00:07:43.0733218Z</c>
         /// </summary>
         [JsonProperty("previous_updated_time", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string PreviousUpdatedTime { get; set; }

@@ -5,5 +5,5 @@
 
 | Name | Type | Description | Notes |
 |------------ | ------------- | ------------- | -------------|
-**IsRedirectLoop** | **bool?** | indicates if redirects in chain start and end at the same URL<br>if true, the last URL from the chain redirects back to the original URL |[optional]|
-**Chain** | **IEnumerable<OnPageRedirectLinkItem>** | contains links that form a chain |[optional]|
+**IsRedirectLoop** | **bool?** | <em>indicates if redirects in <code>chain</code> start and end at the same URL</em><br>if <code>true</code>, the last URL from the chain redirects back to the original URL |[optional]|
+**Chain** | **IEnumerable<OnPageRedirectLinkItem>** | <em>contains links that form a chain</em> |[optional]|

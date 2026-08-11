@@ -5,5 +5,5 @@
 
 | Name | Type | Description | Notes |
 |------------ | ------------- | ------------- | -------------|
-**HunspellLanguageCode** | **string** | spellcheck language code |[optional]|
-**Misspelled** | **IEnumerable<HunspellMisspelledInfo>** | array of misspelled words |[optional]|
+**HunspellLanguageCode** | **string** | <em>spellcheck language code</em> |[optional]|
+**Misspelled** | **IEnumerable<HunspellMisspelledInfo>** | <em>array of misspelled words</em> |[optional]|

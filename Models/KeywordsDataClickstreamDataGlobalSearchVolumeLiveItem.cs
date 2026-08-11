@@ -11,7 +11,7 @@ namespace DataForSeo.Client.Models
 
         /// <summary>
         /// keyword
-        /// <br/>keyword is returned with decoded %## (plus symbol ‘+’ will be decoded to a space character)
+        /// <br/>keyword is returned with decoded %## (plus symbol '+' will be decoded to a space character)
         /// </summary>
         [JsonProperty("keyword", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string Keyword { get; set; }
@@ -19,7 +19,7 @@ namespace DataForSeo.Client.Models
         /// <summary>
         /// clickstream-based average monthly search volume rate
         /// <br/>represents the (approximate) number of searches for the given keyword idea based on clickstream
-        /// <br/>you can learn more about clickstream search volume in this Help Center article
+        /// <br/>you can learn more about clickstream search volume in <see href="https://dataforseo.com/help-center/what-is-clickstream-search-volume-and-how-to-get-it-with-dataforseo">this Help Center article</see>
         /// </summary>
         [JsonProperty("search_volume", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public long? SearchVolume { get; set; }

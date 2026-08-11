@@ -5,4 +5,4 @@
 
 | Name | Type | Description | Notes |
 |------------ | ------------- | ------------- | -------------|
-**Tasks** | **IEnumerable<SerpSeznamLocationsTaskInfo>** | array of tasks |[optional]|
+**Tasks** | **IEnumerable<SerpSeznamLocationsTaskInfo>** | <em>array of tasks</em> |[optional]|

@@ -5,4 +5,4 @@
 
 | Name | Type | Description | Notes |
 |------------ | ------------- | ------------- | -------------|
-**Result** | **IEnumerable<OnPageLinksResultInfo>** | array of results |[optional]|
+**Result** | **IEnumerable<OnPageLinksResultInfo>** | <em>array of results</em> |[optional]|

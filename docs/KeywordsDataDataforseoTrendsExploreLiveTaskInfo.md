@@ -5,4 +5,4 @@
 
 | Name | Type | Description | Notes |
 |------------ | ------------- | ------------- | -------------|
-**Result** | **IEnumerable<KeywordsDataDataforseoTrendsExploreLiveResultInfo>** | array of results |[optional]|
+**Result** | **IEnumerable<KeywordsDataDataforseoTrendsExploreLiveResultInfo>** | <em>array of results</em> |[optional]|

@@ -5,8 +5,8 @@
 
 | Name | Type | Description | Notes |
 |------------ | ------------- | ------------- | -------------|
-**Technology** | **string** | target technology |[optional]|
-**DateFrom** | **string** | starting date of the time range |[optional]|
-**DateTo** | **string** | ending date of the time range |[optional]|
-**ItemsCount** | **long?** | number of items in the results array |[optional]|
-**Items** | **IEnumerable<DomainAnalyticsTechnologiesTechnologyStatsLiveItem>** | items array |[optional]|
+**Technology** | **string** | <em>target technology</em> |[optional]|
+**DateFrom** | **string** | <em>starting date of the time range</em> |[optional]|
+**DateTo** | **string** | <em>ending date of the time range</em> |[optional]|
+**ItemsCount** | **int?** |  |[optional]|
+**Items** | **IEnumerable<DomainAnalyticsTechnologiesTechnologyStatsLiveItem>** |  |[optional]|

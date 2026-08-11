@@ -5,9 +5,9 @@
 
 | Name | Type | Description | Notes |
 |------------ | ------------- | ------------- | -------------|
-**RankGroup** | **int?** | group rank in SERP<br>position within a group of elements with identical type values;<br>positions of elements with different type values are omitted from rank_group;<br>always equals 0 for desktop |[optional]|
-**RankAbsolute** | **int?** | absolute rank in SERP<br>absolute position among all the elements in SERP<br>always equals 0 for desktop |[optional]|
-**Title** | **string** | title of the row |[optional]|
-**Url** | **string** | URL of the third-party review source |[optional]|
-**Items** | **IEnumerable<AiModeImagesElementInfo>** | contains arrays of elements available in the list |[optional]|
-**RelatedImageSearches** | **IEnumerable<RelatedImageSearchesElement>** | contains keywords and images related to the specified search term<br>Note: this array is deprecated and always returns null |[optional]|
+**RankGroup** | **int?** | <em>group rank in SERP</em><br>position within a group of elements with identical <code>type</code> values;<br>positions of elements with different <code>type</code> values are omitted from <code>rank_group</code>;<br>always equals <code>0</code> for <code>desktop</code> |[optional]|
+**RankAbsolute** | **int?** | <em>absolute rank in SERP</em><br>absolute position among all the elements in SERP<br>always equals <code>0</code> for <code>desktop</code> |[optional]|
+**Title** | **string** | <em>title of the row</em> |[optional]|
+**Url** | **string** | <i>URL of the third-party review source</i> |[optional]|
+**Items** | **IEnumerable<AiModeImagesElementInfo>** | <em>contains arrays of elements available in the list</em> |[optional]|
+**RelatedImageSearches** | **IEnumerable<RelatedImageSearchesElement>** | <em>contains keywords and images related to the specified search term</em><br><strong>Note:</strong> this array is deprecated and always returns <code>null</code> |[optional]|

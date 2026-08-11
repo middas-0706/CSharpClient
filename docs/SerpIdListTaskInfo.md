@@ -5,4 +5,4 @@
 
 | Name | Type | Description | Notes |
 |------------ | ------------- | ------------- | -------------|
-**Result** | **IEnumerable<SerpIdListResultInfo>** | array of results |[optional]|
+**Result** | **IEnumerable<SerpIdListResultInfo>** | <em>array of results</em> |[optional]|

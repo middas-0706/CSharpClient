@@ -35,7 +35,7 @@ namespace DataForSeo.Client.Models
 
         /// <summary>
         /// device type in a POST array
-        /// <br/>if there is no data, then the value is null
+        /// <br/>if there is no data, then the value is_<c>null</c>n
         /// </summary>
         [JsonProperty("device", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string Device { get; set; }
@@ -43,10 +43,10 @@ namespace DataForSeo.Client.Models
         /// <summary>
         /// competition
         /// <br/>represents the relative amount of competition associated with the given keyword in paid SERP only. This value is based on Bing Ads data.
-        /// <br/>Possible values: 0.1, 0.5,0.90.1 – low competition,
-        /// <br/>0.5 – medium competition,
-        /// <br/>0.9 – high competition;
-        /// <br/>if there is no data the value is null
+        /// <br/>Possible values: <c>0.1</c>, <c>0.5</c>,<c>0.9</c><c>0.1</c> - low competition,
+        /// <br/><c>0.5</c> - medium competition,
+        /// <br/><c>0.9</c> - high competition;
+        /// <br/>if there is no data the value is <c>null</c>
         /// </summary>
         [JsonProperty("competition", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public double? Competition { get; set; }
@@ -54,21 +54,21 @@ namespace DataForSeo.Client.Models
         /// <summary>
         /// cost-per-click
         /// <br/>represents the average cost per click (USD) historically paid for the keyword.
-        /// <br/>if there is no data, then the value is null
+        /// <br/>if there is no data, then the value is_<c>null</c>n
         /// </summary>
         [JsonProperty("cpc", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public double? Cpc { get; set; }
 
         /// <summary>
         /// monthly average search volume rate
-        /// <br/>represents the (approximate) number of searches for the keyword on the Bing search engine, depending on the user’s targetingsearch volume is rounded to the closest decimal valuesif there is no data, then the value is null
+        /// <br/>represents the (approximate) number of searches for the keyword on the Bing search engine, depending on the user’s targetingsearch volume is rounded to the closest decimal valuesif there is no data, then the value is_<c>null</c>n
         /// </summary>
         [JsonProperty("search_volume", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public long? SearchVolume { get; set; }
 
         /// <summary>
         /// product and service categories
-        /// <br/>legacy field, the value will always be null
+        /// <br/>legacy field, the value will always be <c>null</c>
         /// </summary>
         [JsonProperty("categories", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public IEnumerable<string> Categories { get; set; }
@@ -76,7 +76,7 @@ namespace DataForSeo.Client.Models
         /// <summary>
         /// monthly searches
         /// <br/>represents the (approximate) number of searches on this keyword (as available for the past twelve months), targeted to the specified geographic locations.
-        /// <br/>if there is no data, then the value is null
+        /// <br/>if there is no data, then the value is_<c>null</c>n
         /// </summary>
         [JsonProperty("monthly_searches", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public IEnumerable<MonthlySearchesInfo> MonthlySearches { get; set; }

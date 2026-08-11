@@ -29,8 +29,8 @@ namespace DataForSeo.Client.Models
 
         /// <summary>
         /// token for subsequent requests
-        /// <br/>by specifying the unique offset_token when setting a new task, you will get the subsequent results of the initial task;
-        /// <br/>offset_token values are unique for each subsequent task
+        /// <br/>by specifying the unique <c>offset_token</c> when setting a new task, you will get the subsequent results of the initial task;
+        /// <br/><c>offset_token</c> values are unique for each subsequent task
         /// </summary>
         [JsonProperty("offset_token", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string OffsetToken { get; set; }

@@ -20,7 +20,7 @@ namespace DataForSeo.Client.Models
         /// position in line
         /// <br/>the number of line characters before the resource;
         /// <br/>sometimes referred to as column
-        /// <br/>Note: counts from 1, i.e. if the resource doesn’t have any characters to the left, the value will be 1
+        /// <br/>Note: counts from 1, i.e. if the resource doesn't have any characters to the left, the value will be 1
         /// </summary>
         [JsonProperty("offset_left", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public int? OffsetLeft { get; set; }

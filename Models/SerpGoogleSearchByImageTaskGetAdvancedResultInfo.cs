@@ -56,7 +56,7 @@ namespace DataForSeo.Client.Models
         /// date and time when the result was received
         /// <br/>in the UTC format: “yyyy-mm-dd hh-mm-ss +00:00”
         /// <br/>example:
-        /// <br/>2019-11-15 12:57:46 +00:00
+        /// <br/><c>2019-11-15 12:57:46 +00:00</c>
         /// </summary>
         [JsonProperty("datetime", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string Datetime { get; set; }
@@ -76,10 +76,10 @@ namespace DataForSeo.Client.Models
 
         /// <summary>
         /// types of search results in SERP
-        /// <br/>contains types of search results (items) found in SERP.
+        /// <br/>contains types of search results (<c>items</c>) found in SERP.
         /// <br/>possible item types:
-        /// <br/>organic,
-        /// <br/>images
+        /// <br/><c>organic</c>, 
+        /// <br/><c>images</c>
         /// </summary>
         [JsonProperty("item_types", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public IEnumerable<string> ItemTypes { get; set; }
@@ -91,13 +91,13 @@ namespace DataForSeo.Client.Models
         public long? SeResultsCount { get; set; }
 
         /// <summary>
-        /// the number of results returned in the items array
+        /// the number of results returned in the <c>items</c> array
         /// </summary>
         [JsonProperty("items_count", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public long? ItemsCount { get; set; }
 
         /// <summary>
-        /// items featured in the faq_box
+        /// items of the element
         /// </summary>
         [JsonProperty("items", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public IEnumerable<BaseSerpApiGoogleSearchByImagesElementItem> Items { get; set; }

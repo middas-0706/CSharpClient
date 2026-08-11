@@ -41,9 +41,9 @@ namespace DataForSeo.Client.Models
 
         /// <summary>
         /// date and time when backlink data was updated
-        /// <br/>in the UTC format: “yyyy-mm-dd hh-mm-ss +00:00”;
-        /// <br/>example:
-        /// <br/>2019-11-15 12:57:46 +00:00
+        /// <br/>            in the UTC format: “yyyy-mm-dd hh-mm-ss +00:00”;
+        /// <br/>            example:
+        /// <br/>            <c>2019-11-15 12:57:46 +00:00</c>
         /// </summary>
         [JsonProperty("time_update", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string TimeUpdate { get; set; }

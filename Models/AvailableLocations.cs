@@ -30,7 +30,7 @@ namespace DataForSeo.Client.Models
         /// <summary>
         /// location type
         /// <br/>possible values:
-        /// <br/>Country, Region
+        /// <br/><c>Country</c>, <c>Region</c>
         /// </summary>
         [JsonProperty("location_type", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string LocationType { get; set; }

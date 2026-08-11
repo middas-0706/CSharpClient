@@ -17,7 +17,7 @@ namespace DataForSeo.Client.Models
 
         /// <summary>
         /// solution to the equation
-        /// <br/>solution to the mathematical equation specified in the keyword field when setting a task
+        /// <br/>            solution to the mathematical equation specified in the <c>keyword</c> field when setting a task
         /// </summary>
         [JsonProperty("result", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string Result { get; set; }
@@ -30,8 +30,8 @@ namespace DataForSeo.Client.Models
 
         /// <summary>
         /// sitelinks
-        /// <br/>the links shown below some of Google’s search results
-        /// <br/>if there are none, equals null
+        /// <br/>            the links shown below some of Google's search results
+        /// <br/>            if there are none, equals <c>null</c>
         /// </summary>
         [JsonProperty("links", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public IEnumerable<LinkElement> Links { get; set; }

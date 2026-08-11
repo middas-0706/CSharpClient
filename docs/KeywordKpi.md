@@ -5,6 +5,6 @@
 
 | Name | Type | Description | Notes |
 |------------ | ------------- | ------------- | -------------|
-**Desktop** | **IEnumerable<KeywordKpiItemInfo>** | keyword data aggregated for desktop devices<br>if there is no data, then the value is null |[optional]|
-**Mobile** | **IEnumerable<KeywordKpiItemInfo>** | keyword data aggregated for mobile devices<br>if there is no data, then the value is null |[optional]|
-**Tablet** | **IEnumerable<KeywordKpiItemInfo>** | keyword data aggregated for tablet devices<br>if there is no data, then the value is null |[optional]|
+**Desktop** | **IEnumerable<KeywordKpiItemInfo>** | <em>keyword data aggregated for desktop devices</em><br>if there is no data, then the value is_<code>null</code>n |[optional]|
+**Mobile** | **IEnumerable<KeywordKpiItemInfo>** | <em>keyword data aggregated for mobile devices</em><br>if there is no data, then the value is_<code>null</code>n |[optional]|
+**Tablet** | **IEnumerable<KeywordKpiItemInfo>** | <em>keyword data aggregated for tablet devices</em><br>if there is no data, then the value is_<code>null</code>n |[optional]|

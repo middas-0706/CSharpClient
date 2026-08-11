@@ -12,12 +12,12 @@ namespace DataForSeo.Client.Models.Requests
         /// <summary>
         /// start time for filtering results
         /// <br/>required field
-        /// <br/>if include_metadata is set to true, minimum start value: a month from current datetime;
-        /// <br/>if include_metadata is set to false, minimum start value: six months from current datetime;
-        /// <br/>maximum start value: current datetime;
-        /// <br/>must be specified in the UTC format: “yyyy-mm-dd hh-mm-ss +00:00”;
+        /// <br/>if <c>include_metadata</c> is set to <c>true</c>, minimum start value: a month from current datetime;
+        /// <br/>if <c>include_metadata</c> is set to <c>false</c>, minimum start value: six months from current datetime;
+        /// <br/>maximum start value: current <c>datetime</c>;
+        /// <br/>must be specified in the UTC format: 'yyyy-mm-dd hh-mm-ss +00:00';
         /// <br/>example:
-        /// <br/>2023-01-15 12:57:46 +00:00
+        /// <br/><c>2023-01-15 12:57:46 +00:00</c>
         /// </summary>
         [JsonProperty("datetime_from", Required = Required.DisallowNull, NullValueHandling = NullValueHandling.Ignore)]
         public string DatetimeFrom { get; set; }
@@ -25,13 +25,13 @@ namespace DataForSeo.Client.Models.Requests
         /// <summary>
         /// finish time for filtering results
         /// <br/>required field
-        /// <br/>if include_metadata is set to true, minimum finish value: a month from current datetime;
-        /// <br/>if include_metadata is set to false, minimum finish value: six months from current datetime;
-        /// <br/>maximum finish value: current datetime;
-        /// <br/>Note: datetime_to must be greater than datetime_from;
-        /// <br/>must be specified in the UTC format: “yyyy-mm-dd hh-mm-ss +00:00”;
+        /// <br/>if <c>include_metadata</c> is set to <c>true</c>, minimum finish value: a month from current datetime;
+        /// <br/>if <c>include_metadata</c> is set to <c>false</c>, minimum finish value: six months from current datetime;
+        /// <br/>maximum finish value: current <c>datetime</c>;
+        /// <br/>Note: <c>datetime_to</c> must be greater than <c>datetime_from</c>;
+        /// <br/>must be specified in the UTC format: 'yyyy-mm-dd hh-mm-ss +00:00';
         /// <br/>example:
-        /// <br/>2023-01-31 13:57:46 +00:00
+        /// <br/><c>2023-01-31 13:57:46 +00:00</c>
         /// </summary>
         [JsonProperty("datetime_to", Required = Required.DisallowNull, NullValueHandling = NullValueHandling.Ignore)]
         public string DatetimeTo { get; set; }
@@ -39,9 +39,9 @@ namespace DataForSeo.Client.Models.Requests
         /// <summary>
         /// the maximum number of returned task IDs
         /// <br/>optional field
-        /// <br/>default value: 1000
-        /// <br/>maximum value: 1000
-        /// <br/>minimum value: 1
+        /// <br/>default value: <c>1000</c>
+        /// <br/>maximum value: <c>1000</c>
+        /// <br/>minimum value: <c>1</c>
         /// </summary>
         [JsonProperty("limit", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public int? Limit { get; set; }
@@ -49,9 +49,9 @@ namespace DataForSeo.Client.Models.Requests
         /// <summary>
         /// offset in the results array of returned task IDs
         /// <br/>optional field
-        /// <br/>if you specify the 10 value, the first ten tasks in the results array will be omitted;
-        /// <br/>minimum and default value: 0;
-        /// <br/>maximum value: 100M (100 million)
+        /// <br/>if you specify the <c>10</c> value, the first ten tasks in the results array will be omitted;
+        /// <br/>minimum and default value: <c>0</c>;
+        /// <br/>maximum value: <c>100M</c> (100 million)
         /// </summary>
         [JsonProperty("offset", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public int? Offset { get; set; }
@@ -59,8 +59,8 @@ namespace DataForSeo.Client.Models.Requests
         /// <summary>
         /// sorting by task execution time
         /// <br/>optional field
-        /// <br/>possible values: 'asc', 'desc'
-        /// <br/>default value: 'asc'
+        /// <br/>possible values: <c>'asc'</c>, <c>'desc'</c>
+        /// <br/>default value: <c>'asc'</c>
         /// </summary>
         [JsonProperty("sort", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string Sort { get; set; }
@@ -68,8 +68,8 @@ namespace DataForSeo.Client.Models.Requests
         /// <summary>
         /// include task metadata in the response
         /// <br/>optional field
-        /// <br/>if set to true, the metadata object containing parameters specified in the POST request will be provided in the response;
-        /// <br/>default value: false
+        /// <br/>if set to <c>true</c>, the <c>metadata</c> object containing parameters specified in the POST request will be provided in the response;
+        /// <br/>default value: <c>false</c>
         /// </summary>
         [JsonProperty("include_metadata", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public bool? IncludeMetadata { get; set; }

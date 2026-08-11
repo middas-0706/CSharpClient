@@ -11,8 +11,8 @@ namespace DataForSeo.Client.Models
 
         /// <summary>
         /// unique hotel identifier
-        /// <br/>unique hotel identifier assigned by Google;
-        /// <br/>example: 'CgoIjaeSlI6CnNpVEAE'
+        /// <br/>            unique hotel identifier assigned by Google;
+        /// <br/>            example: <c>'CgoIjaeSlI6CnNpVEAE'</c>
         /// </summary>
         [JsonProperty("hotel_identifier", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string HotelIdentifier { get; set; }

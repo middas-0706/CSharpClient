@@ -10,7 +10,7 @@ namespace DataForSeo.Client.Models
     {
 
         /// <summary>
-        /// HTML page
+        /// HTML_pagen
         /// </summary>
         [JsonProperty("html", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string Html { get; set; }

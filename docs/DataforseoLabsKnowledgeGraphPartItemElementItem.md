@@ -5,7 +5,7 @@
 
 | Name | Type | Description | Notes |
 |------------ | ------------- | ------------- | -------------|
-**Title** | **string** | title of the result in SERP |[optional]|
-**DataAttrid** | **string** | google defined data attribute ID<br>example:<br>action:listen_artist |[optional]|
-**Text** | **string** | description content |[optional]|
-**Links** | **IEnumerable<LinkElement>** | sitelinks<br>the links shown below some of Google’s search results<br>if there are none, equals null |[optional]|
+**Title** | **string** | <em>title of the result in SERP</em> |[optional]|
+**DataAttrid** | **string** | <em>google defined data attribute ID</em><br>            example:<br>            <code>action:listen_artist</code> |[optional]|
+**Text** | **string** | <em>description content</em> |[optional]|
+**Links** | **IEnumerable<LinkElement>** | <em>sitelinks</em><br>            the links shown below some of Google's search results<br>            if there are none, equals <code>null</code> |[optional]|

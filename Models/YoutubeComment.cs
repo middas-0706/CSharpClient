@@ -17,8 +17,8 @@ namespace DataForSeo.Client.Models
 
         /// <summary>
         /// group rank in SERP
-        /// <br/>position within a group of elements with identical type values
-        /// <br/>positions of elements with different type values are omitted from rank_group
+        /// <br/>position within a group of elements with identical <c>type</c> values
+        /// <br/>positions of elements with different <c>type</c> values are omitted from <c>rank_group</c>
         /// </summary>
         [JsonProperty("rank_group", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public int? RankGroup { get; set; }
@@ -37,13 +37,13 @@ namespace DataForSeo.Client.Models
         public string AuthorName { get; set; }
 
         /// <summary>
-        /// the URL of the page where the author’s channel logo is hosted
+        /// the URL of the page where the author's channel logo is hosted
         /// </summary>
         [JsonProperty("author_thumbnail", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string AuthorThumbnail { get; set; }
 
         /// <summary>
-        /// URL of the author’s channel
+        /// URL of the author's channel
         /// </summary>
         [JsonProperty("author_url", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string AuthorUrl { get; set; }
@@ -64,7 +64,7 @@ namespace DataForSeo.Client.Models
         /// date and time when the result was published
         /// <br/>in the UTC format: “yyyy-mm-dd hh-mm-ss +00:00”
         /// <br/>example:
-        /// <br/>2022-11-15 12:57:46 +00:00
+        /// <br/><c>2022-11-15 12:57:46 +00:00</c>
         /// </summary>
         [JsonProperty("timestamp", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string Timestamp { get; set; }

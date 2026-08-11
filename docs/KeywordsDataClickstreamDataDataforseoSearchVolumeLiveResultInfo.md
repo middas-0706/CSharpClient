@@ -5,8 +5,8 @@
 
 | Name | Type | Description | Notes |
 |------------ | ------------- | ------------- | -------------|
-**LocationCode** | **int?** | location code in a POST array<br>if there is no data, then the value is null |[optional]|
-**LanguageCode** | **string** | language code in a POST array<br><br>Note:if the keyword in the POST array appears to be misspelled, data will be returned for the correctly spelled keyword;<br>we use the functionality of Google Ads API to check and validate the spelling of keywords, learn more by this link |[optional]|
-**UseClickstream** | **bool?** | indicates if the use_clickstream parameter is active<br>possible values: true, false |[optional]|
-**ItemsCount** | **int?** | ithe number of results returned in the items array |[optional]|
-**Items** | **IEnumerable<KeywordsDataClickstreamDataSearchVolumeLiveItem>** | array of keywords<br>contains keywords and their search volume rates |[optional]|
+**LocationCode** | **int?** | <em>location code in a POST array</em><br>if there is no data, then the value is <code>null</code> |[optional]|
+**LanguageCode** | **string** | <em>language code in a POST array<br></em><br><strong>Note:</strong>if the keyword in the POST array appears to be misspelled, data will be returned for the correctly spelled keyword;<br>we use the functionality of Google Ads API to check and validate the spelling of keywords, <a href='https://support.google.com/google-ads/answer/7476658' target='_blank' rel='noopener noreferrer'>learn more by this link</a> |[optional]|
+**UseClickstream** | **bool?** | <em>indicates if the <code>use_clickstream</code> parameter is active</em><br>possible values: <code>true</code>, <code>false</code> |[optional]|
+**ItemsCount** | **int?** | <em>ithe number of results returned in the <code>items</code> array</em> |[optional]|
+**Items** | **IEnumerable<KeywordsDataClickstreamDataSearchVolumeLiveItem>** | <em>array of keywords</em><br>contains keywords and their search volume rates |[optional]|

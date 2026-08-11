@@ -5,5 +5,5 @@
 
 | Name | Type | Description | Notes |
 |------------ | ------------- | ------------- | -------------|
-**Data** | **IEnumerable<TrendsGraphDataInfo>** | Google Trends data for the specified parameters |[optional]|
+**Data** | **IEnumerable<TrendsGraphDataInfo>** | <em>Google Trends data for the specified parameters</em> |[optional]|
 **Averages** | **IEnumerable<double?>** |  |[optional]|

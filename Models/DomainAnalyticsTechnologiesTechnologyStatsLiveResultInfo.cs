@@ -26,16 +26,8 @@ namespace DataForSeo.Client.Models
         /// </summary>
         [JsonProperty("date_to", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string DateTo { get; set; }
-
-        /// <summary>
-        /// number of items in the results array
-        /// </summary>
         [JsonProperty("items_count", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public long? ItemsCount { get; set; }
-
-        /// <summary>
-        /// items array
-        /// </summary>
+        public int? ItemsCount { get; set; }
         [JsonProperty("items", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public IEnumerable<DomainAnalyticsTechnologiesTechnologyStatsLiveItem> Items { get; set; }
 

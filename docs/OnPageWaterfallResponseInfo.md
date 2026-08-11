@@ -5,4 +5,4 @@
 
 | Name | Type | Description | Notes |
 |------------ | ------------- | ------------- | -------------|
-**Tasks** | **IEnumerable<OnPageWaterfallTaskInfo>** | array of tasks |[optional]|
+**Tasks** | **IEnumerable<OnPageWaterfallTaskInfo>** | <em>array of tasks</em> |[optional]|

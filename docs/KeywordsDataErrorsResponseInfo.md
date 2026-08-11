@@ -5,4 +5,4 @@
 
 | Name | Type | Description | Notes |
 |------------ | ------------- | ------------- | -------------|
-**Tasks** | **IEnumerable<KeywordsDataErrorsTaskInfo>** | array of tasks |[optional]|
+**Tasks** | **IEnumerable<KeywordsDataErrorsTaskInfo>** | <em>array of tasks</em> |[optional]|

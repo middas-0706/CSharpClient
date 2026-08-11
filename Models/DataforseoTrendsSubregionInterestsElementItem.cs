@@ -17,7 +17,7 @@ namespace DataForSeo.Client.Models
 
         /// <summary>
         /// comparison of data on subregional keyword popularity for the specified parameters
-        /// <br/>if you specified a single keyword, the value will be null
+        /// <br/>if you specified a single keyword, the value will be <c>null</c>
         /// </summary>
         [JsonProperty("interests_comparison", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public InterestsComparison InterestsComparison { get; set; }

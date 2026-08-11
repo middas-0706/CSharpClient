@@ -46,9 +46,9 @@ namespace DataForSeo.Client.Models
         public string Source { get; set; }
 
         /// <summary>
-        /// the item’s rating 
+        /// the item's rating 
         /// <br/>the popularity rate based on reviews and displayed in SERP;
-        /// <br/>if there is none, equals null
+        /// <br/>if there is none, equals <c>null</c>
         /// </summary>
         [JsonProperty("rating", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public RatingInfo Rating { get; set; }

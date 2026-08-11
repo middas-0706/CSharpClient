@@ -19,7 +19,7 @@ namespace DataForSeo.Client.Models
         /// <summary>
         /// hreflang attribute value
         /// <br/>language and optional country code specified in the hreflang attribute
-        /// <br/>example: 'en-US', 'fr'
+        /// <br/>example: <c>'en-US'</c>, <c>'fr'</c>
         /// </summary>
         [JsonProperty("hreflang", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string Hreflang { get; set; }

@@ -8,6 +8,10 @@ namespace DataForSeo.Client.Models.Responses
 
     public class AiOptimizationGeminiLlmResponsesTaskPostResponseInfo  : BaseResponseInfo 
     {
+
+        /// <summary>
+        /// array of tasks
+        /// </summary>
         [JsonProperty("tasks", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public IEnumerable<AiOptimizationGeminiLlmResponsesTaskPostTaskInfo> Tasks { get; set; }
 

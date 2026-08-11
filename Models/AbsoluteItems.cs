@@ -12,9 +12,9 @@ namespace DataForSeo.Client.Models
         /// <summary>
         /// location identifier
         /// <br/>you can use this field for matching obtained results with location parameters specified in the request
-        /// <br/>see the full list of available locations with their geo_id here or by making a separate request to https://api.dataforseo.com/v3/keywords_data/dataforseo_trends/locations
+        /// <br/>see the full list of available locations with their <c>geo_id</c> <see href="/v3/keywords_data/dataforseo_trends/locations/">here</see> or by making a separate request to <c>https://api.dataforseo.com/v3/keywords_data/dataforseo_trends/locations</c>
         /// <br/>example:
-        /// <br/>US-NY
+        /// <br/><c>US-NY</c>
         /// </summary>
         [JsonProperty("geo_id", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string GeoId { get; set; }
@@ -22,9 +22,9 @@ namespace DataForSeo.Client.Models
         /// <summary>
         /// location name
         /// <br/>you can use this field for matching obtained results with location parameters specified in the request
-        /// <br/>see the full list of available locations with their geo_name here or by making a separate request to https://api.dataforseo.com/v3/keywords_data/dataforseo_trends/locations
+        /// <br/>see the full list of available locations with their <c>geo_name</c> <see href="/v3/keywords_data/dataforseo_trends/locations/">here</see> or by making a separate request to <c>https://api.dataforseo.com/v3/keywords_data/dataforseo_trends/locations</c>
         /// <br/>example:
-        /// <br/>Andorra
+        /// <br/><c>Andorra</c>
         /// </summary>
         [JsonProperty("geo_name", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string GeoName { get; set; }

@@ -17,10 +17,10 @@ namespace DataForSeo.Client.Models
 
         /// <summary>
         /// keyword popularity rate within the specified age range
-        /// <br/>using this value you can understand how popular a keyword is within each age range;
+        /// <br/>using this <c>value</c> you can understand how popular a keyword is within each age range; 
         /// <br/>calculation: we determine the highest popularity value for the relevant keyword across all age groups, and then express all other values as a percentage of that highest value (100);
-        /// <br/>a value of 100 is the highest popularity for the term
-        /// <br/>a value of 0 means there was not enough data for this term
+        /// <br/>a value of <c>100</c> is the highest popularity for the term
+        /// <br/>a value of <c>0</c> means there was not enough data for this term
         /// </summary>
         [JsonProperty("value", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public int? Value { get; set; }

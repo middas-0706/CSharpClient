@@ -55,15 +55,15 @@ namespace DataForSeo.Client.Models
 
         /// <summary>
         /// date and time when the video was published
-        /// <br/>in the UTC format: “yyyy-mm-dd hh-mm-ss +00:00”
-        /// <br/>example: 2009-01-01 00:00:00 +00:00
+        /// <br/>            in the UTC format: 'yyyy-mm-dd hh-mm-ss +00:00'
+        /// <br/>            example: <c>2009-01-01 00:00:00 +00:00</c>
         /// </summary>
         [JsonProperty("timestamp", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string Timestamp { get; set; }
 
         /// <summary>
         /// results table
-        /// <br/>if there are none, equals null
+        /// <br/>            if there are none, equals <c>null</c>
         /// </summary>
         [JsonProperty("table", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public Table Table { get; set; }

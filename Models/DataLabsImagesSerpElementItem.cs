@@ -29,7 +29,7 @@ namespace DataForSeo.Client.Models
 
         /// <summary>
         /// contains keywords and images related to the specified search term
-        /// <br/>if there are none, equals null
+        /// <br/>            if there are none, equals <c>null</c>
         /// </summary>
         [Obsolete]
         [JsonProperty("related_image_searches", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]

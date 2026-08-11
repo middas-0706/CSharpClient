@@ -5,4 +5,4 @@
 
 | Name | Type | Description | Notes |
 |------------ | ------------- | ------------- | -------------|
-**Result** | **IEnumerable<KeywordsDataBingKeywordsForKeywordsTaskGetResultInfo>** | array of results |[optional]|
+**Result** | **IEnumerable<KeywordsDataBingKeywordsForKeywordsTaskGetResultInfo>** | <em>array of results</em> |[optional]|

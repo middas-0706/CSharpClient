@@ -5,4 +5,4 @@
 
 | Name | Type | Description | Notes |
 |------------ | ------------- | ------------- | -------------|
-**Result** | **IEnumerable<AiOptimizationAiKeywordDataLocationsAndLanguagesResultInfo>** | array of results |[optional]|
+**Result** | **IEnumerable<AiOptimizationAiKeywordDataLocationsAndLanguagesResultInfo>** | <em>array of results</em> |[optional]|

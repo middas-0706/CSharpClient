@@ -17,8 +17,8 @@ namespace DataForSeo.Client.Models.Requests
         /// <br/>each keyword should be at least 3 characters long;
         /// <br/>the keywords will be converted to lowercase format;
         /// <br/>Note: certain symbols and characters (e.g., UTF symbols, emojis) are not allowed
-        /// <br/>to learn more about which symbols and characters can be used, please refer to this article
-        /// <br/>learn more about rules and limitations of keyword and keywords fields in DataForSEO APIs in this Help Center article
+        /// <br/>to learn more about which symbols and characters can be used, please refer to <see href="https://dataforseo.com/help-center/using-symbols-in-keywords-when-setting-a-google-ads-task">this article</see>
+        /// <br/>learn more about rules and limitations of <c>keyword</c> and <c>keywords</c> fields in DataForSEO APIs in this <see href="https://dataforseo.com/help-center/rules-and-limitations-of-keyword-and-keywords-fields-in-dataforseo-apis">Help Center article</see>
         /// </summary>
         [JsonProperty("keywords", Required = Required.DisallowNull, NullValueHandling = NullValueHandling.Ignore)]
         public IEnumerable<string> Keywords { get; set; }
@@ -28,7 +28,7 @@ namespace DataForSeo.Client.Models.Requests
         /// <br/>optional field
         /// <br/>the character limit is 255
         /// <br/>you can use this parameter to identify the task and match it with the result
-        /// <br/>you will find the specified tag value in the data object of the response
+        /// <br/>you will find the specified <c>tag</c> value in the <c>data</c> object of the response
         /// </summary>
         [JsonProperty("tag", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string Tag { get; set; }

@@ -45,7 +45,7 @@ namespace DataForSeo.Client.Models
 
         /// <summary>
         /// location of the resource in the document
-        /// <br/>parameters defining the location of the specific resource within the document’s HTML
+        /// <br/>parameters defining the location of the specific resource within the document's HTML
         /// </summary>
         [JsonProperty("location", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public OnPageResourceLocationInfo Location { get; set; }

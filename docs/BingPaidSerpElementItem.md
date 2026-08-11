@@ -5,19 +5,19 @@
 
 | Name | Type | Description | Notes |
 |------------ | ------------- | ------------- | -------------|
-**Domain** | **string** | domain of the ad element in SERP |[optional]|
-**Title** | **string** | title of the ad element in SERP |[optional]|
-**Description** | **string** | description of the ad element in SERP |[optional]|
-**Url** | **string** | relevant URL of the ad element in SERP |[optional]|
-**Breadcrumb** | **string** | breadcrumb of the ad element in SERP |[optional]|
-**WebsiteName** | **string** | website name in SERP |[optional]|
-**IsImage** | **bool?** | indicates whether the element contains an image |[optional]|
-**IsVideo** | **bool?** | indicates whether the element contains a video |[optional]|
+**Domain** | **string** | <em>domain of the ad element in SERP</em> |[optional]|
+**Title** | **string** | <em>title of the ad element in SERP</em> |[optional]|
+**Description** | **string** | <em>description of the ad element in SERP</em> |[optional]|
+**Url** | **string** | <em>relevant URL of the ad element in SERP</em> |[optional]|
+**Breadcrumb** | **string** | <em>breadcrumb of the ad element in SERP</em> |[optional]|
+**WebsiteName** | **string** | <em>website name in SERP</em> |[optional]|
+**IsImage** | **bool?** | <em>indicates whether the element contains an <code class='prettyprint'>image</code></em> |[optional]|
+**IsVideo** | **bool?** | <em>indicates whether the element contains a <code class='prettyprint'>video</code></em> |[optional]|
 **Checks** | **IEnumerable<string>** |  |[optional]|
-**Images** | **IEnumerable<AiModeImagesElementInfo>** | images of the element |[optional]|
-**Highlighted** | **IEnumerable<string>** | words highlighted in bold within the results description |[optional]|
-**Extra** | **IDictionary<string, string>** | additional information about the result |[optional]|
-**DescriptionRows** | **IEnumerable<string>** | extended description<br>if there is none, equals null |[optional]|
-**Links** | **IEnumerable<AdLinkElement>** | links featured in the organic result |[optional]|
-**Price** | **PriceInfo** | price of booking a place for the specified dates of stay |[optional]|
-**Rating** | **RatingInfo** | the item’s rating <br>the popularity rate based on reviews and displayed in SERP |[optional]|
+**Images** | **IEnumerable<AiModeImagesElementInfo>** | <em>images of the element</em><br>            if there are none, equals <code>null</code> |[optional]|
+**Highlighted** | **IEnumerable<string>** | <em>words highlighted in bold within the results <code>description</code></em> |[optional]|
+**Extra** | **IDictionary<string, string>** | <em>additional information about the result</em> |[optional]|
+**DescriptionRows** | **IEnumerable<string>** | <em>extended description</em><br>            if there is none, equals <code>null</code> |[optional]|
+**Links** | **IEnumerable<AdLinkElement>** | <em>links featured in the organic result</em> |[optional]|
+**Price** | **PriceInfo** | <em>price of booking a place for the specified dates of stay</em> |[optional]|
+**Rating** | **RatingInfo** | <em>the item's rating </em><br>            the popularity rate based on reviews and displayed in SERP |[optional]|

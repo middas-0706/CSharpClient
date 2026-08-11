@@ -6,11 +6,11 @@
 | Name | Type | Description | Notes |
 |------------ | ------------- | ------------- | -------------|
 **Type** | **string** | type of element |[optional]|
-**Price** | **PriceInfo** | price indicated in the element |[optional]|
-**Title** | **string** | title of a given link element |[optional]|
-**Description** | **string** | link description |[optional]|
-**HotelIdentifier** | **string** | unique hotel identifier<br>unique hotel identifier assigned by Google;<br>example: 'CgoIjaeSlI6CnNpVEAE' |[optional]|
-**Domain** | **string** | domain where a link points |[optional]|
-**Url** | **string** | source URL |[optional]|
-**IsPaid** | **bool?** | indicates whether the element is an ad |[optional]|
-**Rating** | **RatingInfo** | the item’s rating <br>the popularity rate based on reviews and displayed in SERP;<br>if there is none, equals null |[optional]|
+**Price** | **PriceInfo** | <em>price indicated in the element</em> |[optional]|
+**Title** | **string** | <em>title of a given link element</em> |[optional]|
+**Description** | **string** | <em>link description</em> |[optional]|
+**HotelIdentifier** | **string** | <em>unique hotel identifier</em><br>unique hotel identifier assigned by Google;<br>example: <code>'CgoIjaeSlI6CnNpVEAE'</code> |[optional]|
+**Domain** | **string** | <em>domain where a link points</em> |[optional]|
+**Url** | **string** | <em>source URL</em> |[optional]|
+**IsPaid** | **bool?** | <em>indicates whether the element is an ad</em> |[optional]|
+**Rating** | **RatingInfo** | <em>the item's rating </em><br>the popularity rate based on reviews and displayed in SERP;<br>if there is none, equals <code>null</code> |[optional]|

@@ -5,4 +5,4 @@
 
 | Name | Type | Description | Notes |
 |------------ | ------------- | ------------- | -------------|
-**Result** | **IEnumerable<KeywordsDataGoogleAdsKeywordsForKeywordsTasksReadyResultInfo>** | array of results |[optional]|
+**Result** | **IEnumerable<KeywordsDataGoogleAdsKeywordsForKeywordsTasksReadyResultInfo>** | <em>array of results</em> |[optional]|

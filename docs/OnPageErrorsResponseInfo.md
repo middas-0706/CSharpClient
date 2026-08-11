@@ -5,4 +5,4 @@
 
 | Name | Type | Description | Notes |
 |------------ | ------------- | ------------- | -------------|
-**Tasks** | **IEnumerable<OnPageErrorsTaskInfo>** | array of tasks |[optional]|
+**Tasks** | **IEnumerable<OnPageErrorsTaskInfo>** | <em>array of tasks</em> |[optional]|

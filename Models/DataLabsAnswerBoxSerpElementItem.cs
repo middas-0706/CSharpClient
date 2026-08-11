@@ -11,15 +11,15 @@ namespace DataForSeo.Client.Models
 
         /// <summary>
         /// text
-        /// <br/>if there is none, equals null
+        /// <br/>            if there is none, equals <c>null</c>
         /// </summary>
         [JsonProperty("text", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public IEnumerable<string> Text { get; set; }
 
         /// <summary>
         /// sitelinks
-        /// <br/>the links shown below some of Google’s search results
-        /// <br/>if there are none, equals null
+        /// <br/>            the links shown below some of Google's search results
+        /// <br/>            if there are none, equals <c>null</c>
         /// </summary>
         [JsonProperty("links", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public IEnumerable<LinkElement> Links { get; set; }

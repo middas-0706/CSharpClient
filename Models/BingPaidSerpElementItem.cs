@@ -46,13 +46,13 @@ namespace DataForSeo.Client.Models
         public string WebsiteName { get; set; }
 
         /// <summary>
-        /// indicates whether the element contains an image
+        /// indicates whether the element contains an <c>image</c>
         /// </summary>
         [JsonProperty("is_image", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public bool? IsImage { get; set; }
 
         /// <summary>
-        /// indicates whether the element contains a video
+        /// indicates whether the element contains a <c>video</c>
         /// </summary>
         [JsonProperty("is_video", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public bool? IsVideo { get; set; }
@@ -61,12 +61,13 @@ namespace DataForSeo.Client.Models
 
         /// <summary>
         /// images of the element
+        /// <br/>            if there are none, equals <c>null</c>
         /// </summary>
         [JsonProperty("images", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public IEnumerable<AiModeImagesElementInfo> Images { get; set; }
 
         /// <summary>
-        /// words highlighted in bold within the results description
+        /// words highlighted in bold within the results <c>description</c>
         /// </summary>
         [JsonProperty("highlighted", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public IEnumerable<string> Highlighted { get; set; }
@@ -79,7 +80,7 @@ namespace DataForSeo.Client.Models
 
         /// <summary>
         /// extended description
-        /// <br/>if there is none, equals null
+        /// <br/>            if there is none, equals <c>null</c>
         /// </summary>
         [JsonProperty("description_rows", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public IEnumerable<string> DescriptionRows { get; set; }
@@ -97,8 +98,8 @@ namespace DataForSeo.Client.Models
         public PriceInfo Price { get; set; }
 
         /// <summary>
-        /// the item’s rating 
-        /// <br/>the popularity rate based on reviews and displayed in SERP
+        /// the item's rating 
+        /// <br/>            the popularity rate based on reviews and displayed in SERP
         /// </summary>
         [JsonProperty("rating", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public RatingInfo Rating { get; set; }

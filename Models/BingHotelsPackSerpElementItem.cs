@@ -17,24 +17,24 @@ namespace DataForSeo.Client.Models
 
         /// <summary>
         /// starting date of stay
-        /// <br/>in the format “year-month-date”
-        /// <br/>example:
-        /// <br/>2019-11-15
+        /// <br/>            in the format “year-month-date”
+        /// <br/>            example:
+        /// <br/>            2019-11-15
         /// </summary>
         [JsonProperty("date_from", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string DateFrom { get; set; }
 
         /// <summary>
         /// ending date of stay
-        /// <br/>in the format “year-month-date”
-        /// <br/>example:
-        /// <br/>2019-11-17
+        /// <br/>            in the format “year-month-date”
+        /// <br/>            example:
+        /// <br/>            2019-11-17
         /// </summary>
         [JsonProperty("date_to", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string DateTo { get; set; }
 
         /// <summary>
-        /// contains results featured in the ‘hotels_pack’ element of SERP
+        /// contains results featured in the 'hotels_pack' element of SERP
         /// </summary>
         [JsonProperty("items", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public IEnumerable<HotelsPackElement> Items { get; set; }

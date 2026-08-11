@@ -17,15 +17,15 @@ namespace DataForSeo.Client.Models
 
         /// <summary>
         /// additional references relevant to the item
-        /// <br/>includes references to webpages that may have been used to generate the ai_overview
+        /// <br/>includes references to webpages that may have been used to generate the <c>ai_overview</c>
         /// </summary>
         [JsonProperty("references", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public IEnumerable<AiModeAiOverviewReferenceInfo> References { get; set; }
 
         /// <summary>
         /// indicates whether the element is loaded asynchronously
-        /// <br/>if true, the people_also_ask_ai_overview_expanded_element element is loaded asynchronously;
-        /// <br/>if false, the people_also_ask_ai_overview_expanded_element element is loaded from cache
+        /// <br/>if <c>true</c>, the <c>people_also_ask_ai_overview_expanded_element</c> element is loaded asynchronously;
+        /// <br/>if <c>false</c>, the <c>people_also_ask_ai_overview_expanded_element</c> element is loaded from cache
         /// </summary>
         [JsonProperty("asynchronous_ai_overview", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public bool? AsynchronousAiOverview { get; set; }

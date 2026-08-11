@@ -11,8 +11,8 @@ namespace DataForSeo.Client.Models
 
         /// <summary>
         /// the alignment of the element in SERP
-        /// <br/>can take the following values:
-        /// <br/>left, right
+        /// <br/>            can take the following values:
+        /// <br/>            <c>left</c>, <c>right</c>
         /// </summary>
         [JsonProperty("position", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string Position { get; set; }
@@ -37,8 +37,8 @@ namespace DataForSeo.Client.Models
 
         /// <summary>
         /// sitelinks
-        /// <br/>the links shown below some search results
-        /// <br/>if there are none, equals null
+        /// <br/>            the links shown below some search results
+        /// <br/>            if there are none, equals <c>null</c>
         /// </summary>
         [JsonProperty("links", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public IEnumerable<LinkElement> Links { get; set; }
@@ -51,7 +51,7 @@ namespace DataForSeo.Client.Models
 
         /// <summary>
         /// references relevant to the element
-        /// <br/>includes references to webpages that were used to generate the ai_overview_element
+        /// <br/>            includes references to webpages that were used to generate the <c>ai_overview_element</c>
         /// </summary>
         [JsonProperty("references", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public IEnumerable<AiModeAiOverviewReferenceInfo> References { get; set; }

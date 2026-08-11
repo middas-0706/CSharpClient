@@ -28,7 +28,7 @@ namespace DataForSeo.Client.Models
         public long? VideoCount { get; set; }
 
         /// <summary>
-        /// indicates whether the channel has a “verified” label
+        /// indicates whether the channel has a 'verified' label
         /// </summary>
         [JsonProperty("is_verified", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public bool? IsVerified { get; set; }

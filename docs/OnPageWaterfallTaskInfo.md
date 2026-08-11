@@ -5,4 +5,4 @@
 
 | Name | Type | Description | Notes |
 |------------ | ------------- | ------------- | -------------|
-**Result** | **IEnumerable<OnPageWaterfallResultInfo>** | array of results |[optional]|
+**Result** | **IEnumerable<OnPageWaterfallResultInfo>** | <em>array of results</em> |[optional]|

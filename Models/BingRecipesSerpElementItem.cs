@@ -10,7 +10,7 @@ namespace DataForSeo.Client.Models
     {
 
         /// <summary>
-        /// contains results featured in the ‘hotels_pack’ element of SERP
+        /// contains results featured in the 'hotels_pack' element of SERP
         /// </summary>
         [JsonProperty("items", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public IEnumerable<RecipesElement> Items { get; set; }

@@ -5,4 +5,4 @@
 
 | Name | Type | Description | Notes |
 |------------ | ------------- | ------------- | -------------|
-**Result** | **IEnumerable<DataforseoLabsAmazonRankedKeywordsLiveResultInfo>** | array of results |[optional]|
+**Result** | **IEnumerable<DataforseoLabsAmazonRankedKeywordsLiveResultInfo>** | <em>array of results</em> |[optional]|

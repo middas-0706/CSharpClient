@@ -17,32 +17,21 @@ namespace DataForSeo.Client.Models
 
         /// <summary>
         /// location code in a POST array
-        /// <br/>if there is no data, then the value is null
+        /// <br/>if there is no data, then the value is_<c>null</c>n
         /// </summary>
         [JsonProperty("location_code", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public int? LocationCode { get; set; }
 
         /// <summary>
         /// language code in a POST array
-        /// <br/>if there is no data, then the value is null
+        /// <br/>if there is no data, then the value is_<c>null</c>n
         /// </summary>
         [JsonProperty("language_code", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string LanguageCode { get; set; }
         [JsonProperty("device", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public IEnumerable<string> Device { get; set; }
-
-        /// <summary>
-        /// time period
-        /// <br/>indicates if returned data is aggregated to a certain time period
-        /// <br/>default value monthly
-        /// </summary>
         [JsonProperty("period", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string Period { get; set; }
-
-        /// <summary>
-        /// contains results distributed by device type
-        /// <br/>if the device parameter is not specified, the data will be returned for all available device types
-        /// </summary>
         [JsonProperty("searches", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public SearchVolumeHistorySearchInfo Searches { get; set; }
 

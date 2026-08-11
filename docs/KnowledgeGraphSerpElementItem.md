@@ -5,14 +5,14 @@
 
 | Name | Type | Description | Notes |
 |------------ | ------------- | ------------- | -------------|
-**RankGroup** | **int?** | group rank in SERP<br>position within a group of elements with identical type values<br>positions of elements with different type values are omitted from rank_group |[optional]|
-**RankAbsolute** | **int?** | absolute rank in SERP<br>absolute position among all the elements in SERP |[optional]|
-**Title** | **string** | title of the result in SERP |[optional]|
-**Subtitle** | **string** | subtitle of the item |[optional]|
-**Description** | **string** | description of the results element in SERP |[optional]|
-**CardId** | **string** | card id |[optional]|
-**Url** | **string** | relevant URL in SERP |[optional]|
-**ImageUrl** | **string** | URL of the image<br>the URL leading to the image on the original resource or DataForSEO storage (in case the original source is not available) |[optional]|
-**LogoUrl** | **string** | URL of the logo from knowledge graph |[optional]|
-**Cid** | **string** | google-defined client id<br>unique id of a local establishment;<br>can be used with Google Reviews API to get a full list of reviews |[optional]|
-**Items** | **IEnumerable<BaseSerpApiKnowledgeGraphElementItem>** | additional items present in the element<br>if there are none, equals null |[optional]|
+**RankGroup** | **int?** | <em>group rank in SERP</em><br>position within a group of elements with identical <code>type</code> values<br>positions of elements with different <code>type</code> values are omitted from <code>rank_group</code> |[optional]|
+**RankAbsolute** | **int?** | <em>absolute rank in SERP</em><br>absolute position among all the elements in SERP |[optional]|
+**Title** | **string** | <em>title of the result in SERP</em> |[optional]|
+**Subtitle** | **string** | <em>subtitle of the item</em> |[optional]|
+**Description** | **string** | <em>description of the results element in SERP</em> |[optional]|
+**CardId** | **string** | <em>card id</em> |[optional]|
+**Url** | **string** | <em> relevant URL in SERP</em> |[optional]|
+**ImageUrl** | **string** | <em>URL of the image</em><br>the URL leading to the image on the original resource or DataForSEO storage (in case the original source is not available) |[optional]|
+**LogoUrl** | **string** | <em>URL of the logo from knowledge graph</em> |[optional]|
+**Cid** | **string** | <em>google-defined client id</em><br>unique id of a local establishment;<br>can be used with <a href='/v3/reviews/google/overview/?php' target='_blank' rel='noopener noreferrer'>Google Reviews API</a> to get a full list of reviews |[optional]|
+**Items** | **IEnumerable<BaseSerpApiKnowledgeGraphElementItem>** | <em>additional items present in the element</em><br>if there are none, equals <code>null</code> |[optional]|

@@ -11,9 +11,9 @@ namespace DataForSeo.Client.Models
 
         /// <summary>
         /// group rank in SERP
-        /// <br/>position within a group of elements with identical type values;
-        /// <br/>positions of elements with different type values are omitted from rank_group;
-        /// <br/>always equals 0 for desktop
+        /// <br/>position within a group of elements with identical <c>type</c> values;
+        /// <br/>positions of elements with different <c>type</c> values are omitted from <c>rank_group</c>;
+        /// <br/>always equals <c>0</c> for <c>desktop</c>
         /// </summary>
         [JsonProperty("rank_group", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public int? RankGroup { get; set; }
@@ -21,7 +21,7 @@ namespace DataForSeo.Client.Models
         /// <summary>
         /// absolute rank in SERP
         /// <br/>absolute position among all the elements in SERP
-        /// <br/>always equals 0 for desktop
+        /// <br/>always equals <c>0</c> for <c>desktop</c>
         /// </summary>
         [JsonProperty("rank_absolute", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public int? RankAbsolute { get; set; }
@@ -35,7 +35,7 @@ namespace DataForSeo.Client.Models
         /// <summary>
         /// value converted to a requested currency
         /// <br/>indicates the exact value based on Google Fincance data at the time when our API pulled the results
-        /// <br/>note that exchange rates displayed in the currency_box element may be delayed according to the Google Finance disclaimer
+        /// <br/>note that exchange rates displayed in the <c>currency_box</c> element may be delayed according to <see href="https://www.google.com/intl/en_us/googlefinance/disclaimer/">the Google Finance disclaimer</see>
         /// </summary>
         [JsonProperty("converted_value", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public double? ConvertedValue { get; set; }
@@ -57,7 +57,7 @@ namespace DataForSeo.Client.Models
         /// date and time when the result was published
         /// <br/>in the UTC format: “yyyy-mm-dd hh-mm-ss +00:00”
         /// <br/>example:
-        /// <br/>2019-11-15 12:57:46 +00:00
+        /// <br/><c>2019-11-15 12:57:46 +00:00</c>
         /// </summary>
         [JsonProperty("timestamp", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string Timestamp { get; set; }

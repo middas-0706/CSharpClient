@@ -5,6 +5,6 @@
 
 | Name | Type | Description | Notes |
 |------------ | ------------- | ------------- | -------------|
-**Title** | **string** | title of the result in SERP |[optional]|
-**Url** | **string** | relevant URL in SERP |[optional]|
-**Items** | **IEnumerable<GoogleFlightsElement>** | historical SERPs and related data found in the database |[optional]|
+**Title** | **string** | <em>title of the result in SERP</em> |[optional]|
+**Url** | **string** | <em> relevant URL in SERP</em> |[optional]|
+**Items** | **IEnumerable<GoogleFlightsElement>** | <em>historical SERPs and related data found in the database</em> |[optional]|

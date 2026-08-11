@@ -6,4 +6,4 @@
 | Name | Type | Description | Notes |
 |------------ | ------------- | ------------- | -------------|
 **Type** | **string** | type of element |[optional]|
-**Items** | **IEnumerable<FaqBoxElement>** | contains arrays of specific images |[optional]|
+**Items** | **IEnumerable<FaqBoxElement>** | <em>contains arrays of specific images</em> |[optional]|

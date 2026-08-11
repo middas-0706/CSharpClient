@@ -5,4 +5,4 @@
 
 | Name | Type | Description | Notes |
 |------------ | ------------- | ------------- | -------------|
-**Result** | **IEnumerable<KeywordsDataClickstreamDataGlobalSearchVolumeLiveResultInfo>** | array of results |[optional]|
+**Result** | **IEnumerable<KeywordsDataClickstreamDataGlobalSearchVolumeLiveResultInfo>** | <em>array of results</em> |[optional]|

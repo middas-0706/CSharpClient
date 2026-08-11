@@ -5,4 +5,4 @@
 
 | Name | Type | Description | Notes |
 |------------ | ------------- | ------------- | -------------|
-**Tasks** | **IEnumerable<KeywordsDataDataforseoTrendsLocationsCountryTaskInfo>** | array of tasks |[optional]|
+**Tasks** | **IEnumerable<KeywordsDataDataforseoTrendsLocationsCountryTaskInfo>** | <em>array of tasks</em> |[optional]|

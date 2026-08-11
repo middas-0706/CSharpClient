@@ -11,15 +11,15 @@ namespace DataForSeo.Client.Models
 
         /// <summary>
         /// status of the crawling session
-        /// <br/>possible values: in_progress, finished
+        /// <br/>possible values: <c>in_progress</c>, <c>finished</c>
         /// </summary>
         [JsonProperty("crawl_progress", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string CrawlProgress { get; set; }
 
         /// <summary>
         /// error message
-        /// <br/>if the url you indicated returns a 404 status code or is not a valid URL, you will obtain 'error_message':'Screenshot is empty'
-        /// <br/>if no error is encountered, the value will be null
+        /// <br/>if the <c>url</c> you indicated returns a 404 status code or is not a valid URL, you will obtain <c>'error_message':'Screenshot is empty'</c>
+        /// <br/>if no error is encountered, the value will be <c>null</c>
         /// </summary>
         [JsonProperty("error_message", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string ErrorMessage { get; set; }

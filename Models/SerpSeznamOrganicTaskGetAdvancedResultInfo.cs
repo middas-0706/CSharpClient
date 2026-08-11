@@ -11,7 +11,7 @@ namespace DataForSeo.Client.Models
 
         /// <summary>
         /// keyword received in a POST array
-        /// <br/>the keyword is returned with decoded %## (plus symbol ‘+’ will be decoded to a space character)
+        /// <br/>the keyword is returned with decoded %## (plus symbol '+' will be decoded to a space character)
         /// </summary>
         [JsonProperty("keyword", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string Keyword { get; set; }
@@ -51,7 +51,7 @@ namespace DataForSeo.Client.Models
         /// date and time when the result was received
         /// <br/>in the UTC format: “yyyy-mm-dd hh-mm-ss +00:00”
         /// <br/>example:
-        /// <br/>2019-11-15 12:57:46 +00:00
+        /// <br/><c>2019-11-15 12:57:46 +00:00</c>
         /// </summary>
         [JsonProperty("datetime", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string Datetime { get; set; }
@@ -65,16 +65,16 @@ namespace DataForSeo.Client.Models
 
         /// <summary>
         /// search refinement chips
-        /// <br/>equals null
+        /// <br/>equals <c>null</c>
         /// </summary>
         [JsonProperty("refinement_chips", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public RefinementChipsInfo RefinementChips { get; set; }
 
         /// <summary>
         /// types of search results in SERP
-        /// <br/>contains types of search results (items) found in SERP.
+        /// <br/>contains types of search results (<c>items</c>) found in SERP.
         /// <br/>possible item types:
-        /// <br/>images, local_pack, organic, related_searches, top_stories, featured_snippet, video, shopping
+        /// <br/><see href="#images">images</see>, <see href="#local_pack">local_pack</see>, <see href="#organic">organic</see>, <see href="#related_searches">related_searches</see>, <see href="#top_stories">top_stories</see>, <see href="#featured_snippet">featured_snippet</see>, <see href="#video">video</see>, <see href="#shopping">shopping</see>
         /// </summary>
         [JsonProperty("item_types", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public IEnumerable<string> ItemTypes { get; set; }
@@ -93,14 +93,14 @@ namespace DataForSeo.Client.Models
         public long? PagesCount { get; set; }
 
         /// <summary>
-        /// the number of results returned in the items array
+        /// the number of results returned in the <c>items</c> array
         /// </summary>
         [JsonProperty("items_count", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public long? ItemsCount { get; set; }
 
         /// <summary>
         /// additional items present in the element
-        /// <br/>if there are none, equals null
+        /// <br/>if there are none, equals <c>null</c>
         /// </summary>
         [JsonProperty("items", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public IEnumerable<BaseSerpApiElementItem> Items { get; set; }

@@ -11,21 +11,21 @@ namespace DataForSeo.Client.Models
 
         /// <summary>
         /// keyword data aggregated for desktop devices
-        /// <br/>if there is no data, then the value is null
+        /// <br/>if there is no data, then the value is_<c>null</c>n
         /// </summary>
         [JsonProperty("desktop", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public IEnumerable<KeywordKpiItemInfo> Desktop { get; set; }
 
         /// <summary>
         /// keyword data aggregated for mobile devices
-        /// <br/>if there is no data, then the value is null
+        /// <br/>if there is no data, then the value is_<c>null</c>n
         /// </summary>
         [JsonProperty("mobile", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public IEnumerable<KeywordKpiItemInfo> Mobile { get; set; }
 
         /// <summary>
         /// keyword data aggregated for tablet devices
-        /// <br/>if there is no data, then the value is null
+        /// <br/>if there is no data, then the value is_<c>null</c>n
         /// </summary>
         [JsonProperty("tablet", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public IEnumerable<KeywordKpiItemInfo> Tablet { get; set; }

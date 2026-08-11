@@ -5,4 +5,4 @@
 
 | Name | Type | Description | Notes |
 |------------ | ------------- | ------------- | -------------|
-**Target** | **string** | target domain<br>required field<br>domain name of the website to analyze<br>Note: results will be returned for the specified domain only |[optional]|
+**Target** | **string** | <em>target domain</em><br><strong>required field</strong><br>domain name of the website to analyze<br><strong>Note:</strong> results will be returned for the specified domain only |[optional]|

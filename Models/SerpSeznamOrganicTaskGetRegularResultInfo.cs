@@ -11,7 +11,7 @@ namespace DataForSeo.Client.Models
 
         /// <summary>
         /// keyword received in a POST array
-        /// <br/>keyword is returned with decoded %## (plus symbol ‘+’ will be decoded to a space character)
+        /// <br/>keyword is returned with decoded %## (plus symbol '+' will be decoded to a space character)
         /// </summary>
         [JsonProperty("keyword", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string Keyword { get; set; }
@@ -51,7 +51,7 @@ namespace DataForSeo.Client.Models
         /// date and time when the result was received
         /// <br/>in the UTC format: “yyyy-mm-dd hh-mm-ss +00:00”
         /// <br/>example:
-        /// <br/>2019-11-15 12:57:46 +00:00
+        /// <br/><c>2019-11-15 12:57:46 +00:00</c>
         /// </summary>
         [JsonProperty("datetime", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string Datetime { get; set; }
@@ -65,19 +65,19 @@ namespace DataForSeo.Client.Models
 
         /// <summary>
         /// search refinement chips
-        /// <br/>equals null
+        /// <br/>equals <c>null</c>
         /// </summary>
         [JsonProperty("refinement_chips", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public RefinementChipsInfo RefinementChips { get; set; }
 
         /// <summary>
         /// types of search results found in SERP
-        /// <br/>contains types of all search results (items) found in the returned SERP
+        /// <br/>contains types of all search results (<c>items</c>) found in the returned SERP
         /// <br/>possible item types:
-        /// <br/>images, local_pack, organic, related_searches, top_stories, featured_snippet, video
+        /// <br/><c>images</c>, <c>local_pack</c>, <c>organic</c>, <c>related_searches</c>, <c>top_stories</c>, <c>featured_snippet</c>, <c>video</c>
         /// <br/>note that this array contains all types of search results found in the returned SERP;
-        /// <br/>however, this endpoint provides data for the organic type only
-        /// <br/>to get all items (inlcuding SERP features and rich snippets) found in the returned SERP, please refer to the Seznam Organiс Advanced SERP endpoint
+        /// <br/>however, this endpoint provides data for the <c>organic</c> type only
+        /// <br/>to get all items (inlcuding SERP features and rich snippets) found in the returned SERP, please refer to the <see href="/v3/serp/seznam/organic/task_get/advanced">Seznam Organiс Advanced SERP endpoint</see>
         /// </summary>
         [JsonProperty("item_types", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public IEnumerable<string> ItemTypes { get; set; }
@@ -96,7 +96,7 @@ namespace DataForSeo.Client.Models
         public long? PagesCount { get; set; }
 
         /// <summary>
-        /// the number of results returned in the items array
+        /// the number of results returned in the <c>items</c> array
         /// </summary>
         [JsonProperty("items_count", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public long? ItemsCount { get; set; }

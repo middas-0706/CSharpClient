@@ -5,4 +5,4 @@
 
 | Name | Type | Description | Notes |
 |------------ | ------------- | ------------- | -------------|
-**Tasks** | **IEnumerable<AiOptimizationAiKeywordDataLocationsAndLanguagesTaskInfo>** | array of tasks |[optional]|
+**Tasks** | **IEnumerable<AiOptimizationAiKeywordDataLocationsAndLanguagesTaskInfo>** | <em>array of tasks</em> |[optional]|

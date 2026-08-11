@@ -5,4 +5,4 @@
 
 | Name | Type | Description | Notes |
 |------------ | ------------- | ------------- | -------------|
-**Tasks** | **IEnumerable<OnPageKeywordDensityTaskInfo>** | array of tasks |[optional]|
+**Tasks** | **IEnumerable<OnPageKeywordDensityTaskInfo>** | <em>array of tasks</em> |[optional]|

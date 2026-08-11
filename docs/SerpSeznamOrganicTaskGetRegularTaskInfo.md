@@ -5,4 +5,4 @@
 
 | Name | Type | Description | Notes |
 |------------ | ------------- | ------------- | -------------|
-**Result** | **IEnumerable<SerpSeznamOrganicTaskGetRegularResultInfo>** | array of results |[optional]|
+**Result** | **IEnumerable<SerpSeznamOrganicTaskGetRegularResultInfo>** | <em>array of results</em> |[optional]|

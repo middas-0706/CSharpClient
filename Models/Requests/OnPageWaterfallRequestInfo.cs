@@ -12,9 +12,9 @@ namespace DataForSeo.Client.Models.Requests
         /// <summary>
         /// ID of the task
         /// <br/>required field
-        /// <br/>you can get this ID in the response of the Task POST endpoint
+        /// <br/>you can get this ID in the response of the <see href="/v3/on_page/task_post/">Task POST</see> endpoint
         /// <br/>example:
-        /// <br/>“07131248-1535-0216-1000-17384017ad04”
+        /// <br/>'07131248-1535-0216-1000-17384017ad04'
         /// </summary>
         [JsonProperty("id", Required = Required.DisallowNull, NullValueHandling = NullValueHandling.Ignore)]
         public string Id { get; set; }
@@ -32,7 +32,7 @@ namespace DataForSeo.Client.Models.Requests
         /// <br/>optional field
         /// <br/>the character limit is 255
         /// <br/>you can use this parameter to identify the task and match it with the result
-        /// <br/>you will find the specified tag value in the data object of the response
+        /// <br/>you will find the specified <c>tag</c> value in the <c>data</c> object of the response
         /// </summary>
         [JsonProperty("tag", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string Tag { get; set; }

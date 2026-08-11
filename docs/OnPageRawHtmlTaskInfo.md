@@ -5,4 +5,4 @@
 
 | Name | Type | Description | Notes |
 |------------ | ------------- | ------------- | -------------|
-**Result** | **IEnumerable<OnPageRawHtmlResultInfo>** | array of results |[optional]|
+**Result** | **IEnumerable<OnPageRawHtmlResultInfo>** | <em>array of results</em> |[optional]|

@@ -5,5 +5,5 @@
 
 | Name | Type | Description | Notes |
 |------------ | ------------- | ------------- | -------------|
-**JobFunctionId** | **long?** | ID of the job function |[optional]|
-**JobFunctionName** | **string** | name of the job function |[optional]|
+**JobFunctionId** | **long?** | <em>ID of the job function</em> |[optional]|
+**JobFunctionName** | **string** | <em>name of the job function</em> |[optional]|

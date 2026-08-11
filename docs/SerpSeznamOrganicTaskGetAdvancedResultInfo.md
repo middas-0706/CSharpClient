@@ -5,17 +5,17 @@
 
 | Name | Type | Description | Notes |
 |------------ | ------------- | ------------- | -------------|
-**Keyword** | **string** | keyword received in a POST array<br>the keyword is returned with decoded %## (plus symbol ‘+’ will be decoded to a space character) |[optional]|
+**Keyword** | **string** | <em>keyword received in a POST array<br></em><strong>the keyword is returned with decoded %## (plus symbol '+' will be decoded to a space character)</strong> |[optional]|
 **Type** | **string** | type of element |[optional]|
-**SeDomain** | **string** | search engine domain in a POST array |[optional]|
-**LocationCode** | **int?** | location code in a POST array |[optional]|
-**LanguageCode** | **string** | language code in a POST array |[optional]|
-**CheckUrl** | **string** | direct URL to search engine results<br>you can use it to make sure that we provided accurate results |[optional]|
-**Datetime** | **string** | date and time when the result was received<br>in the UTC format: “yyyy-mm-dd hh-mm-ss +00:00”<br>example:<br>2019-11-15 12:57:46 +00:00 |[optional]|
-**Spell** | **SpellInfo** | autocorrection of the search engine<br>if the search engine provided results for a keyword that was corrected, we will specify the keyword corrected by the search engine and the type of autocorrection |[optional]|
-**RefinementChips** | **RefinementChipsInfo** | search refinement chips<br>equals null |[optional]|
-**ItemTypes** | **IEnumerable<string>** | types of search results in SERP<br>contains types of search results (items) found in SERP.<br>possible item types:<br>images, local_pack, organic, related_searches, top_stories, featured_snippet, video, shopping |[optional]|
-**SeResultsCount** | **long?** | total number of results in SERP |[optional]|
-**PagesCount** | **long?** | total pages retrieved<br>total number of retrieved SERPs in the result |[optional]|
-**ItemsCount** | **long?** | the number of results returned in the items array |[optional]|
-**Items** | **IEnumerable<BaseSerpApiElementItem>** | additional items present in the element<br>if there are none, equals null |[optional]|
+**SeDomain** | **string** | <em>search engine domain in a POST array</em> |[optional]|
+**LocationCode** | **int?** | <em>location code in a POST array</em> |[optional]|
+**LanguageCode** | **string** | <em>language code in a POST array</em> |[optional]|
+**CheckUrl** | **string** | <em>direct URL to search engine results</em><br>you can use it to make sure that we provided accurate results |[optional]|
+**Datetime** | **string** | <em>date and time when the result was received</em><br>in the UTC format: “yyyy-mm-dd hh-mm-ss +00:00”<br>example:<br><code class='long-string'>2019-11-15 12:57:46 +00:00</code> |[optional]|
+**Spell** | **SpellInfo** | <em>autocorrection of the search engine</em><br>if the search engine provided results for a keyword that was corrected, we will specify the keyword corrected by the search engine and the type of autocorrection |[optional]|
+**RefinementChips** | **RefinementChipsInfo** | <em>search refinement chips</em><br>equals <code>null</code> |[optional]|
+**ItemTypes** | **IEnumerable<string>** | <em>types of search results in SERP</em><br>contains types of search results (<code>items</code>) found in SERP.<br>possible item types:<br><a href='#images'><code>images</code></a>, <a href='#local_pack'><code>local_pack</code></a>, <a href='#organic'><code>organic</code></a>, <a href='#related_searches'><code>related_searches</code></a>, <a href='#top_stories'><code>top_stories</code></a>, <a href='#featured_snippet'><code>featured_snippet</code></a>, <a href='#video'><code>video</code></a>, <a href='#shopping'><code>shopping</code></a> |[optional]|
+**SeResultsCount** | **long?** | <em> total number of results in SERP</em> |[optional]|
+**PagesCount** | **long?** | <em>total pages retrieved</em><br>total number of retrieved SERPs in the result |[optional]|
+**ItemsCount** | **long?** | <em>the number of results returned in the <strong><code>items</code></strong> array</em> |[optional]|
+**Items** | **IEnumerable<BaseSerpApiElementItem>** | <em>additional items present in the element</em><br>if there are none, equals <code>null</code> |[optional]|

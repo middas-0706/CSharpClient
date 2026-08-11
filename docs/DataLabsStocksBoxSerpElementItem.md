@@ -5,11 +5,11 @@
 
 | Name | Type | Description | Notes |
 |------------ | ------------- | ------------- | -------------|
-**Title** | **string** | title of the result in SERP |[optional]|
-**Source** | **string** | source of additional information about the result |[optional]|
-**Snippet** | **string** | text alongside the link title |[optional]|
-**Price** | **PriceInfo** | price of booking a place for the specified dates of stay |[optional]|
-**Url** | **string** | relevant URL in SERP |[optional]|
-**Domain** | **string** | domain in SERP |[optional]|
-**Table** | **Table** | table element |[optional]|
-**Graph** | **Graph** | contains data provided in the graph of the element |[optional]|
+**Title** | **string** | <em>title of the result in SERP</em> |[optional]|
+**Source** | **string** | <em>source of additional information about the result</em> |[optional]|
+**Snippet** | **string** | <em>text alongside the link title</em> |[optional]|
+**Price** | **PriceInfo** | <em>price of booking a place for the specified dates of stay</em> |[optional]|
+**Url** | **string** | <em> relevant URL in SERP</em> |[optional]|
+**Domain** | **string** | <em>domain in SERP</em> |[optional]|
+**Table** | **Table** | <em>table element</em> |[optional]|
+**Graph** | **Graph** | <em>contains data provided in the graph of the element</em> |[optional]|

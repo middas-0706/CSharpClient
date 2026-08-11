@@ -22,6 +22,18 @@ namespace DataForSeo.Client.Models
         public string Title { get; set; }
 
         /// <summary>
+        /// source URL
+        /// </summary>
+        [JsonProperty("url", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
+        public string Url { get; set; }
+
+        /// <summary>
+        /// domain where a link points
+        /// </summary>
+        [JsonProperty("domain", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
+        public string Domain { get; set; }
+
+        /// <summary>
         /// link description
         /// </summary>
         [JsonProperty("description", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
@@ -53,12 +65,19 @@ namespace DataForSeo.Client.Models
         public PriceInfo Price { get; set; }
 
         /// <summary>
-        /// the item’s rating 
+        /// the item's rating 
         /// <br/>the popularity rate based on reviews and displayed in SERP;
-        /// <br/>if there is none, equals null
+        /// <br/>if there is none, equals <c>null</c>
         /// </summary>
         [JsonProperty("rating", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public RatingInfo Rating { get; set; }
+
+        /// <summary>
+        /// identifiers of the product
+        /// <br/>can include the following identifiers: <c>product_id</c>, <c>data_docid</c>, <c>gid</c>
+        /// </summary>
+        [JsonProperty("product_identifiers", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
+        public ProductIdentifiers ProductIdentifiers { get; set; }
 
         private IDictionary<string, object> _additionalProperties;
 

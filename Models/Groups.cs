@@ -12,7 +12,7 @@ namespace DataForSeo.Client.Models
         /// <summary>
         /// id of the technology group
         /// <br/>example:
-        /// <br/>marketing, sales
+        /// <br/><c>marketing</c>, <c>sales</c>
         /// </summary>
         [JsonProperty("id", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string Id { get; set; }

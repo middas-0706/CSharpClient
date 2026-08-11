@@ -5,4 +5,4 @@
 
 | Name | Type | Description | Notes |
 |------------ | ------------- | ------------- | -------------|
-**Tasks** | **IEnumerable<OnPageForceStopTaskInfo>** | array of tasks |[optional]|
+**Tasks** | **IEnumerable<OnPageForceStopTaskInfo>** | <em>array of tasks</em> |[optional]|

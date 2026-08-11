@@ -5,4 +5,4 @@
 
 | Name | Type | Description | Notes |
 |------------ | ------------- | ------------- | -------------|
-**Tasks** | **IEnumerable<DomainAnalyticsTechnologiesTechnologyStatsLiveTaskInfo>** | array of tasks |[optional]|
+**Tasks** | **IEnumerable<DomainAnalyticsTechnologiesTechnologyStatsLiveTaskInfo>** | <em>array of tasks</em> |[optional]|

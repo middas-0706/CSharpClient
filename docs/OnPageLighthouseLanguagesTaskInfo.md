@@ -5,4 +5,4 @@
 
 | Name | Type | Description | Notes |
 |------------ | ------------- | ------------- | -------------|
-**Result** | **IEnumerable<OnPageLighthouseLanguagesResultInfo>** | array of results |[optional]|
+**Result** | **IEnumerable<OnPageLighthouseLanguagesResultInfo>** | <em>array of results</em> |[optional]|

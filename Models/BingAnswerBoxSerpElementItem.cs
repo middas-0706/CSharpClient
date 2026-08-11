@@ -11,7 +11,7 @@ namespace DataForSeo.Client.Models
 
         /// <summary>
         /// text
-        /// <br/>if there is none, equals null
+        /// <br/>            if there is none, equals <c>null</c>
         /// </summary>
         [JsonProperty("text", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public IEnumerable<string> Text { get; set; }

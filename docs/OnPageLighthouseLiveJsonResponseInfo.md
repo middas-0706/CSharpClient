@@ -5,4 +5,4 @@
 
 | Name | Type | Description | Notes |
 |------------ | ------------- | ------------- | -------------|
-**Tasks** | **IEnumerable<OnPageLighthouseLiveJsonTaskInfo>** |  |[optional]|
+**Tasks** | **IEnumerable<OnPageLighthouseLiveJsonTaskInfo>** | <em>array of tasks</em> |[optional]|

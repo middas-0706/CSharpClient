@@ -16,7 +16,7 @@ namespace DataForSeo.Client.Models
         public string PageUrl { get; set; }
 
         /// <summary>
-        /// Time To Interactive (TTI) metric
+        /// <see href="https://web.dev/interactive/">Time To Interactive (TTI)</see> metric
         /// <br/>the time it takes until the user can interact with a page (in milliseconds)
         /// </summary>
         [JsonProperty("time_to_interactive", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
@@ -51,7 +51,7 @@ namespace DataForSeo.Client.Models
         public int? RequestSentTime { get; set; }
 
         /// <summary>
-        /// time to first byte (TTFB) in milliseconds
+        /// time to first byte <see href="https://en.wikipedia.org/wiki/Time_to_first_byte">(TTFB)</see> in milliseconds
         /// </summary>
         [JsonProperty("waiting_time", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public int? WaitingTime { get; set; }

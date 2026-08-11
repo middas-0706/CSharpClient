@@ -6,19 +6,19 @@ using DataForSeo.Client.Models;
 namespace DataForSeo.Client.Models
 {
     [JsonConverter(typeof(JsonInheritanceConverter), "type")]
-    [JsonInheritance("paid", typeof(DataLabsPaidSerpElementItem))]
-    [JsonInheritance("featured_snippet", typeof(DataLabsFeaturedSnippetSerpElementItem))]
     [JsonInheritance("organic", typeof(DataLabsOrganicSerpElementItem))]
+    [JsonInheritance("local_pack", typeof(DataLabsLocalPackSerpElementItem))]
+    [JsonInheritance("paid", typeof(DataLabsPaidSerpElementItem))]
     [JsonInheritance("answer_box", typeof(DataLabsAnswerBoxSerpElementItem))]
     [JsonInheritance("carousel", typeof(DataLabsCarouselSerpElementItem))]
     [JsonInheritance("multi_carousel", typeof(DataLabsMultiCarouselSerpElementItem))]
+    [JsonInheritance("featured_snippet", typeof(DataLabsFeaturedSnippetSerpElementItem))]
     [JsonInheritance("google_flights", typeof(DataLabsGoogleFlightsSerpElementItem))]
     [JsonInheritance("google_reviews", typeof(DataLabsGoogleReviewsSerpElementItem))]
     [JsonInheritance("google_posts", typeof(DataLabsGooglePostsSerpElementItem))]
     [JsonInheritance("images", typeof(DataLabsImagesSerpElementItem))]
     [JsonInheritance("jobs", typeof(DataLabsJobsSerpElementItem))]
     [JsonInheritance("knowledge_graph", typeof(DataLabsKnowledgeGraphSerpElementItem))]
-    [JsonInheritance("local_pack", typeof(DataLabsLocalPackSerpElementItem))]
     [JsonInheritance("hotels_pack", typeof(DataLabsHotelsPackSerpElementItem))]
     [JsonInheritance("map", typeof(DataLabsMapSerpElementItem))]
     [JsonInheritance("people_also_ask", typeof(DataLabsPeopleAlsoAskSerpElementItem))]
@@ -63,29 +63,29 @@ namespace DataForSeo.Client.Models
         public string SeType { get; set; }
 
         /// <summary>
-        /// position within a group of elements with identical type values
-        /// <br/>positions of elements with different type values are omitted from rank_group
+        /// position within a group of elements with identical <c>type</c> values
+        /// <br/>            positions of elements with different <c>type</c> values are omitted from <c>rank_group</c>
         /// </summary>
         [JsonProperty("rank_group", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public int? RankGroup { get; set; }
 
         /// <summary>
         /// absolute rank in SERP
-        /// <br/>absolute position among all the elements in SERP
+        /// <br/>            absolute position among all the elements in SERP
         /// </summary>
         [JsonProperty("rank_absolute", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public int? RankAbsolute { get; set; }
 
         /// <summary>
         /// the alignment of the element in SERP
-        /// <br/>can take the following values:
-        /// <br/>left, right
+        /// <br/>            can take the following values:
+        /// <br/>            <c>left</c>, <c>right</c>
         /// </summary>
         [JsonProperty("position", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string Position { get; set; }
 
         /// <summary>
-        /// the XPath of the element
+        /// the <see href="https://en.wikipedia.org/wiki/XPath">XPath</see> of the element
         /// </summary>
         [JsonProperty("xpath", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string Xpath { get; set; }

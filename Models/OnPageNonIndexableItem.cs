@@ -11,7 +11,7 @@ namespace DataForSeo.Client.Models
 
         /// <summary>
         /// the reason why the page is non-indexable
-        /// <br/>can take the following values: robots_txt, meta_tag, http_header, attribute, too_many_redirects
+        /// <br/>can take the following values: <c>robots_txt</c>, <c>meta_tag</c>, <c>http_header</c>, <c>attribute</c>, <c>too_many_redirects</c>
         /// </summary>
         [JsonProperty("reason", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string Reason { get; set; }

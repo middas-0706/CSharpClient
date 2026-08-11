@@ -5,4 +5,4 @@
 
 | Name | Type | Description | Notes |
 |------------ | ------------- | ------------- | -------------|
-**Tasks** | **IEnumerable<SerpSeznamOrganicTaskGetRegularTaskInfo>** | array of tasks |[optional]|
+**Tasks** | **IEnumerable<SerpSeznamOrganicTaskGetRegularTaskInfo>** | <em>array of tasks</em> |[optional]|

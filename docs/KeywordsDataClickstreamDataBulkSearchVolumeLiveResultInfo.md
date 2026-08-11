@@ -5,6 +5,6 @@
 
 | Name | Type | Description | Notes |
 |------------ | ------------- | ------------- | -------------|
-**LocationCode** | **int?** | location code in a POST array |[optional]|
-**ItemsCount** | **long?** | the number of results returned in the items array |[optional]|
-**Items** | **IEnumerable<KeywordsDataClickstreamDataSearchVolumeLiveItem>** | contains keywords and related data |[optional]|
+**LocationCode** | **int?** | <em>location code in a POST array</em> |[optional]|
+**ItemsCount** | **long?** | <em>the number of results returned in the <code>items</code> array</em> |[optional]|
+**Items** | **IEnumerable<KeywordsDataClickstreamDataSearchVolumeLiveItem>** | <em>contains keywords and related data</em> |[optional]|

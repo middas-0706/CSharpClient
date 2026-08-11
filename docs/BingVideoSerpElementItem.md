@@ -5,4 +5,4 @@
 
 | Name | Type | Description | Notes |
 |------------ | ------------- | ------------- | -------------|
-**Items** | **IEnumerable<VideoElement>** | contains results featured in the ‘hotels_pack’ element of SERP |[optional]|
+**Items** | **IEnumerable<VideoElement>** | <em>contains results featured in the 'hotels_pack' element of SERP</em> |[optional]|

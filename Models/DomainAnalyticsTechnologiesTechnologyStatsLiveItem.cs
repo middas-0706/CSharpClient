@@ -44,7 +44,7 @@ namespace DataForSeo.Client.Models
         /// <summary>
         /// distribution of websites by backlink rank
         /// <br/>contains domain rank ranges and number of websites per range
-        /// <br/>learn more about rank and how it is calculated in this help center article
+        /// <br/>learn more about rank and how it is calculated in <see href="https://dataforseo.com/help-center/what_is_rank_in_backlinks_api">this help center article</see>
         /// </summary>
         [JsonProperty("domains_rank", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public IDictionary<string, long?> DomainsRank { get; set; }

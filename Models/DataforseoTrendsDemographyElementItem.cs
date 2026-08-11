@@ -19,7 +19,7 @@ namespace DataForSeo.Client.Models
         /// <summary>
         /// comparison of demographic data on keyword popularity for the specified parameters
         /// <br/>conains keyword popularity data by age and gender
-        /// <br/>if you specified a single keyword, the value will be null
+        /// <br/>if you specified a single keyword, the value will be <c>null</c>
         /// </summary>
         [JsonProperty("demography_comparison", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public DemographyComparisonInfo DemographyComparison { get; set; }

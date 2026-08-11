@@ -5,7 +5,7 @@
 
 | Name | Type | Description | Notes |
 |------------ | ------------- | ------------- | -------------|
-**Id** | **string** | id of the technology category<br>example:<br>crm, cart_abandonment |[optional]|
-**Path** | **string** | path to the technology category<br>example:<br>user_generated_content.content_curation |[optional]|
-**Title** | **string** | title of the technology category |[optional]|
-**Technologies** | **IEnumerable<string>** | list of technologies in this category<br>example:<br>'Salesforce', 'CareCart' |[optional]|
+**Id** | **string** | <em>id of the technology category</em><br>example:<br><code>crm</code>, <code>cart_abandonment</code> |[optional]|
+**Path** | **string** | <em>path to the technology category</em><br>example:<br><code>user_generated_content.content_curation</code> |[optional]|
+**Title** | **string** | <em>title of the technology category</em> |[optional]|
+**Technologies** | **IEnumerable<string>** | <em>list of technologies in this category</em><br>example:<br><code>'Salesforce'</code>, <code>'CareCart'</code> |[optional]|

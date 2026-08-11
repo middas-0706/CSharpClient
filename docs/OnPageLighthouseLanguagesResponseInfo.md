@@ -5,4 +5,4 @@
 
 | Name | Type | Description | Notes |
 |------------ | ------------- | ------------- | -------------|
-**Tasks** | **IEnumerable<OnPageLighthouseLanguagesTaskInfo>** | array of tasks |[optional]|
+**Tasks** | **IEnumerable<OnPageLighthouseLanguagesTaskInfo>** | <em>array of tasks</em> |[optional]|

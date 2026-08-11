@@ -8,6 +8,12 @@ namespace DataForSeo.Client.Models
 
     public class OnPageLighthouseLiveJsonTaskInfo  : BaseResponseTaskInfo 
     {
+
+        /// <summary>
+        /// results of Lighthouse audit
+        /// <br/>this array will include data according to the parameters you specified when setting a task;
+        /// <br/>all fields and their descriptions are available in the official documentation <see href="https://github.com/GoogleChrome/lighthouse/blob/master/readme.md">by this link.</see>
+        /// </summary>
         [JsonProperty("result", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public IEnumerable<IDictionary<string, object>> Result { get; set; }
 

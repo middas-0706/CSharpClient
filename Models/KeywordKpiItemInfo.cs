@@ -12,20 +12,20 @@ namespace DataForSeo.Client.Models
         /// <summary>
         /// represents the position of the relevant ad in SERP
         /// <br/>can take the following values:
-        /// <br/>FirstPage1: The first ad to appear on the right side of the first search results page
-        /// <br/>FirstPage2: The second ad to appear on the right side of the first search results page
-        /// <br/>FirstPage3: The third ad to appear on the right side of the first search results page
-        /// <br/>FirstPage4: The fourth ad to appear on the right side of the first search results page
-        /// <br/>FirstPage5: The fifth ad to appear on the right side of the first search results page
-        /// <br/>FirstPage6: The sixth ad to appear on the right side of the first search results page
-        /// <br/>FirstPage7: The seventh ad to appear on the right side of the first search results page
-        /// <br/>FirstPage8: The eighth ad to appear on the right side of the first search results page
-        /// <br/>FirstPage9: The ninth ad to appear on the right side of the first search results page
-        /// <br/>FirstPage10: The tenth ad to appear on the right side of the first search results page
-        /// <br/>MainLine1: The first ad to appear at the top of the search results page
-        /// <br/>MainLine2: The second ad to appear at the top of the search results page
-        /// <br/>MainLine3: The third ad to appear at the top of the search results page
-        /// <br/>MainLine4: The fourth ad to appear at the top of the search results page
+        /// <br/><c>FirstPage1</c>: The first ad to appear on the right side of the first search results page
+        /// <br/><c>FirstPage2</c>: The second ad to appear on the right side of the first search results page
+        /// <br/><c>FirstPage3</c>: The third ad to appear on the right side of the first search results page
+        /// <br/><c>FirstPage4</c>: The fourth ad to appear on the right side of the first search results page
+        /// <br/><c>FirstPage5</c>: The fifth ad to appear on the right side of the first search results page
+        /// <br/><c>FirstPage6</c>: The sixth ad to appear on the right side of the first search results page
+        /// <br/><c>FirstPage7</c>: The seventh ad to appear on the right side of the first search results page
+        /// <br/><c>FirstPage8</c>: The eighth ad to appear on the right side of the first search results page
+        /// <br/><c>FirstPage9</c>: The ninth ad to appear on the right side of the first search results page
+        /// <br/><c>FirstPage10</c>: The tenth ad to appear on the right side of the first search results page
+        /// <br/><c>MainLine1</c>: The first ad to appear at the top of the search results page
+        /// <br/><c>MainLine2</c>: The second ad to appear at the top of the search results page
+        /// <br/><c>MainLine3</c>: The third ad to appear at the top of the search results page
+        /// <br/><c>MainLine4</c>: The fourth ad to appear at the top of the search results page
         /// </summary>
         [JsonProperty("ad_position", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string AdPosition { get; set; }

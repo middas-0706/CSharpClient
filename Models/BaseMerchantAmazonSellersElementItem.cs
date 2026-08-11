@@ -19,8 +19,8 @@ namespace DataForSeo.Client.Models
         public string Type { get; set; }
 
         /// <summary>
-        /// position within a group of elements with identical type values
-        /// <br/>positions of elements with different type values are omitted from rank_group
+        /// position within a group of elements with identical <c>type</c> values
+        /// <br/>positions of elements with different <c>type</c> values are omitted from <c>rank_group</c>
         /// </summary>
         [JsonProperty("rank_group", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public int? RankGroup { get; set; }
@@ -35,13 +35,13 @@ namespace DataForSeo.Client.Models
         /// <summary>
         /// alignment of the element in SERP
         /// <br/>possible values:
-        /// <br/>left, right
+        /// <br/><c>left</c>, <c>right</c>
         /// </summary>
         [JsonProperty("position", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string Position { get; set; }
 
         /// <summary>
-        /// XPath of the element
+        /// <see href="https://en.wikipedia.org/wiki/XPath">XPath</see> of the element
         /// </summary>
         [JsonProperty("xpath", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string Xpath { get; set; }
@@ -53,7 +53,7 @@ namespace DataForSeo.Client.Models
         public string SellerName { get; set; }
 
         /// <summary>
-        /// url forwarding to the seller’s page on Amazon
+        /// url forwarding to the seller's page on Amazon
         /// </summary>
         [JsonProperty("seller_url", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string SellerUrl { get; set; }
@@ -66,7 +66,7 @@ namespace DataForSeo.Client.Models
 
         /// <summary>
         /// product pricing details
-        /// <br/>if there are no details, the value will be null
+        /// <br/>if there are no details, the value will be <c>null</c>
         /// </summary>
         [JsonProperty("price", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public PriceInfo Price { get; set; }

@@ -11,9 +11,9 @@ namespace DataForSeo.Client.Models
 
         /// <summary>
         /// group rank in SERP
-        /// <br/>position within a group of elements with identical type values;
-        /// <br/>positions of elements with different type values are omitted from rank_group;
-        /// <br/>always equals 0 for desktop
+        /// <br/>position within a group of elements with identical <c>type</c> values;
+        /// <br/>positions of elements with different <c>type</c> values are omitted from <c>rank_group</c>;
+        /// <br/>always equals <c>0</c> for <c>desktop</c>
         /// </summary>
         [JsonProperty("rank_group", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public int? RankGroup { get; set; }
@@ -21,7 +21,7 @@ namespace DataForSeo.Client.Models
         /// <summary>
         /// absolute rank in SERP
         /// <br/>absolute position among all the elements in SERP
-        /// <br/>always equals 0 for desktop
+        /// <br/>always equals <c>0</c> for <c>desktop</c>
         /// </summary>
         [JsonProperty("rank_absolute", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public int? RankAbsolute { get; set; }
@@ -35,7 +35,7 @@ namespace DataForSeo.Client.Models
         /// <summary>
         /// google defined data attribute ID
         /// <br/>example:
-        /// <br/>action:listen_artist
+        /// <br/><c>action:listen_artist</c>
         /// </summary>
         [JsonProperty("data_attrid", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string DataAttrid { get; set; }

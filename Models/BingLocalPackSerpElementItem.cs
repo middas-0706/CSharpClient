@@ -48,22 +48,22 @@ namespace DataForSeo.Client.Models
         public bool? IsPaid { get; set; }
 
         /// <summary>
-        /// the item’s rating 
-        /// <br/>the popularity rate based on reviews and displayed in SERP
+        /// the item's rating 
+        /// <br/>            the popularity rate based on reviews and displayed in SERP
         /// </summary>
         [JsonProperty("rating", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public RatingInfo Rating { get; set; }
 
         /// <summary>
         /// bing-defined client id
-        /// <br/>unique id of a local establishment
+        /// <br/>            unique id of a local establishment
         /// </summary>
         [JsonProperty("cid", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string Cid { get; set; }
 
         /// <summary>
         /// business listing is claimed
-        /// <br/>if true, the business listing is claimed by the owner or representative
+        /// <br/>            if <c>true</c>, the business listing is claimed by the owner or representative
         /// </summary>
         [JsonProperty("is_claimed", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public bool? IsClaimed { get; set; }

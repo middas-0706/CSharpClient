@@ -10,6 +10,10 @@ namespace DataForSeo.Client.Models
     {
         [JsonProperty("content_duplicates", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public IDictionary<string, string> ContentDuplicates { get; set; }
+
+        /// <summary>
+        /// filters available for the backlinks endpoint:
+        /// </summary>
         [JsonProperty("backlinks", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public IDictionary<string, string> Backlinks { get; set; }
         [JsonProperty("domain_pages", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
@@ -20,6 +24,10 @@ namespace DataForSeo.Client.Models
         public IDictionary<string, string> ReferringDomains { get; set; }
         [JsonProperty("domain_intersection", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public IDictionary<string, string> DomainIntersection { get; set; }
+
+        /// <summary>
+        /// filters available for the page intersection endpoint:
+        /// </summary>
         [JsonProperty("page_intersection", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public IDictionary<string, string> PageIntersection { get; set; }
         [JsonProperty("referring_networks", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]

@@ -11,7 +11,7 @@ namespace DataForSeo.Client.Models
 
         /// <summary>
         /// location code in a POST array
-        /// <br/>if there is no data, then the value is null
+        /// <br/>if there is no data, then the value is <c>null</c>
         /// </summary>
         [JsonProperty("location_code", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public int? LocationCode { get; set; }
@@ -19,20 +19,20 @@ namespace DataForSeo.Client.Models
         /// <summary>
         /// language code in a POST array
         /// <br/>Note:if the keyword in the POST array appears to be misspelled, data will be returned for the correctly spelled keyword;
-        /// <br/>we use the functionality of Google Ads API to check and validate the spelling of keywords, learn more by this link
+        /// <br/>we use the functionality of Google Ads API to check and validate the spelling of keywords, <see href="https://support.google.com/google-ads/answer/7476658">learn more by this link</see>
         /// </summary>
         [JsonProperty("language_code", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string LanguageCode { get; set; }
 
         /// <summary>
-        /// indicates if the use_clickstream parameter is active
-        /// <br/>possible values: true, false
+        /// indicates if the <c>use_clickstream</c> parameter is active
+        /// <br/>possible values: <c>true</c>, <c>false</c>
         /// </summary>
         [JsonProperty("use_clickstream", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public bool? UseClickstream { get; set; }
 
         /// <summary>
-        /// ithe number of results returned in the items array
+        /// ithe number of results returned in the <c>items</c> array
         /// </summary>
         [JsonProperty("items_count", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public int? ItemsCount { get; set; }

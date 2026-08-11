@@ -6,9 +6,9 @@
 | Name | Type | Description | Notes |
 |------------ | ------------- | ------------- | -------------|
 **Type** | **string** | type of element |[optional]|
-**Position** | **string** | the alignment of the element in SERP<br>can take the following values:<br>left, right |[optional]|
-**Source** | **string** | reference source name or title |[optional]|
-**Domain** | **string** | domain name of the reference |[optional]|
-**Url** | **string** | link URL |[optional]|
-**Title** | **string** | link anchor text |[optional]|
-**Text** | **string** | text of the component |[optional]|
+**Position** | **string** | <em>the alignment of the element in SERP</em><br>can take the following values:<br><code>left</code>, <code>right</code> |[optional]|
+**Source** | **string** | <em>reference source name or title</em> |[optional]|
+**Domain** | **string** | <em>domain name of the reference</em> |[optional]|
+**Url** | **string** | <em>link URL</em> |[optional]|
+**Title** | **string** | <em>link anchor text</em> |[optional]|
+**Text** | **string** | <em>text of the component</em> |[optional]|

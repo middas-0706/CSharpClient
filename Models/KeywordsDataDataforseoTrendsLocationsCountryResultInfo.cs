@@ -24,12 +24,9 @@ namespace DataForSeo.Client.Models
         /// <summary>
         /// the code of the superordinate location
         /// <br/>example:
-        /// <br/>'location_code': 9041134,
-        /// <br/>'location_name': 'Vienna International Airport,Lower Austria,Austria',
-        /// <br/>'location_code_parent': 20044
-        /// <br/>where location_code_parent corresponds to:
-        /// <br/>'location_code': 20044,
-        /// <br/>'location_name': 'Lower Austria,Austria'
+        /// <br/><c>'location_code': 9041134,'location_name': 'Vienna International Airport,Lower Austria,Austria','location_code_parent': 20044</c>
+        /// <br/>where <c>location_code_parent</c> corresponds to:
+        /// <br/><c>'location_code': 20044,'location_name': 'Lower Austria,Austria'</c>
         /// </summary>
         [JsonProperty("location_code_parent", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public int? LocationCodeParent { get; set; }
@@ -42,14 +39,14 @@ namespace DataForSeo.Client.Models
 
         /// <summary>
         /// location type
-        /// <br/>possible values according to Google’s target types
+        /// <br/>possible values according to <see href="https://developers.google.com/adwords/api/docs/appendix/geotargeting">Google’s target types</see>
         /// </summary>
         [JsonProperty("location_type", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string LocationType { get; set; }
 
         /// <summary>
         /// DataForSEO trends location identifier
-        /// <br/>you can use this field for matching obtained results with the location_code parameter specified in the request
+        /// <br/>you can use this field for matching obtained results with the <c>location_code</c> parameter specified in the request
         /// </summary>
         [JsonProperty("geo_id", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string GeoId { get; set; }

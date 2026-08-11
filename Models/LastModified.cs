@@ -11,30 +11,30 @@ namespace DataForSeo.Client.Models
 
         /// <summary>
         /// date and time when the header was last modified
-        /// <br/>in the UTC format: “yyyy-mm-dd hh-mm-ss +00:00”
+        /// <br/>in the UTC format: 'yyyy-mm-dd hh-mm-ss +00:00'
         /// <br/>example:
-        /// <br/>2019-11-15 12:57:46 +00:00
-        /// <br/>if there is no data, the value will be null
+        /// <br/><c>2019-11-15 12:57:46 +00:00</c>
+        /// <br/>if there is no data, the value will be <c>null</c>
         /// </summary>
         [JsonProperty("header", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string Header { get; set; }
 
         /// <summary>
         /// date and time when the sitemap was last modified
-        /// <br/>in the UTC format: “yyyy-mm-dd hh-mm-ss +00:00”
+        /// <br/>in the UTC format: 'yyyy-mm-dd hh-mm-ss +00:00'
         /// <br/>example:
-        /// <br/>2019-11-15 12:57:46 +00:00
-        /// <br/>if there is no data, the value will be null
+        /// <br/><c>2019-11-15 12:57:46 +00:00</c>
+        /// <br/>if there is no data, the value will be <c>null</c>
         /// </summary>
         [JsonProperty("sitemap", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string Sitemap { get; set; }
 
         /// <summary>
         /// date and time when the meta tag was last modified
-        /// <br/>in the UTC format: “yyyy-mm-dd hh-mm-ss +00:00”
+        /// <br/>in the UTC format: 'yyyy-mm-dd hh-mm-ss +00:00'
         /// <br/>example:
-        /// <br/>2019-11-15 12:57:46 +00:00
-        /// <br/>if there is no data, the value will be null
+        /// <br/><c>2019-11-15 12:57:46 +00:00</c>
+        /// <br/>if there is no data, the value will be <c>null</c>
         /// </summary>
         [JsonProperty("meta_tag", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string MetaTag { get; set; }

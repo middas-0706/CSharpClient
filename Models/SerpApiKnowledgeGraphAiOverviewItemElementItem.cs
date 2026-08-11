@@ -11,22 +11,22 @@ namespace DataForSeo.Client.Models
 
         /// <summary>
         /// indicates whether the element is loaded asynchronously
-        /// <br/>if true, the ai_overview element is loaded asynchronously;
-        /// <br/>if false, the ai_overview element is loaded from cache;
-        /// <br/>to obtain the content of ai_overview elements, use the load_async_ai_overview parameter in the POST request
+        /// <br/>if <c>true</c>, the <c>ai_overview</c> element is loaded asynchronously;
+        /// <br/>if <c>false</c>, the <c>ai_overview</c> element is loaded from cache;
+        /// <br/>to obtain the content of <c>ai_overview</c> elements, use the <c>load_async_ai_overview</c> parameter in the POST request
         /// </summary>
         [JsonProperty("asynchronous_ai_overview", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public bool? AsynchronousAiOverview { get; set; }
 
         /// <summary>
-        /// contains results featured in the ‘hotels_pack’ element of SERP
+        /// contains results featured in the 'hotels_pack' element of SERP
         /// </summary>
         [JsonProperty("items", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public IEnumerable<BaseSerpApiAiOverviewElementItem> Items { get; set; }
 
         /// <summary>
         /// additional references relevant to the item
-        /// <br/>includes references to webpages that may have been used to generate the ai_overview
+        /// <br/>includes references to webpages that may have been used to generate the <c>ai_overview</c>
         /// </summary>
         [JsonProperty("references", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public IEnumerable<AiModeAiOverviewReferenceInfo> References { get; set; }

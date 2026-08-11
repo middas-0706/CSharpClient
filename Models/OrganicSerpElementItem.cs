@@ -63,7 +63,7 @@ namespace DataForSeo.Client.Models
 
         /// <summary>
         /// URL to a similar search
-        /// <br/>URL to a new search for the same keyword(s) on related sites
+        /// <br/>URL to a new search for the same keyword(s) <see href="https://support.google.com/websearch/answer/2466433?hl=en#:~:text=Search%20for%20related%20sites">on related sites</see>
         /// </summary>
         [JsonProperty("related_search_url", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string RelatedSearchUrl { get; set; }
@@ -75,21 +75,21 @@ namespace DataForSeo.Client.Models
         public string WebsiteName { get; set; }
 
         /// <summary>
-        /// indicates whether the element contains an image
-        /// <br/>Note: this check no longer appears in SERP
+        /// indicates whether the element contains an_<c>image</c>
+        /// <br/>Note: this check no longer appears in SERPn
         /// </summary>
         [JsonProperty("is_image", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public bool? IsImage { get; set; }
 
         /// <summary>
-        /// indicates whether the element contains a video
+        /// indicates whether the element contains a <c>video</c>
         /// <br/>Note: this check no longer appears in SERP
         /// </summary>
         [JsonProperty("is_video", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public bool? IsVideo { get; set; }
 
         /// <summary>
-        /// indicates whether the element is a featured_snippet
+        /// indicates whether the element is a <c>featured_snippet</c>
         /// <br/>Note: this check no longer appears in SERP
         /// </summary>
         [JsonProperty("is_featured_snippet", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
@@ -112,13 +112,13 @@ namespace DataForSeo.Client.Models
         /// <summary>
         /// array of properties detected for the SERP element
         /// <br/>lists the properties that are true for this element
-        /// <br/>each value in the array represents a detected property
+        /// <br/>each value in the array represents a detected property 
         /// <br/>example:
-        /// <br/>if is_image is present in the array, the element contains an image
+        /// <br/>if <c>is_image</c> is present in the array, the element contains an image
         /// <br/>possible values in the array:
-        /// <br/>is_image, is_video, is_featured_snippet, amp_version, is_malicious, is_web_story, is_highly_cited
-        /// <br/>equals null if none of the properties are detected for the element
-        /// <br/>learn more about the checks array in this Help Center article
+        /// <br/><c>is_image</c>, <c>is_video</c>, <c>is_featured_snippet</c>, <c>amp_version</c>, <c>is_malicious</c>, <c>is_web_story</c>, <c>is_highly_cited</c>
+        /// <br/>equals <c>null</c> if none of the properties are detected for the element
+        /// <br/>learn more about the <c>checks</c> array in <see href="https://dataforseo.com/help-center/whats-a-checks-array-in-the-google-organic-serp-api">this Help Center article</see>
         /// </summary>
         [JsonProperty("checks", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public IEnumerable<string> Checks { get; set; }
@@ -137,7 +137,7 @@ namespace DataForSeo.Client.Models
 
         /// <summary>
         /// images of the element
-        /// <br/>if there are none, equals null
+        /// <br/>if there are none, equals <c>null</c>
         /// </summary>
         [JsonProperty("images", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public IEnumerable<AiModeImagesElementInfo> Images { get; set; }
@@ -150,9 +150,9 @@ namespace DataForSeo.Client.Models
         public bool? AmpVersion { get; set; }
 
         /// <summary>
-        /// the item’s rating 
+        /// the item's rating 
         /// <br/>the popularity rate based on reviews and displayed in SERP
-        /// <br/>if there is none, equals null
+        /// <br/>if there is none, equals <c>null</c>
         /// </summary>
         [JsonProperty("rating", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public RatingInfo Rating { get; set; }
@@ -160,13 +160,13 @@ namespace DataForSeo.Client.Models
         /// <summary>
         /// pricing details
         /// <br/>contains the pricing details of the product or service featured in the result;
-        /// <br/>if there is none, equals null
+        /// <br/>if there is none, equals <c>null</c>
         /// </summary>
         [JsonProperty("price", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public PriceInfo Price { get; set; }
 
         /// <summary>
-        /// words highlighted in bold within the results description
+        /// words highlighted in bold within the results <c>description</c>
         /// </summary>
         [JsonProperty("highlighted", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public IEnumerable<string> Highlighted { get; set; }
@@ -179,8 +179,8 @@ namespace DataForSeo.Client.Models
 
         /// <summary>
         /// frequently asked questions
-        /// <br/>questions and answers extension shown below some of Google’s search results
-        /// <br/>Note: this object is deprecated and always returns null
+        /// <br/>questions and answers extension shown below some of Google's search results
+        /// <br/>Note: this object is deprecated and always returns <c>null</c>
         /// </summary>
         [Obsolete]
         [JsonProperty("faq", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
@@ -195,8 +195,8 @@ namespace DataForSeo.Client.Models
         public IEnumerable<string> ExtendedPeopleAlsoSearch { get; set; }
 
         /// <summary>
-        /// contains information from the ‘About this result’ panel
-        /// <br/>Note: this object is deprecated and always returns null
+        /// contains information from the 'About this result' panel
+        /// <br/>Note: this object is deprecated and always returns <c>null</c>
         /// </summary>
         [Obsolete]
         [JsonProperty("about_this_result", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
@@ -205,7 +205,7 @@ namespace DataForSeo.Client.Models
         /// <summary>
         /// related result from the same domain
         /// <br/>related result from the same domain appears as a part of the main result snippet;
-        /// <br/>you can derive the related_result snippets as 'type': 'organic' results by setting the group_organic_results parameter to false in the POST request
+        /// <br/>you can derive the <c>related_result</c> snippets as <c>'type': 'organic'</c> results by setting the <c>group_organic_results</c> parameter to <c>false</c> in the POST request
         /// </summary>
         [JsonProperty("related_result", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public IEnumerable<RelatedResult> RelatedResult { get; set; }
@@ -214,7 +214,7 @@ namespace DataForSeo.Client.Models
         /// date and time when the result was published
         /// <br/>in the UTC format: “yyyy-mm-dd hh-mm-ss +00:00”
         /// <br/>example:
-        /// <br/>2019-11-15 12:57:46 +00:00
+        /// <br/><c>2019-11-15 12:57:46 +00:00</c>
         /// </summary>
         [JsonProperty("timestamp", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string Timestamp { get; set; }

@@ -5,4 +5,4 @@
 
 | Name | Type | Description | Notes |
 |------------ | ------------- | ------------- | -------------|
-**Tasks** | **IEnumerable<OnPagePageScreenshotTaskInfo>** | array of tasks |[optional]|
+**Tasks** | **IEnumerable<OnPagePageScreenshotTaskInfo>** | <em>array of tasks</em> |[optional]|

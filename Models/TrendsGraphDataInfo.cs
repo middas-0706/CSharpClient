@@ -11,20 +11,20 @@ namespace DataForSeo.Client.Models
 
         /// <summary>
         /// start date of the corresponding time range
-        /// <br/>in the UTC format: “yyyy-mm-dd”
+        /// <br/>in the UTC format: 'yyyy-mm-dd'
         /// </summary>
         [JsonProperty("date_from", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string DateFrom { get; set; }
 
         /// <summary>
         /// end date of the corresponding time range
-        /// <br/>in the UTC format: “yyyy-mm-dd”
+        /// <br/>in the UTC format: 'yyyy-mm-dd'
         /// </summary>
         [JsonProperty("date_to", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string DateTo { get; set; }
 
         /// <summary>
-        /// a point in time in the Unix time format
+        /// a point in time in the <see href="https://en.wikipedia.org/wiki/Unix_time">Unix time format</see>
         /// </summary>
         [JsonProperty("timestamp", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public int? Timestamp { get; set; }

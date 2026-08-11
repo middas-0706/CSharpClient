@@ -5,4 +5,4 @@
 
 | Name | Type | Description | Notes |
 |------------ | ------------- | ------------- | -------------|
-**Result** | **IEnumerable<DataforseoLabsAppleKeywordsForAppLiveResultInfo>** | array of results |[optional]|
+**Result** | **IEnumerable<DataforseoLabsAppleKeywordsForAppLiveResultInfo>** | <em>array of results</em> |[optional]|

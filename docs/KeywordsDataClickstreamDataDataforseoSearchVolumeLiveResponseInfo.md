@@ -5,4 +5,4 @@
 
 | Name | Type | Description | Notes |
 |------------ | ------------- | ------------- | -------------|
-**Tasks** | **IEnumerable<KeywordsDataClickstreamDataDataforseoSearchVolumeLiveTaskInfo>** | array of tasks |[optional]|
+**Tasks** | **IEnumerable<KeywordsDataClickstreamDataDataforseoSearchVolumeLiveTaskInfo>** | <em>array of tasks</em> |[optional]|

@@ -5,5 +5,5 @@
 
 | Name | Type | Description | Notes |
 |------------ | ------------- | ------------- | -------------|
-**Text** | **IEnumerable<string>** | text<br>if there is none, equals null |[optional]|
-**Links** | **IEnumerable<LinkElement>** | links featured in the organic result |[optional]|
+**Text** | **IEnumerable<string>** | <em>text</em><br>            if there is none, equals <code>null</code> |[optional]|
+**Links** | **IEnumerable<LinkElement>** | <em>links featured in the organic result</em> |[optional]|

@@ -32,15 +32,15 @@ namespace DataForSeo.Client.Models
 
         /// <summary>
         /// indicated condition of the product
-        /// <br/>possible values: Used, Refurbished, New, Pre-owned, null
+        /// <br/>possible values: <c>Used</c>, <c>Refurbished</c>, <c>New</c>, <c>Pre-owned</c>, <c>null</c>
         /// </summary>
         [JsonProperty("product_condition", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string ProductCondition { get; set; }
 
         /// <summary>
         /// data from annotations and badges with special offers
-        /// <br/>if there is no annotation for this product, the value will be null
-        /// <br/>examples: LOW PRICE, SPECIAL OFFER, SALE, PRICE DROP
+        /// <br/>if there is no annotation for this product, the value will be <c>null</c>
+        /// <br/>examples: <c>LOW PRICE</c>, <c>SPECIAL OFFER</c>, <c>SALE</c>, <c>PRICE DROP</c>
         /// </summary>
         [JsonProperty("product_annotation", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string ProductAnnotation { get; set; }
@@ -48,7 +48,7 @@ namespace DataForSeo.Client.Models
         /// <summary>
         /// product availability information
         /// <br/>product availability information
-        /// <br/>can take the following values: in_stock, limited_stock, out_of_stock, backordered, pre_order_available, on_display_to_order
+        /// <br/>can take the following values: <c>in_stock</c>, <c>limited_stock</c>, <c>out_of_stock</c>, <c>backordered</c>, <c>pre_order_available</c>, <c>on_display_to_order</c>
         /// </summary>
         [JsonProperty("product_availability", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string ProductAvailability { get; set; }

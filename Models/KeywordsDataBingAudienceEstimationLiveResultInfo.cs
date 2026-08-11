@@ -83,7 +83,7 @@ namespace DataForSeo.Client.Models
 
         /// <summary>
         /// currency name
-        /// <br/>example: USDollar
+        /// <br/>example: <c>USDollar</c>
         /// </summary>
         [JsonProperty("currency", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string Currency { get; set; }

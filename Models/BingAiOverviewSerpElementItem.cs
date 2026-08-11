@@ -17,14 +17,14 @@ namespace DataForSeo.Client.Models
 
         /// <summary>
         /// additional items present in the element
-        /// <br/>if there are none, equals null
+        /// <br/>            if there are none, equals <c>null</c>
         /// </summary>
         [JsonProperty("items", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public IEnumerable<BaseSerpApiBingAiOverviewElementItem> Items { get; set; }
 
         /// <summary>
         /// additional references relevant to the item
-        /// <br/>includes references to webpages that may have been used to generate the ai_overview
+        /// <br/>            includes references to webpages that may have been used to generate the <c>ai_overview</c>
         /// </summary>
         [JsonProperty("references", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public IEnumerable<AiModeAiOverviewReferenceInfo> References { get; set; }

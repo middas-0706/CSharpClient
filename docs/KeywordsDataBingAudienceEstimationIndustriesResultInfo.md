@@ -5,5 +5,5 @@
 
 | Name | Type | Description | Notes |
 |------------ | ------------- | ------------- | -------------|
-**IndustryId** | **long?** | ID of the industry |[optional]|
-**IndustryName** | **string** | name of the industry |[optional]|
+**IndustryId** | **long?** | <em>ID of the industry</em> |[optional]|
+**IndustryName** | **string** | <em>name of the industry</em> |[optional]|

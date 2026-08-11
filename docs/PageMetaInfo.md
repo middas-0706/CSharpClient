@@ -5,33 +5,33 @@
 
 | Name | Type | Description | Notes |
 |------------ | ------------- | ------------- | -------------|
-**Title** | **string** | page title |[optional]|
-**Charset** | **int?** | code page<br>example: 65001 |[optional]|
-**Follow** | **bool?** | indicates whether a page’s ‘meta robots’ allows crawlers to follow the links on the page<br>if false, the page’s ‘meta robots’ tag contains “nofollow” parameter instructing crawlers not to follow the links on the page |[optional]|
-**Generator** | **string** | meta tag generator |[optional]|
-**Htags** | **IDictionary<string, IEnumerable<string>>** | HTML header tags |[optional]|
-**Description** | **string** | content of the meta description tag |[optional]|
-**Favicon** | **string** | favicon of the page |[optional]|
-**MetaKeywords** | **string** | content of the keywords meta tag |[optional]|
-**Canonical** | **string** | canonical page |[optional]|
-**InternalLinksCount** | **long?** | number of internal links on the page |[optional]|
-**ExternalLinksCount** | **long?** | number of external links on the page |[optional]|
-**InboundLinksCount** | **long?** | number of internal links pointing at the page |[optional]|
-**ImagesCount** | **long?** | number of images on the page |[optional]|
-**ImagesSize** | **int?** | total size of images on the page measured in bytes |[optional]|
-**ScriptsCount** | **long?** | number of scripts on the page |[optional]|
-**ScriptsSize** | **int?** | total size of scripts on the page measured in bytes |[optional]|
-**StylesheetsCount** | **long?** | number of stylesheets on the page |[optional]|
-**StylesheetsSize** | **int?** | total size of stylesheets on the page measured in bytes |[optional]|
-**TitleLength** | **int?** | length of the title tag in characters |[optional]|
-**DescriptionLength** | **int?** | length of the description tag in characters |[optional]|
-**RenderBlockingScriptsCount** | **long?** | number of scripts on the page that block page rendering |[optional]|
-**RenderBlockingStylesheetsCount** | **long?** | number of CSS styles on the page that block page rendering |[optional]|
-**CumulativeLayoutShift** | **double?** | Core Web Vitals metric measuring the layout stability of the page<br>measures the sum total of all individual layout shift scores for every unexpected layout shift that occurs during the entire lifespan of the page. Learn more. |[optional]|
-**MetaTitle** | **string** | meta title of the page<br>meta tag in the head section of an HTML document that defines the title of a page |[optional]|
-**Content** | **HtmlContentInfo** | overall information about content of the page |[optional]|
-**DeprecatedTags** | **IEnumerable<string>** | deprecated tags on the page |[optional]|
-**DuplicateMetaTags** | **IEnumerable<string>** | duplicate meta tags on the page |[optional]|
-**Spell** | **HunspellInfo** | spellcheck<br>hunspell spellcheck errors |[optional]|
-**SocialMediaTags** | **IDictionary<string, string>** | object of social media tags found on the page<br>contains social media tags and their content<br>supported tags include but are not limited to Open Graph and Twitter card |[optional]|
+**Title** | **string** | <em>page title</em> |[optional]|
+**Charset** | **int?** | <em><a href='https://en.wikipedia.org/wiki/Code_page' target='_blank' rel='noopener noreferrer'>code page</a></em><br>example: <code>65001</code> |[optional]|
+**Follow** | **bool?** | <em>indicates whether a page's 'meta robots' allows crawlers to follow the links on the page</em><br>if <code>false</code>, the page's 'meta robots' tag contains 'nofollow' parameter instructing crawlers not to follow the links on the page |[optional]|
+**Generator** | **string** | <em>meta tag generator</em> |[optional]|
+**Htags** | **IDictionary<string, IEnumerable<string>>** | <em>HTML header tags</em> |[optional]|
+**Description** | **string** | <em>content of the meta description tag</em> |[optional]|
+**Favicon** | **string** | <em>favicon of the page</em> |[optional]|
+**MetaKeywords** | **string** | <em>content of the <code>keywords</code> meta tag</em> |[optional]|
+**Canonical** | **string** | <em>canonical page</em> |[optional]|
+**InternalLinksCount** | **long?** | <em>number of internal links on the page</em> |[optional]|
+**ExternalLinksCount** | **long?** | <em>number of external links on the page</em> |[optional]|
+**InboundLinksCount** | **long?** | <em>number of internal links pointing at the page</em> |[optional]|
+**ImagesCount** | **long?** | <em>number of images on the page</em> |[optional]|
+**ImagesSize** | **int?** | <em>total size of images on the page measured in bytes</em> |[optional]|
+**ScriptsCount** | **long?** | <em>number of scripts on the page</em> |[optional]|
+**ScriptsSize** | **int?** | <em>total size of scripts on the page measured in bytes</em> |[optional]|
+**StylesheetsCount** | **long?** | <em>number of stylesheets on the page</em> |[optional]|
+**StylesheetsSize** | **int?** | <em>total size of stylesheets on the page measured in bytes</em> |[optional]|
+**TitleLength** | **int?** | <em>length of the <code>title</code> tag in characters</em> |[optional]|
+**DescriptionLength** | **int?** | <em>length of the <code>description</code> tag in characters</em> |[optional]|
+**RenderBlockingScriptsCount** | **long?** | <em>number of scripts on the page that block page rendering</em> |[optional]|
+**RenderBlockingStylesheetsCount** | **long?** | <em>number of CSS styles on the page that block page rendering</em> |[optional]|
+**CumulativeLayoutShift** | **double?** | <em>Core Web Vitals metric measuring the layout stability of the page</em><br>measures the sum total of all individual layout shift scores for every unexpected layout shift that occurs during the entire lifespan of the page. <a href='https://web.dev/cls/'>Learn more.</a> |[optional]|
+**MetaTitle** | **string** | <em>meta title of the page</em><br>meta tag in the head section of an HTML document that defines the title of a page |[optional]|
+**Content** | **HtmlContentInfo** | <em>overall information about content of the page</em> |[optional]|
+**DeprecatedTags** | **IEnumerable<string>** | <em>deprecated tags on the page</em> |[optional]|
+**DuplicateMetaTags** | **IEnumerable<string>** | <em>duplicate meta tags on the page</em> |[optional]|
+**Spell** | **HunspellInfo** | <em>spellcheck</em><br><a href='http://hunspell.github.io/' target='_blank' rel='noopener noreferrer'>hunspell</a> spellcheck errors |[optional]|
+**SocialMediaTags** | **IDictionary<string, string>** | <em>object of social media tags found on the page</em><br>contains social media tags and their content<br>supported tags include but are not limited to <a href='https://ogp.me/'>Open Graph</a> and <a href='https://developer.twitter.com/en/docs/twitter-for-websites/cards/guides/getting-started'>Twitter card</a> |[optional]|
 **BrokenHtml** | **OnPageResourceIssueInfo** | resource errors and warnings |[optional]|

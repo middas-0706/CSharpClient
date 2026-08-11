@@ -49,19 +49,15 @@ namespace DataForSeo.Client.Models
         /// date and time when the result was published
         /// <br/>in the UTC format: “yyyy-mm-dd hh-mm-ss +00:00”
         /// <br/>example:
-        /// <br/>2019-11-15 12:57:46 +00:00
+        /// <br/><c>2019-11-15 12:57:46 +00:00</c>
         /// </summary>
         [JsonProperty("timestamp", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string Timestamp { get; set; }
-
-        /// <summary>
-        /// search queries related to the elment
-        /// </summary>
         [JsonProperty("related_searches", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public IEnumerable<string> RelatedSearches { get; set; }
 
         /// <summary>
-        /// contains information from the ‘About this result’ panel
+        /// contains information from the 'About this result' panel
         /// <br/>Note: element no longer appears in SERP and has been deprecated in SERP API
         /// </summary>
         [Obsolete]

@@ -23,14 +23,14 @@ namespace DataForSeo.Client.Models
 
         /// <summary>
         /// text message of the error
-        /// <br/>the full list of possible HTML errors can be found here
+        /// <br/>the full list of possible HTML errors can be found <see href="https://github.com/AngleSharp/AngleSharp/blob/3968eb050e142b1d94550fba407afe772232b126/src/AngleSharp/Html/Parser/HtmlParseError.cs">here</see>
         /// </summary>
         [JsonProperty("message", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string Message { get; set; }
 
         /// <summary>
         /// general status code
-        /// <br/>you can find the full list of the response codes here
+        /// <br/>you can find the full list of the response codes <see href="/v3/appendix/errors">here</see>
         /// <br/>Note: we strongly recommend designing a necessary system for handling related exceptional or error conditions
         /// </summary>
         [JsonProperty("status_code", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]

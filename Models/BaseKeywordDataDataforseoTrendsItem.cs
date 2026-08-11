@@ -21,7 +21,7 @@ namespace DataForSeo.Client.Models
 
         /// <summary>
         /// the alignment of the element
-        /// <br/>can take the following values: 1, 2, 3, 4, etc.
+        /// <br/>can take the following values: <c>1</c>, <c>2</c>, <c>3</c>, <c>4</c>, etc.
         /// </summary>
         [JsonProperty("position", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public int? Position { get; set; }

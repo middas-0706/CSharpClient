@@ -5,8 +5,8 @@
 
 | Name | Type | Description | Notes |
 |------------ | ------------- | ------------- | -------------|
-**VideoId** | **string** | ID of the video |[optional]|
-**Title** | **string** | title of the video |[optional]|
-**Url** | **string** | URL of the video |[optional]|
-**DurationTime** | **string** | duration of the video |[optional]|
-**DurationTimeSeconds** | **int?** | duration of the video in seconds |[optional]|
+**VideoId** | **string** | <em>ID of the video</em> |[optional]|
+**Title** | **string** | <em>title of the video</em> |[optional]|
+**Url** | **string** | <em>URL of the video</em> |[optional]|
+**DurationTime** | **string** | <em>duration of the video</em> |[optional]|
+**DurationTimeSeconds** | **int?** | <em>duration of the video in seconds</em> |[optional]|

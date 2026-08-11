@@ -5,12 +5,12 @@
 
 | Name | Type | Description | Notes |
 |------------ | ------------- | ------------- | -------------|
-**Title** | **string** | title of the result in SERP |[optional]|
-**SubTitle** | **string** | subtitle of the item |[optional]|
-**Description** | **string** | description of the results element in SERP |[optional]|
-**CardId** | **string** | card id |[optional]|
-**Url** | **string** | relevant URL in SERP |[optional]|
-**ImageUrl** | **string** | URL of the image from knowledge graph |[optional]|
-**LogoUrl** | **string** | URL of the logo from knowledge graph |[optional]|
-**Cid** | **string** | google-defined client id |[optional]|
-**Items** | **IEnumerable<BaseDataforseoLabsKnowledgeGraphElementItem>** | historical SERPs and related data found in the database |[optional]|
+**Title** | **string** | <em>title of the result in SERP</em> |[optional]|
+**SubTitle** | **string** | <em>subtitle of the item</em> |[optional]|
+**Description** | **string** | <em>description of the results element in SERP</em> |[optional]|
+**CardId** | **string** | <em>card id</em> |[optional]|
+**Url** | **string** | <em> relevant URL in SERP</em> |[optional]|
+**ImageUrl** | **string** | <em>URL of the image from knowledge graph</em> |[optional]|
+**LogoUrl** | **string** | <em>URL of the logo from knowledge graph</em> |[optional]|
+**Cid** | **string** | <em>google-defined client id</em> |[optional]|
+**Items** | **IEnumerable<BaseDataforseoLabsKnowledgeGraphElementItem>** | <em>historical SERPs and related data found in the database</em> |[optional]|

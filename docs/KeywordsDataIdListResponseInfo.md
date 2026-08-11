@@ -5,4 +5,4 @@
 
 | Name | Type | Description | Notes |
 |------------ | ------------- | ------------- | -------------|
-**Tasks** | **IEnumerable<KeywordsDataIdListTaskInfo>** | array of tasks |[optional]|
+**Tasks** | **IEnumerable<KeywordsDataIdListTaskInfo>** | <em>array of tasks</em> |[optional]|

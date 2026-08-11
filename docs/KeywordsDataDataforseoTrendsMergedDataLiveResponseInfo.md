@@ -5,4 +5,4 @@
 
 | Name | Type | Description | Notes |
 |------------ | ------------- | ------------- | -------------|
-**Tasks** | **IEnumerable<KeywordsDataDataforseoTrendsMergedDataLiveTaskInfo>** | array of tasks |[optional]|
+**Tasks** | **IEnumerable<KeywordsDataDataforseoTrendsMergedDataLiveTaskInfo>** | <em>array of tasks</em> |[optional]|

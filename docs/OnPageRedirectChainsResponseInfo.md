@@ -5,4 +5,4 @@
 
 | Name | Type | Description | Notes |
 |------------ | ------------- | ------------- | -------------|
-**Tasks** | **IEnumerable<OnPageRedirectChainsTaskInfo>** | array of tasks |[optional]|
+**Tasks** | **IEnumerable<OnPageRedirectChainsTaskInfo>** | <em>array of tasks</em> |[optional]|

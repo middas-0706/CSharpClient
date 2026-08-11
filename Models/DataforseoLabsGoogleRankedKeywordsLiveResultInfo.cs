@@ -23,14 +23,14 @@ namespace DataForSeo.Client.Models
 
         /// <summary>
         /// location code in a POST array
-        /// <br/>if there is no data, then the value is null
+        /// <br/>            if there is no data, then the value is <c>null</c>
         /// </summary>
         [JsonProperty("location_code", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public int? LocationCode { get; set; }
 
         /// <summary>
         /// language code in a POST array
-        /// <br/>if there is no data, then the value is null
+        /// <br/>            if there is no data, then the value is <c>null</c>
         /// </summary>
         [JsonProperty("language_code", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string LanguageCode { get; set; }
@@ -42,21 +42,21 @@ namespace DataForSeo.Client.Models
         public long? TotalCount { get; set; }
 
         /// <summary>
-        /// the number of results returned in the items array
+        /// the number of results returned in the <c>items</c> array
         /// </summary>
         [JsonProperty("items_count", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public long? ItemsCount { get; set; }
 
         /// <summary>
         /// ranking data relevant to the specified domain or webpage 
-        /// <br/>ranking data is provided by the rank_group parameters that show the result’s rank considering only equivalent SERP elements
+        /// <br/>            ranking data is provided by the <c>rank_group</c> parameters that show the result’s rank considering only equivalent SERP elements
         /// </summary>
         [JsonProperty("metrics", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public IDictionary<string, DataforseoLabsMetricsInfo> Metrics { get; set; }
 
         /// <summary>
         /// ranking data relevant to the specified domain or webpage
-        /// <br/>ranking data is provided by the rank_absolute parameters that indicate the result’s position among all SERP elements
+        /// <br/>            ranking data is provided by the <c>rank_absolute</c> parameters that indicate the result’s position among all SERP elements
         /// </summary>
         [JsonProperty("metrics_absolute", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public IDictionary<string, DataforseoLabsMetricsInfo> MetricsAbsolute { get; set; }

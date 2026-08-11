@@ -5,8 +5,8 @@
 
 | Name | Type | Description | Notes |
 |------------ | ------------- | ------------- | -------------|
-**CrawlProgress** | **string** | status of the crawling session<br>possible values: in_progress, finished |[optional]|
-**CrawlStatus** | **CrawlStatusInfo** | details of the crawling session |[optional]|
-**TestSummary** | **TestSummary** | microdata validation test results |[optional]|
-**ItemsCount** | **long?** | number of items in the results array |[optional]|
-**Items** | **IEnumerable<OnPageMicrodataInfoItem>** | items array |[optional]|
+**CrawlProgress** | **string** | <em>status of the crawling session</em><br>possible values: <code>in_progress</code>, <code>finished</code> |[optional]|
+**CrawlStatus** | **CrawlStatusInfo** | <em>details of the crawling session</em> |[optional]|
+**TestSummary** | **TestSummary** | <em>microdata validation test results</em> |[optional]|
+**ItemsCount** | **long?** | <em>number of items in the results array</em> |[optional]|
+**Items** | **IEnumerable<OnPageMicrodataInfoItem>** | <em>items array</em> |[optional]|

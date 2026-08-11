@@ -12,9 +12,9 @@ namespace DataForSeo.Client.Models.Requests
         /// <summary>
         /// ID of the task
         /// <br/>required field
-        /// <br/>you can get this ID in the response of the Task POST endpoint
+        /// <br/>you can get this ID in the response of the <see href="https://docs.dataforseo.com/v3/on_page/task_post/">Task POST</see> endpoint
         /// <br/>example:
-        /// <br/>“07131248-1535-0216-1000-17384017ad04”
+        /// <br/>'07131248-1535-0216-1000-17384017ad04'
         /// </summary>
         [JsonProperty("id", Required = Required.DisallowNull, NullValueHandling = NullValueHandling.Ignore)]
         public string Id { get; set; }
@@ -40,8 +40,8 @@ namespace DataForSeo.Client.Models.Requests
         /// <summary>
         /// the maximum number of returned links
         /// <br/>optional field
-        /// <br/>default value: 100
-        /// <br/>maximum value: 1000
+        /// <br/>default value: <c>100</c>
+        /// <br/>maximum value: <c>1000</c>
         /// </summary>
         [JsonProperty("limit", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public int? Limit { get; set; }
@@ -49,9 +49,9 @@ namespace DataForSeo.Client.Models.Requests
         /// <summary>
         /// offset in the results array of returned links
         /// <br/>optional field
-        /// <br/>default value: 0
-        /// <br/>maximum value: 2000000
-        /// <br/>if you specify the 10 value, the first ten links in the results array will be omitted and the data will be provided for the successive links
+        /// <br/>default value: <c>0</c>
+        /// <br/>maximum value: <c>2000000</c>
+        /// <br/>if you specify the <c>10</c> value, the first ten links in the results array will be omitted and the data will be provided for the successive links
         /// </summary>
         [JsonProperty("offset", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public int? Offset { get; set; }
@@ -60,19 +60,15 @@ namespace DataForSeo.Client.Models.Requests
         /// array of results filtering parameters
         /// <br/>optional field
         /// <br/>you can add several filters at once (8 filters maximum)
-        /// <br/>you should set a logical operator and, or between the conditions
+        /// <br/>you should set a logical operator <c>and</c>, <c>or</c> between the conditions
         /// <br/>the following operators are supported:
-        /// <br/>regex, not_regex, =, &lt;&gt;, in, not_in, like, not_like
-        /// <br/>you can use the % operator with like and not_like to match any string of zero or more characters
+        /// <br/><c>regex</c>, <c>not_regex</c>, <c>=</c>, <c>&lt;&gt;</c>, <c>in</c>, <c>not_in</c>, <c>like</c>, <c>not_like</c>
+        /// <br/>you can use the <c>%</c> operator with <c>like</c> and <c>not_like</c> to match any string of zero or more characters
         /// <br/>example:
-        /// <br/>['direction','=','external']
-        /// <br/>[['domain_to','&lt;&gt;','example.com'],
-        /// <br/>'and',
-        /// <br/>['link_from','not_like','%example.com/blog%']]
-        /// <br/>[['direction','=','external'],
-        /// <br/>'and',
-        /// <br/>[['link_from','like','%example.com/blog%'],'or',['link_from','like','%example.com/help%']]]
-        /// <br/>The full list of possible filters is available by this link.
+        /// <br/><c>['direction','=','external']</c>
+        /// <br/><c>[['domain_to','&lt;&gt;','example.com'],'and',['link_from','not_like','%example.com/blog%']]</c>
+        /// <br/><c>[['direction','=','external'],'and',[['link_from','like','%example.com/blog%'],'or',['link_from','like','%example.com/help%']]]</c>
+        /// <br/>The full list of possible filters is available <see href="/v3/on_page/filters_and_thresholds/?bash">by this link.</see>
         /// </summary>
         [JsonProperty("filters", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public IEnumerable<object> Filters { get; set; }
@@ -81,10 +77,10 @@ namespace DataForSeo.Client.Models.Requests
         /// token for subsequent requests
         /// <br/>optional field
         /// <br/>provided in the identical filed of the response to each request;
-        /// <br/>use this parameter to avoid timeouts while trying to obtain over 20,000 results in a single request;
-        /// <br/>by specifying the unique search_after_token value from the response array, you will get the subsequent results of the initial task;
-        /// <br/>search_after_token values are unique for each subsequent task ;
-        /// <br/>Note: if the search_after_token is specified in the request, all other parameters should be identical to the previous request
+        /// <br/>use this parameter to avoid timeouts while trying to obtain over <c>20,000</c> results in a single request;
+        /// <br/>by specifying the unique <c>search_after_token</c> value from the response array, you will get the subsequent results of the initial task;
+        /// <br/><c>search_after_token</c> values are unique for each subsequent task ;
+        /// <br/>Note: if the <c>search_after_token</c> is specified in the request, all other parameters should be identical to the previous request
         /// </summary>
         [JsonProperty("search_after_token", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string SearchAfterToken { get; set; }
@@ -94,7 +90,7 @@ namespace DataForSeo.Client.Models.Requests
         /// <br/>optional field
         /// <br/>the character limit is 255
         /// <br/>you can use this parameter to identify the task and match it with the result
-        /// <br/>you will find the specified tag value in the data object of the response
+        /// <br/>you will find the specified <c>tag</c> value in the <c>data</c> object of the response
         /// </summary>
         [JsonProperty("tag", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string Tag { get; set; }

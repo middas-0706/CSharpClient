@@ -5,7 +5,7 @@
 
 | Name | Type | Description | Notes |
 |------------ | ------------- | ------------- | -------------|
-**Title** | **string** | title of the item |[optional]|
-**Url** | **string** | URL |[optional]|
-**Items** | **IEnumerable<AiModeImagesElementInfo>** | contains results featured in the ‘hotels_pack’ element of SERP |[optional]|
-**RelatedImageSearches** | **IEnumerable<RelatedImageSearchesElement>** | contains keywords and images related to the specified search term<br>if there are none, equals null |[optional]|
+**Title** | **string** | <em>title of the item</em> |[optional]|
+**Url** | **string** | <em>URL</em> |[optional]|
+**Items** | **IEnumerable<AiModeImagesElementInfo>** | <em>contains results featured in the 'hotels_pack' element of SERP</em> |[optional]|
+**RelatedImageSearches** | **IEnumerable<RelatedImageSearchesElement>** | <em>contains keywords and images related to the specified search term</em><br>            if there are none, equals <code>null</code> |[optional]|

@@ -22,7 +22,7 @@ namespace DataForSeo.Client.Models
 
         /// <summary>
         /// the alignment of the element in Google Trends
-        /// <br/>can take the following values: 1, 2, 3, 4, etc.
+        /// <br/>can take the following values: <c>1</c>, <c>2</c>, <c>3</c>, <c>4</c>, etc.
         /// </summary>
         [JsonProperty("position", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public int? Position { get; set; }
@@ -35,7 +35,7 @@ namespace DataForSeo.Client.Models
 
         /// <summary>
         /// relevant keywords
-        /// <br/>the data included in the google_trends_graph element is based on the keywords listed in this array
+        /// <br/>the data included in the <c>google_trends_graph</c> element is based on the keywords listed in this array
         /// </summary>
         [JsonProperty("keywords", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public IEnumerable<string> Keywords { get; set; }

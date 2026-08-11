@@ -67,26 +67,26 @@ namespace DataForSeo.Client.Models
 
         /// <summary>
         /// indicates whether the link is dofollow
-        /// <br/>if the value is true, the link doesn’t have a rel='nofollow' attribute
+        /// <br/>if the value is <c>true</c>, the link doesn't have a <c>rel='nofollow'</c> attribute
         /// </summary>
         [JsonProperty("dofollow", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public bool? Dofollow { get; set; }
 
         /// <summary>
-        /// url scheme of the referring page
+        /// <see href="https://en.wikipedia.org/wiki/List_of_URI_schemes">url scheme</see> of the referring page
         /// </summary>
         [JsonProperty("page_from_scheme", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string PageFromScheme { get; set; }
 
         /// <summary>
-        /// url scheme of the referenced page
+        /// <see href="https://en.wikipedia.org/wiki/List_of_URI_schemes">url scheme</see> of the referenced page
         /// </summary>
         [JsonProperty("page_to_scheme", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string PageToScheme { get; set; }
 
         /// <summary>
         /// direction of the link
-        /// <br/>possible values: internal, external
+        /// <br/>possible values: <c>internal</c>, <c>external</c>
         /// </summary>
         [JsonProperty("direction", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string Direction { get; set; }
@@ -100,7 +100,7 @@ namespace DataForSeo.Client.Models
 
         /// <summary>
         /// indicates that the link may have a conflict with another link
-        /// <br/>if true, at least one link pointing to link_to has a rel='nofollow' attribute and at least one is dofollow
+        /// <br/>if <c>true</c>, at least one link pointing to <c>link_to</c> has a <c>rel='nofollow'</c> attribute and at least one is dofollow
         /// </summary>
         [JsonProperty("is_link_relation_conflict", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public bool? IsLinkRelationConflict { get; set; }
