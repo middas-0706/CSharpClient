@@ -5,4 +5,4 @@
 
 | Name | Type | Description | Notes |
 |------------ | ------------- | ------------- | -------------|
-**Tasks** | **IEnumerable<BusinessDataGoogleHotelSearchesTasksReadyTaskInfo>** | array of tasks |[optional]|
+**Tasks** | **IEnumerable<BusinessDataGoogleHotelSearchesTasksReadyTaskInfo>** | <em>array of tasks</em> |[optional]|

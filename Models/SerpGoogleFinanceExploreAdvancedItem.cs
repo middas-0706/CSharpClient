@@ -11,7 +11,7 @@ namespace DataForSeo.Client.Models
 
         /// <summary>
         /// array of items
-        /// <br/>this array can take the following names: most_active, gainers, losers
+        /// <br/>this array can take the following names: <c>most_active</c>, <c>gainers</c>, <c>losers</c>
         /// </summary>
         [JsonProperty("most_active", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public IEnumerable<GoogleFinanceMarketTrendsElement> MostActive { get; set; }

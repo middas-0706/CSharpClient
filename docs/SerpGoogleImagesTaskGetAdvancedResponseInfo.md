@@ -5,4 +5,4 @@
 
 | Name | Type | Description | Notes |
 |------------ | ------------- | ------------- | -------------|
-**Tasks** | **IEnumerable<SerpGoogleImagesTaskGetAdvancedTaskInfo>** | array of tasks |[optional]|
+**Tasks** | **IEnumerable<SerpGoogleImagesTaskGetAdvancedTaskInfo>** | <em>array of tasks</em> |[optional]|

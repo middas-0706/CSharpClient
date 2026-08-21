@@ -8,6 +8,10 @@ namespace DataForSeo.Client.Models.Responses
 
     public class SerpGoogleFinanceQuoteTaskPostResponseInfo  : BaseResponseInfo 
     {
+
+        /// <summary>
+        /// array of tasks
+        /// </summary>
         [JsonProperty("tasks", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public IEnumerable<SerpGoogleFinanceQuoteTaskPostTaskInfo> Tasks { get; set; }
 

@@ -68,9 +68,7 @@ var result = await dfsClient.DataforseoLabsApi.DataforseoLabsIdListAsync(new Lis
 {
     new()
     {
-        Limit = 100,
-        Offset = 0,
-        Sort = "desc",
+        Limit = 10,
         IncludeMetadata = true,
     }
 });
@@ -160,7 +158,6 @@ var result = await dfsClient.DataforseoLabsApi.DataforseoLabsErrorsAsync(new Lis
     new()
     {
         Limit = 10,
-        Offset = 0,
     }
 });
 ```
@@ -2241,8 +2238,8 @@ var result = await dfsClient.DataforseoLabsApi.GoogleAppIntersectionLiveAsync(ne
     {
         AppIds = new Dictionary<string, string>()
         {
-            ["1"] = "org.telegram.messenger",
-            ["2"] = "com.zhiliaoapp.musically",
+            ["1"] = "686449807",
+            ["2"] = "382617920",
         },
         LanguageName = "English",
         LocationCode = 2840,

@@ -40,7 +40,7 @@ namespace DataForSeo.Client.Models
         public string SourceUrl { get; set; }
 
         /// <summary>
-        /// the URL of the cached version of the image stored on Google’s servers
+        /// the URL of the cached version of the image stored on Google's servers
         /// </summary>
         [JsonProperty("encoded_url", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string EncodedUrl { get; set; }

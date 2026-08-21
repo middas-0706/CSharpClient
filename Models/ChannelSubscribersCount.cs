@@ -11,7 +11,7 @@ namespace DataForSeo.Client.Models
 
         /// <summary>
         /// displayed subscriber count
-        /// <br/>subscriber count as displayed on YouTube
+        /// <br/>            subscriber count as displayed on YouTube
         /// </summary>
         [JsonProperty("displayed_count", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string DisplayedCount { get; set; }

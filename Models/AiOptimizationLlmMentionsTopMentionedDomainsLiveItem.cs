@@ -47,21 +47,24 @@ namespace DataForSeo.Client.Models
 
         /// <summary>
         /// found top search results domains relevant to the target
-        /// <br/>array of objects containing data on top domains that appear in search results related to LLM queries
+        /// <br/>array of objects containing data on top domains that appear in search results related to LLM queries;
+        /// <br/>Note: available only for <c>chat_gpt</c>
         /// </summary>
         [JsonProperty("search_results_domain", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public IEnumerable<AggregatedMetricsItemInfo> SearchResultsDomain { get; set; }
 
         /// <summary>
         /// data on brand entities relevant to the target
-        /// <br/>array of objects containing data on brand entity titles that appear in search results related to LLM queries
+        /// <br/>array of objects containing data on brand entity titles that appear in search results related to LLM queries;
+        /// <br/>Note: available only for <c>chat_gpt</c>
         /// </summary>
         [JsonProperty("brand_entities_title", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public IEnumerable<AggregatedMetricsItemInfo> BrandEntitiesTitle { get; set; }
 
         /// <summary>
         /// data on brand entities relevant to the target
-        /// <br/>array of objects containing data on brand entity categories that appear in search results related to LLM queries
+        /// <br/>array of objects containing data on brand entity categories that appear in search results related to LLM queries;
+        /// <br/>Note: available only for <c>chat_gpt</c>
         /// </summary>
         [JsonProperty("brand_entities_category", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public IEnumerable<AggregatedMetricsItemInfo> BrandEntitiesCategory { get; set; }

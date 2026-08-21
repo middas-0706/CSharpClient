@@ -14,6 +14,11 @@ namespace DataForSeo.Client.Models
         /// </summary>
         [JsonProperty("items", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public IEnumerable<AiModeImagesElementInfo> Items { get; set; }
+
+        /// <summary>
+        /// contains keywords and images related to the specified search term
+        /// <br/>            if there are none, equals <c>null</c>
+        /// </summary>
         [Obsolete]
         [JsonProperty("related_image_searches", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public IEnumerable<RelatedImageSearchesElement> RelatedImageSearches { get; set; }

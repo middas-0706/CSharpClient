@@ -5,4 +5,4 @@
 
 | Name | Type | Description | Notes |
 |------------ | ------------- | ------------- | -------------|
-**Result** | **IEnumerable<SerpGoogleFinanceMarketsTaskGetAdvancedResultInfo>** | array of results |[optional]|
+**Result** | **IEnumerable<SerpGoogleFinanceMarketsTaskGetAdvancedResultInfo>** | <em>array of results</em> |[optional]|

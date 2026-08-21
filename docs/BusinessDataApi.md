@@ -75,9 +75,7 @@ var result = await dfsClient.BusinessDataApi.BusinessDataIdListAsync(new List<Bu
 {
     new()
     {
-        Limit = 100,
-        Offset = 0,
-        Sort = "desc",
+        Limit = 10,
         IncludeMetadata = true,
     }
 });
@@ -126,8 +124,6 @@ var result = await dfsClient.BusinessDataApi.BusinessDataErrorsAsync(new List<Bu
     new()
     {
         Limit = 10,
-        Offset = 0,
-        FilteredFunction = "pingback_url",
     }
 });
 ```

@@ -5,4 +5,4 @@
 
 | Name | Type | Description | Notes |
 |------------ | ------------- | ------------- | -------------|
-**Tasks** | **IEnumerable<SerpGoogleFinanceQuoteTaskPostTaskInfo>** |  |[optional]|
+**Tasks** | **IEnumerable<SerpGoogleFinanceQuoteTaskPostTaskInfo>** | <em>array of tasks</em> |[optional]|

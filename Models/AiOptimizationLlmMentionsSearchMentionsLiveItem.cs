@@ -58,6 +58,7 @@ namespace DataForSeo.Client.Models
         /// <summary>
         /// array of search results
         /// <br/>all web search outputs the model retrieved when looking up information, including duplicates and unused entries
+        /// <br/>Note: available only for <c>chat_gpt</c>
         /// </summary>
         [JsonProperty("search_results", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public IEnumerable<SearchResults> SearchResults { get; set; }
@@ -97,6 +98,7 @@ namespace DataForSeo.Client.Models
         /// <summary>
         /// array of brand entities
         /// <br/>contains information on brands mentioned in the response
+        /// <br/>Note: available only for <c>chat_gpt</c>
         /// </summary>
         [JsonProperty("brand_entities", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public IEnumerable<BrandEntities> BrandEntities { get; set; }
@@ -104,6 +106,7 @@ namespace DataForSeo.Client.Models
         /// <summary>
         /// array of fan-out queries
         /// <br/>contains related search queries derived from the main query to provide a more comprehensive response
+        /// <br/>Note: available only for <c>chat_gpt</c>
         /// </summary>
         [JsonProperty("fan_out_queries", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public IEnumerable<string> FanOutQueries { get; set; }

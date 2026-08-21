@@ -23,13 +23,13 @@ namespace DataForSeo.Client.Models
         public string ContactUrl { get; set; }
 
         /// <summary>
-        /// URL of the user’s or entity’s Local Guides profile, if available
+        /// URL of the user's or entity's Local Guides profile, if available
         /// </summary>
         [JsonProperty("contributor_url", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string ContributorUrl { get; set; }
 
         /// <summary>
-        /// URL in the ‘book online’ button of the element
+        /// URL in the 'book online' button of the element
         /// <br/>URL directing users to the online booking or order page of the business entity
         /// </summary>
         [JsonProperty("book_online_url", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
@@ -37,16 +37,16 @@ namespace DataForSeo.Client.Models
 
         /// <summary>
         /// hotel class rating
-        /// <br/>class ratings range between 1-5 stars, learn more
-        /// <br/>if there is no hotel class rating information, the value will be null
+        /// <br/>class ratings range between 1-5 stars, <see href="https://support.google.com/business/answer/7660515?hl=en">learn more</see>
+        /// <br/>if there is no hotel class rating information, the value will be <c>null</c>
         /// </summary>
         [JsonProperty("hotel_rating", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public double? HotelRating { get; set; }
 
         /// <summary>
         /// property price level
-        /// <br/>can take values: inexpensive, moderate, expensive, very_expensive
-        /// <br/>if there is no price level information, the value will be null
+        /// <br/>can take values: <c>inexpensive</c>, <c>moderate</c>, <c>expensive</c>, <c>very_expensive</c>
+        /// <br/>if there is no price level information, the value will be <c>null</c>
         /// </summary>
         [JsonProperty("price_level", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string PriceLevel { get; set; }
@@ -73,7 +73,7 @@ namespace DataForSeo.Client.Models
 
         /// <summary>
         /// unique place identifier
-        /// <br/>place id of the local establishment featured in the element
+        /// <br/><see href="https://developers.google.com/places/place-id">place id</see> of the local establishment featured in the element
         /// </summary>
         [JsonProperty("place_id", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string PlaceId { get; set; }
@@ -134,7 +134,7 @@ namespace DataForSeo.Client.Models
         /// <summary>
         /// google-defined client id
         /// <br/>unique id of a local establishment;
-        /// <br/>can be used with Google Reviews API to get a full list of reviews
+        /// <br/>can be used with <see href="/v3/reviews/google/overview/?php">Google Reviews API</see> to get a full list of reviews
         /// </summary>
         [JsonProperty("cid", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string Cid { get; set; }
@@ -142,7 +142,7 @@ namespace DataForSeo.Client.Models
         /// <summary>
         /// latitude coordinate of the local establishments in google maps
         /// <br/>example:
-        /// <br/>'latitude': 51.584091
+        /// <br/><c>'latitude': 51.584091</c>
         /// </summary>
         [JsonProperty("latitude", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public double? Latitude { get; set; }
@@ -150,7 +150,7 @@ namespace DataForSeo.Client.Models
         /// <summary>
         /// longitude coordinate of the local establishment in google maps
         /// <br/>example:
-        /// <br/>'longitude': -0.31365919999999997
+        /// <br/><c>'longitude': -0.31365919999999997</c>
         /// </summary>
         [JsonProperty("longitude", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public double? Longitude { get; set; }
@@ -163,7 +163,7 @@ namespace DataForSeo.Client.Models
 
         /// <summary>
         /// Google local justifications
-        /// <br/>snippets of text that “justify” why the business is showing up for search query
+        /// <br/>snippets of text that 'justify' why the business is showing up for search query
         /// </summary>
         [JsonProperty("local_justifications", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public IEnumerable<LocalJustificationInfo> LocalJustifications { get; set; }

@@ -6,20 +6,20 @@
 | Name | Type | Description | Notes |
 |------------ | ------------- | ------------- | -------------|
 **Type** | **string** | type of element |[optional]|
-**RankGroup** | **int?** | group rank in SERP<br>position within a group of elements with identical type values<br>positions of elements with different type values are omitted from rank_group |[optional]|
-**RankAbsolute** | **int?** | absolute rank in SERP<br>absolute position among all the elements in SERP |[optional]|
-**Position** | **string** | the alignment of the element in SERP<br>can take the following values:<br>left, right |[optional]|
-**Xpath** | **string** | the XPath of the element |[optional]|
-**JobId** | **string** | ID of the job on Google Jobs |[optional]|
-**Title** | **string** | title of the element |[optional]|
-**EmployerName** | **string** | name of the employer |[optional]|
-**EmployerUrl** | **string** | URL to the employer’s website |[optional]|
-**EmployerImageUrl** | **string** | URL to the image used in the job posting |[optional]|
-**Location** | **string** | location for which the job vacancy is posted |[optional]|
-**SourceName** | **string** | original source of the job vacancy |[optional]|
-**SourceUrl** | **string** | URL to the original source of the job vacancy |[optional]|
-**Salary** | **string** | the salary indicated in the job vacancy<br>if the salary isn’t indicated, this field will equal null |[optional]|
-**ContractType** | **string** | employment contract type |[optional]|
-**Timestamp** | **string** | date and time when the result was published<br>in the UTC format: “yyyy-mm-dd hh-mm-ss +00:00”<br>example:<br>2019-11-15 12:57:46 +00:00 |[optional]|
-**TimeAgo** | **string** | indicates how long ago the job vacancy was posted |[optional]|
-**Rectangle** | **AiModeRectangleInfo** | rectangle parameters<br>contains cartesian coordinates and pixel dimensions of the result’s snippet in SERP;<br>in this case, will equal null |[optional]|
+**RankGroup** | **int?** | <em>group rank in SERP</em><br>position within a group of elements with identical <code>type</code> values<br>positions of elements with different <code>type</code> values are omitted from <code>rank_group</code> |[optional]|
+**RankAbsolute** | **int?** | <em>absolute rank in SERP</em><br>absolute position among all the elements in SERP |[optional]|
+**Position** | **string** | <em>the alignment of the element in SERP</em><br>can take the following values:<br><code>left</code>, <code>right</code> |[optional]|
+**Xpath** | **string** | <em>the <a href='https://en.wikipedia.org/wiki/XPath' rel='noopener noreferrer' target='_blank'>XPath</a> of the element</em> |[optional]|
+**JobId** | **string** | <em>ID of the job on Google Jobs</em> |[optional]|
+**Title** | **string** | <em>title of the element</em> |[optional]|
+**EmployerName** | **string** | <em>name of the employer</em> |[optional]|
+**EmployerUrl** | **string** | <em>URL to the employer's website</em> |[optional]|
+**EmployerImageUrl** | **string** | <em>URL to the image used in the job posting</em> |[optional]|
+**Location** | **string** | <em>location for which the job vacancy is posted</em> |[optional]|
+**SourceName** | **string** | <em>original source of the job vacancy</em> |[optional]|
+**SourceUrl** | **string** | <em>URL to the original source of the job vacancy</em> |[optional]|
+**Salary** | **string** | <em>the salary indicated in the job vacancy</em><br>if the salary isn't indicated, this field will equal <code>null</code> |[optional]|
+**ContractType** | **string** | <em>employment contract type</em> |[optional]|
+**Timestamp** | **string** | <em>date and time when the result was published</em><br>in the UTC format: 'yyyy-mm-dd hh-mm-ss +00:00'<br>example:<br><code class='long-string'>2019-11-15 12:57:46 +00:00</code> |[optional]|
+**TimeAgo** | **string** | <em>indicates how long ago the job vacancy was posted</em> |[optional]|
+**Rectangle** | **AiModeRectangleInfo** | <em>rectangle parameters</em><br>contains cartesian coordinates and pixel dimensions of the result's snippet in SERP;<br>in this case, will equal <code>null</code> |[optional]|

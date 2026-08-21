@@ -35,38 +35,38 @@ namespace DataForSeo.Client.Models
 
         /// <summary>
         /// direct URL to search engine results
-        /// <br/>you can use it to make sure that we provided accurate results
+        /// <br/>        you can use it to make sure that we provided accurate results
         /// </summary>
         [JsonProperty("check_url", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string CheckUrl { get; set; }
 
         /// <summary>
         /// date and time when the result was received
-        /// <br/>in the UTC format: “yyyy-mm-dd hh-mm-ss +00:00”
-        /// <br/>example:
-        /// <br/>2019-11-15 12:57:46 +00:00
+        /// <br/>            in the UTC format: “yyyy-mm-dd hh-mm-ss +00:00”
+        /// <br/>            example:
+        /// <br/>            <c>2019-11-15 12:57:46 +00:00</c>
         /// </summary>
         [JsonProperty("datetime", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string Datetime { get; set; }
 
         /// <summary>
         /// autocorrection of the search engine
-        /// <br/>if the search engine provided results for a keyword that was corrected, we will specify the keyword corrected by the search engine and the type of autocorrection
+        /// <br/>            if the search engine provided results for a keyword that was corrected, we will specify the keyword corrected by the search engine and the type of autocorrection
         /// </summary>
         [JsonProperty("spell", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public SpellInfo Spell { get; set; }
 
         /// <summary>
         /// types of search results in SERP
-        /// <br/>contains types of search results (items) found in SERP.
-        /// <br/>possible item:
-        /// <br/>youtube_video_info
+        /// <br/>            contains types of search results (<c>items</c>) found in SERP.
+        /// <br/>            possible item:
+        /// <br/>            <c>youtube_video_info</c>
         /// </summary>
         [JsonProperty("item_types", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public IEnumerable<string> ItemTypes { get; set; }
 
         /// <summary>
-        /// the number of results returned in the items array
+        /// the number of results returned in the <c>items</c> array
         /// </summary>
         [JsonProperty("items_count", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public long? ItemsCount { get; set; }

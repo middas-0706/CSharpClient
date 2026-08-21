@@ -5,4 +5,4 @@
 
 | Name | Type | Description | Notes |
 |------------ | ------------- | ------------- | -------------|
-**Result** | **IEnumerable<DataforseoLabsGoogleKeywordsForSiteLiveResultInfo>** | array of results |[optional]|
+**Result** | **IEnumerable<DataforseoLabsGoogleKeywordsForSiteLiveResultInfo>** | <em>array of results</em> |[optional]|

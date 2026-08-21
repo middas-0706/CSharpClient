@@ -63,9 +63,7 @@ var result = await dfsClient.AppDataApi.AppDataIdListAsync(new List<AppDataIdLis
 {
     new()
     {
-        Limit = 100,
-        Offset = 0,
-        Sort = "desc",
+        Limit = 10,
         IncludeMetadata = true,
     }
 });
@@ -114,8 +112,6 @@ var result = await dfsClient.AppDataApi.AppDataErrorsAsync(new List<AppDataError
     new()
     {
         Limit = 10,
-        Offset = 0,
-        FilteredFunction = "pingback_url",
     }
 });
 ```
@@ -1874,7 +1870,7 @@ var result = await dfsClient.AppDataApi.AppleAppListingsSearchLiveAsync(new List
         Description = "vpn",
         Categories = new List<string>()
         {
-            "Tools",
+            "Utilities",
         },
         OrderBy = new List<string>()
         {
@@ -1889,7 +1885,7 @@ var result = await dfsClient.AppDataApi.AppleAppListingsSearchLiveAsync(new List
                 4.5,
             },
         },
-        Limit = 2,
+        Limit = 10,
     }
 });
 ```

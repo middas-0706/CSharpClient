@@ -8,6 +8,12 @@ namespace DataForSeo.Client.Models
 
     public class BusinessDataBusinessListingsAvailableFiltersTaskInfo  : BaseResponseTaskInfo 
     {
+
+        /// <summary>
+        /// array of results
+        /// <br/>contains the full list of available parameters that can be used for data filtration
+        /// <br/>the parameters are grouped by the endpoint they can be used with
+        /// </summary>
         [JsonProperty("result", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public IEnumerable<BusinessDataBusinessListingsAvailableFiltersResultInfo> Result { get; set; }
 

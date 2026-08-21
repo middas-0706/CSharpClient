@@ -17,16 +17,16 @@ namespace DataForSeo.Client.Models
 
         /// <summary>
         /// date and time when the content was fethced
-        /// <br/>example:
-        /// <br/>'2022-11-01 10:02:52 +00:00'
+        /// <br/>            example:
+        /// <br/>            <c>'2022-11-01 10:02:52 +00:00'</c>
         /// </summary>
         [JsonProperty("fetch_time", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string FetchTime { get; set; }
 
         /// <summary>
         /// general status code
-        /// <br/>you can find the full list of the response codes here
-        /// <br/>Note: we strongly recommend designing a necessary system for handling related exceptional or error conditions
+        /// <br/>            you can find the full list of the response codes <see href="/v3/appendix/errors">here</see>
+        /// <br/>            Note: we strongly recommend designing a necessary system for handling related exceptional or error conditions
         /// </summary>
         [JsonProperty("status_code", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public int? StatusCode { get; set; }
@@ -39,8 +39,8 @@ namespace DataForSeo.Client.Models
 
         /// <summary>
         /// page content in the markdown format
-        /// <br/>page content in the text-to-HTML markdown format
-        /// <br/>specify markdown_view as true in the request to return the value
+        /// <br/>            page content in the <see href="https://daringfireball.net/projects/markdown/">text-to-HTML markdown format</see>
+        /// <br/>            specify <c>markdown_view</c> as <c>true</c> in the request to return the value
         /// </summary>
         [JsonProperty("page_as_markdown", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string PageAsMarkdown { get; set; }

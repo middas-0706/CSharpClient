@@ -29,7 +29,7 @@ namespace DataForSeo.Client.Models
         /// <summary>
         /// global product identifier on Google Shopping
         /// <br/>example:
-        /// <br/>4702526954592161872
+        /// <br/><c>4702526954592161872</c>
         /// <br/>learn more about the parameter in <see href="https://dataforseo.com/help-center/whats-a-gid-in-google-shopping-api">this help center guide</see>
         /// </summary>
         [JsonProperty("gid", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]

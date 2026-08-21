@@ -21,8 +21,8 @@ namespace DataForSeo.Client.Models
 
         /// <summary>
         /// group rank in SERP
-        /// <br/>position within a group of elements with identical type values
-        /// <br/>positions of elements with different type values are omitted from rank_group
+        /// <br/>position within a group of elements with identical <c>type</c> values
+        /// <br/>positions of elements with different <c>type</c> values are omitted from <c>rank_group</c>
         /// </summary>
         [JsonProperty("rank_group", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public int? RankGroup { get; set; }
@@ -36,15 +36,15 @@ namespace DataForSeo.Client.Models
 
         /// <summary>
         /// identifier of the element
-        /// <br/>full identifier of the element that consists from ticker and market_identifier
-        /// <br/>example: PX1:INDEXDB
+        /// <br/>full identifier of the element that consists from <c>ticker</c> and <c>market_identifier</c>
+        /// <br/>example: <c>PX1:INDEXDB</c>
         /// </summary>
         [JsonProperty("identifier", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string Identifier { get; set; }
 
         /// <summary>
         /// name of the market index as displayed on Google Finance
-        /// <br/>example: CAC 40
+        /// <br/>example: <c>CAC 40</c>
         /// </summary>
         [JsonProperty("displayed_name", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string DisplayedName { get; set; }
@@ -57,23 +57,23 @@ namespace DataForSeo.Client.Models
 
         /// <summary>
         /// location of the market index
-        /// <br/>example: Europe/Paris
+        /// <br/>example: <c>Europe/Paris</c>
         /// </summary>
         [JsonProperty("location", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string Location { get; set; }
 
         /// <summary>
         /// growth trend of the market index
-        /// <br/>possible values: up, down, stable
+        /// <br/>possible values: <c>up</c>, <c>down</c>, <c>stable</c>
         /// </summary>
         [JsonProperty("trend", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string Trend { get; set; }
 
         /// <summary>
         /// date and time of the value readout
-        /// <br/>in the UTC format: “yyyy-mm-dd hh-mm-ss +00:00”
+        /// <br/>in the UTC format: 'yyyy-mm-dd hh-mm-ss +00:00'
         /// <br/>example:
-        /// <br/>2025-02-10 09:40:00 +00:00
+        /// <br/><c>2025-02-10 09:40:00 +00:00</c>
         /// </summary>
         [JsonProperty("timestamp", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string Timestamp { get; set; }

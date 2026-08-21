@@ -41,14 +41,14 @@ namespace DataForSeo.Client.Models
 
         /// <summary>
         /// primary content on the page
-        /// <br/>you can find more information about content priority calculation in this help center article
+        /// <br/>            you can find more information about content priority calculation in this <see href="https://dataforseo.com/help-center/difference-between-primary-and-secondary-content">help center article</see>
         /// </summary>
         [JsonProperty("primary_content", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public IEnumerable<SectionContentItemInfo> PrimaryContent { get; set; }
 
         /// <summary>
         /// secondary content on the page
-        /// <br/>you can find more information about content priority calculation in this help center article
+        /// <br/>            you can find more information about content priority calculation in this <see href="https://dataforseo.com/help-center/difference-between-primary-and-secondary-content">help center article</see>
         /// </summary>
         [JsonProperty("secondary_content", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public IEnumerable<SectionContentItemInfo> SecondaryContent { get; set; }

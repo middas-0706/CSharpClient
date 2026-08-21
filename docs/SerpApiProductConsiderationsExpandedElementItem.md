@@ -13,4 +13,4 @@
 **Url** | **string** | <em>relevant URL</em> |[optional]|
 **Timestamp** | **string** | <em>date and time when the result was published</em><br>in the UTC format: “yyyy-mm-dd hh-mm-ss +00:00”<br>example:<br><code class='long-string'>2019-11-15 12:57:46 +00:00</code> |[optional]|
 **RelatedSearches** | **IEnumerable<string>** |  |[optional]|
-**AboutThisResult** | **AboutThisResultElement** | <em>contains information from the 'About this result' panel</em><br><strong>Note:</strong> element no longer appears in SERP and has been deprecated in SERP API |[optional]|
+**AboutThisResult** | **AboutThisResultElement** | <em>contains information from the 'About this result' panel</em><br><strong>Note:</strong> this object is deprecated and always returns <code>null</null> |[optional]|

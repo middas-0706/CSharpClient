@@ -58,7 +58,7 @@ namespace DataForSeo.Client.Models
 
         /// <summary>
         /// contains information from the 'About this result' panel
-        /// <br/>Note: element no longer appears in SERP and has been deprecated in SERP API
+        /// <br/>Note: this object is deprecated and always returns null
         /// </summary>
         [Obsolete]
         [JsonProperty("about_this_result", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]

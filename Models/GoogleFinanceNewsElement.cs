@@ -36,23 +36,23 @@ namespace DataForSeo.Client.Models
 
         /// <summary>
         /// featured image URL
-        /// <br/>URL of the news article’s featured image
+        /// <br/>URL of the news article's featured image
         /// </summary>
         [JsonProperty("image_url", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string ImageUrl { get; set; }
 
         /// <summary>
         /// date and time of the value readout
-        /// <br/>in the UTC format: “yyyy-mm-dd hh-mm-ss +00:00”
+        /// <br/>in the UTC format: 'yyyy-mm-dd hh-mm-ss +00:00'
         /// <br/>example:
-        /// <br/>2025-02-10 09:40:00 +00:00
+        /// <br/><c>2025-02-10 09:40:00 +00:00</c>
         /// </summary>
         [JsonProperty("timestamp", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string Timestamp { get; set; }
 
         /// <summary>
         /// market indexes quoted in the news article
-        /// <br/>information about market indexes quoted in the google_finance_news_element
+        /// <br/>information about market indexes quoted in the <c>google_finance_news_element</c>
         /// </summary>
         [JsonProperty("quotes", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public IEnumerable<BaseSerpApiGoogleFinanceElementItem> Quotes { get; set; }

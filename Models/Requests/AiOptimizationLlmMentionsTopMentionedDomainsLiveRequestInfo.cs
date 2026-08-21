@@ -81,6 +81,7 @@ namespace DataForSeo.Client.Models.Requests
         /// <br/>this parameter specifies which links will be used to extract domains and aggregation data
         /// <br/>possible values: <c>sources</c>, <c>search_results</c>
         /// <br/>default value: <c>sources</c>
+        /// <br/>Note:if you specify <c>search_results</c>, the data will be available for <c>chat_gpt</c> only
         /// </summary>
         [JsonProperty("links_scope", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string LinksScope { get; set; }

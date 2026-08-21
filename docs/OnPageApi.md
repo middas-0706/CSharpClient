@@ -52,9 +52,7 @@ var result = await dfsClient.OnPageApi.OnPageIdListAsync(new List<OnPageIdListRe
 {
     new()
     {
-        Limit = 100,
-        Offset = 0,
-        Sort = "desc",
+        Limit = 10,
         IncludeMetadata = true,
     }
 });

@@ -53,7 +53,7 @@ namespace DataForSeo.Client.Models
 
         /// <summary>
         /// information about preview videos
-        /// <br/>array of objects containing information about videos in the preview block of the playlist element
+        /// <br/>            array of objects containing information about videos in the preview block of the playlist element
         /// </summary>
         [JsonProperty("preview_videos", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public IEnumerable<PreviewVideos> PreviewVideos { get; set; }

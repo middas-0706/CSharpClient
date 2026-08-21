@@ -11,8 +11,8 @@ namespace DataForSeo.Client.Models
 
         /// <summary>
         /// group rank in SERP
-        /// <br/>position within a group of elements with identical type values
-        /// <br/>positions of elements with different type values are omitted from rank_group
+        /// <br/>position within a group of elements with identical <c>type</c> values
+        /// <br/>positions of elements with different <c>type</c> values are omitted from <c>rank_group</c>
         /// </summary>
         [JsonProperty("rank_group", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public int? RankGroup { get; set; }
@@ -26,14 +26,14 @@ namespace DataForSeo.Client.Models
 
         /// <summary>
         /// title of the news element
-        /// <br/>example: In the news
+        /// <br/>example: <c>In the news</c>
         /// </summary>
         [JsonProperty("title", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string Title { get; set; }
 
         /// <summary>
         /// sub-title of the news element
-        /// <br/>example: Based on Europe, Middle East, and Africa
+        /// <br/>example: <c>Based on Europe, Middle East, and Africa</c>
         /// </summary>
         [JsonProperty("sub_title", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string SubTitle { get; set; }
@@ -41,7 +41,7 @@ namespace DataForSeo.Client.Models
         /// <summary>
         /// market indexes data
         /// <br/>array of items containing market indexes data;
-        /// <br/>possible type of items: google_finance_asset_pair_element, google_finance_market_instrument_element, google_finance_market_index_element
+        /// <br/>possible <c>type</c> of items: <c>google_finance_asset_pair_element</c>, <c>google_finance_market_instrument_element</c>, <c>google_finance_market_index_element</c>
         /// </summary>
         [JsonProperty("items", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public IEnumerable<GoogleFinanceNewsElement> Items { get; set; }

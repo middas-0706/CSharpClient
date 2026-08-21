@@ -22,30 +22,30 @@ namespace DataForSeo.Client.Models
 
         /// <summary>
         /// group rank in SERP
-        /// <br/>position within a group of elements with identical <c>type</c> values
-        /// <br/>positions of elements with different <c>type</c> values are omitted from <c>rank_group</c>
+        /// <br/>            position within a group of elements with identical <c>type</c> values
+        /// <br/>            positions of elements with different <c>type</c> values are omitted from <c>rank_group</c>
         /// </summary>
         [JsonProperty("rank_group", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public int? RankGroup { get; set; }
 
         /// <summary>
         /// absolute rank in SERP for the target domain
-        /// <br/>absolute position among all the elements in SERP
+        /// <br/>            absolute position among all the elements in SERP
         /// </summary>
         [JsonProperty("rank_absolute", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public int? RankAbsolute { get; set; }
 
         /// <summary>
         /// block rank in SERP
-        /// <br/>position among all the blocks in SERP
+        /// <br/>            position among all the blocks in SERP
         /// </summary>
         [JsonProperty("block_rank", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public int? BlockRank { get; set; }
 
         /// <summary>
         /// name of the block in SERP
-        /// <br/>example:
-        /// <br/><c>'People also watched'</c>
+        /// <br/>            example:
+        /// <br/>            <c>'People also watched'</c>
         /// </summary>
         [JsonProperty("block_name", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string BlockName { get; set; }

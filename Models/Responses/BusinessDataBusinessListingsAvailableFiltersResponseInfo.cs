@@ -8,6 +8,10 @@ namespace DataForSeo.Client.Models.Responses
 
     public class BusinessDataBusinessListingsAvailableFiltersResponseInfo  : BaseResponseInfo 
     {
+
+        /// <summary>
+        /// array of tasks
+        /// </summary>
         [JsonProperty("tasks", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public IEnumerable<BusinessDataBusinessListingsAvailableFiltersTaskInfo> Tasks { get; set; }
 

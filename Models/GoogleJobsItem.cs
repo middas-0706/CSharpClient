@@ -17,8 +17,8 @@ namespace DataForSeo.Client.Models
 
         /// <summary>
         /// group rank in SERP
-        /// <br/>position within a group of elements with identical type values
-        /// <br/>positions of elements with different type values are omitted from rank_group
+        /// <br/>position within a group of elements with identical <c>type</c> values
+        /// <br/>positions of elements with different <c>type</c> values are omitted from <c>rank_group</c>
         /// </summary>
         [JsonProperty("rank_group", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public int? RankGroup { get; set; }
@@ -33,13 +33,13 @@ namespace DataForSeo.Client.Models
         /// <summary>
         /// the alignment of the element in SERP
         /// <br/>can take the following values:
-        /// <br/>left, right
+        /// <br/><c>left</c>, <c>right</c>
         /// </summary>
         [JsonProperty("position", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string Position { get; set; }
 
         /// <summary>
-        /// the XPath of the element
+        /// the <see href="https://en.wikipedia.org/wiki/XPath">XPath</see> of the element
         /// </summary>
         [JsonProperty("xpath", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string Xpath { get; set; }
@@ -63,7 +63,7 @@ namespace DataForSeo.Client.Models
         public string EmployerName { get; set; }
 
         /// <summary>
-        /// URL to the employer’s website
+        /// URL to the employer's website
         /// </summary>
         [JsonProperty("employer_url", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string EmployerUrl { get; set; }
@@ -94,7 +94,7 @@ namespace DataForSeo.Client.Models
 
         /// <summary>
         /// the salary indicated in the job vacancy
-        /// <br/>if the salary isn’t indicated, this field will equal null
+        /// <br/>if the salary isn't indicated, this field will equal <c>null</c>
         /// </summary>
         [JsonProperty("salary", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string Salary { get; set; }
@@ -107,9 +107,9 @@ namespace DataForSeo.Client.Models
 
         /// <summary>
         /// date and time when the result was published
-        /// <br/>in the UTC format: “yyyy-mm-dd hh-mm-ss +00:00”
+        /// <br/>in the UTC format: 'yyyy-mm-dd hh-mm-ss +00:00'
         /// <br/>example:
-        /// <br/>2019-11-15 12:57:46 +00:00
+        /// <br/><c>2019-11-15 12:57:46 +00:00</c>
         /// </summary>
         [JsonProperty("timestamp", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string Timestamp { get; set; }
@@ -122,8 +122,8 @@ namespace DataForSeo.Client.Models
 
         /// <summary>
         /// rectangle parameters
-        /// <br/>contains cartesian coordinates and pixel dimensions of the result’s snippet in SERP;
-        /// <br/>in this case, will equal null
+        /// <br/>contains cartesian coordinates and pixel dimensions of the result's snippet in SERP;
+        /// <br/>in this case, will equal <c>null</c>
         /// </summary>
         [JsonProperty("rectangle", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public AiModeRectangleInfo Rectangle { get; set; }

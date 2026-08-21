@@ -45,9 +45,7 @@ var result = await dfsClient.BacklinksApi.BacklinksIdListAsync(new List<Backlink
 {
     new()
     {
-        Limit = 100,
-        Offset = 0,
-        Sort = "desc",
+        Limit = 10,
         IncludeMetadata = true,
     }
 });
@@ -96,8 +94,6 @@ var result = await dfsClient.BacklinksApi.BacklinksErrorsAsync(new List<Backlink
     new()
     {
         Limit = 10,
-        Offset = 0,
-        FilteredFunction = "backlinks/content_duplicates",
     }
 });
 ```

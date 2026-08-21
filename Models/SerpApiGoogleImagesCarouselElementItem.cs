@@ -14,7 +14,7 @@ namespace DataForSeo.Client.Models
         /// <summary>
         /// the alignment of the element in SERP
         /// <br/>can take the following values:
-        /// <br/>left, right
+        /// <br/><c>left</c>, <c>right</c>
         /// </summary>
         [JsonProperty("position", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string Position { get; set; }
@@ -34,7 +34,7 @@ namespace DataForSeo.Client.Models
         /// <summary>
         /// rectangle parameters
         /// <br/>contains cartesian coordinates and pixel dimensions of the result’s snippet in SERP
-        /// <br/>note: calculate_rectangles parameter is not yet available when setting tasks for this search engine type, that’s why rectangle always equals null
+        /// <br/>note: calculate_rectangles parameter is not yet available when setting tasks for this search engine type, that’s why <c>rectangle</c> always equals <c>null</c>
         /// </summary>
         [JsonProperty("rectangle", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public AiModeRectangleInfo Rectangle { get; set; }

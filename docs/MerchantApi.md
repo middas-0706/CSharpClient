@@ -59,9 +59,7 @@ var result = await dfsClient.MerchantApi.MerchantIdListAsync(new List<MerchantId
 {
     new()
     {
-        Limit = 100,
-        Offset = 0,
-        Sort = "desc",
+        Limit = 10,
         IncludeMetadata = true,
     }
 });
@@ -1472,7 +1470,7 @@ var result = await dfsClient.MerchantApi.AmazonSellersTaskPostAsync(new List<Mer
 {
     new()
     {
-        LanguageCode = "en_US",
+        LanguageCode = "en",
         LocationCode = 2840,
         Asin = "B085RFFC9Q",
     }

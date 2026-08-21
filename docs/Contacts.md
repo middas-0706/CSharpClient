@@ -5,5 +5,5 @@
 
 | Name | Type | Description | Notes |
 |------------ | ------------- | ------------- | -------------|
-**Telephones** | **IEnumerable<string>** | array of telephone numbers |[optional]|
-**Emails** | **IEnumerable<string>** | array of emails |[optional]|
+**Telephones** | **IEnumerable<string>** | <em>array of telephone numbers</em><br> |[optional]|
+**Emails** | **IEnumerable<string>** | <em>array of emails</em><br> |[optional]|

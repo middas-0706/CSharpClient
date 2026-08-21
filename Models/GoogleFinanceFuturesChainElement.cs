@@ -16,23 +16,23 @@ namespace DataForSeo.Client.Models
         public string Type { get; set; }
 
         /// <summary>
-        /// futures’ date and time of expiration
-        /// <br/>in the UTC format: “yyyy-mm-dd hh-mm-ss +00:00”
+        /// futures' date and time of expiration
+        /// <br/>in the UTC format: 'yyyy-mm-dd hh-mm-ss +00:00'
         /// <br/>example:
-        /// <br/>2025-02-10 09:40:00 +00:00
+        /// <br/><c>2025-02-10 09:40:00 +00:00</c>
         /// </summary>
         [JsonProperty("expiration_timestamp", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string ExpirationTimestamp { get; set; }
 
         /// <summary>
-        /// futures’ symbol
+        /// futures' symbol
         /// </summary>
         [JsonProperty("symbol", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string Symbol { get; set; }
 
         /// <summary>
         /// price of the market instrument
-        /// <br/>price of the market instrument at a given timestamp
+        /// <br/>price of the market instrument at a given <c>timestamp</c>
         /// </summary>
         [JsonProperty("price", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public double? Price { get; set; }
@@ -45,7 +45,7 @@ namespace DataForSeo.Client.Models
 
         /// <summary>
         /// change in price of the market instrument
-        /// <br/>change in price at a given timestamp
+        /// <br/>change in <c>price</c> at a given <c>timestamp</c>
         /// </summary>
         [JsonProperty("price_delta", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public double? PriceDelta { get; set; }
@@ -58,7 +58,7 @@ namespace DataForSeo.Client.Models
 
         /// <summary>
         /// growth trend of the market index
-        /// <br/>possible values: up, down, stable
+        /// <br/>possible values: <c>up</c>, <c>down</c>, <c>stable</c>
         /// </summary>
         [JsonProperty("trend", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string Trend { get; set; }

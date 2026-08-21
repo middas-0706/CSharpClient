@@ -8,6 +8,10 @@ namespace DataForSeo.Client.Models.Responses
 
     public class SerpGoogleMapsLiveAdvancedResponseInfo  : BaseResponseInfo 
     {
+
+        /// <summary>
+        /// array of tasks
+        /// </summary>
         [JsonProperty("tasks", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public IEnumerable<SerpGoogleMapsLiveAdvancedTaskInfo> Tasks { get; set; }
 

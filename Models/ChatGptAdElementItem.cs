@@ -10,6 +10,14 @@ namespace DataForSeo.Client.Models
     {
 
         /// <summary>
+        /// indicates whether the ad is displayed to the user
+        /// <br/>if `true`, the ad is present in the response and shown on the page
+        /// <br/>if `false`, the ad is present in the response but not displayed to the user
+        /// </summary>
+        [JsonProperty("is_rendered", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
+        public bool? IsRendered { get; set; }
+
+        /// <summary>
         /// name of the brand
         /// </summary>
         [JsonProperty("title", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]

@@ -5,7 +5,7 @@
 
 | Name | Type | Description | Notes |
 |------------ | ------------- | ------------- | -------------|
-**SeType** | **string** | search engine type |[optional]|
-**MainIntent** | **string** | main search intentpossible values: informational, navigational, commercial, transactional |[optional]|
-**ForeignIntent** | **IEnumerable<string>** | supplementary search intentspossible values: informational, navigational, commercial, transactional |[optional]|
-**LastUpdatedTime** | **string** | date and time when keyword data was updatedin the UTC format: “yyyy-mm-dd hh-mm-ss +00:00”example:2019-11-15 12:57:46 +00:00 |[optional]|
+**SeType** | **string** | <em>search engine type</em> |[optional]|
+**MainIntent** | **string** | <em>main search intent</em><br>possible values: <code>informational</code>, <code>navigational</code>, <code>commercial</code>, <code>transactional</code> |[optional]|
+**ForeignIntent** | **IEnumerable<string>** | <em>supplementary search intents</em><br>possible values: <code>informational</code>, <code>navigational</code>, <code>commercial</code>, <code>transactional</code> |[optional]|
+**LastUpdatedTime** | **string** | <em>date and time when keyword data was updated</em><br>in the UTC format: “yyyy-mm-dd hh-mm-ss +00:00”<br>example:<br><code class='long-string'>2019-11-15 12:57:46 +00:00</code> |[optional]|

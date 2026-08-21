@@ -23,14 +23,14 @@ namespace DataForSeo.Client.Models
 
         /// <summary>
         /// main topic on the page
-        /// <br/>you can find more information about topic priority calculation in this help center article
+        /// <br/>            you can find more information about topic priority calculation in this <see href="https://dataforseo.com/help-center/difference-between-primary-and-secondary-content#topics">help center article</see>
         /// </summary>
         [JsonProperty("main_topic", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public IEnumerable<TopicInfo> MainTopic { get; set; }
 
         /// <summary>
         /// secondary topic on the page
-        /// <br/>you can find more information about topic priority calculation in this help center article
+        /// <br/>            you can find more information about topic priority calculation in this <see href="https://dataforseo.com/help-center/difference-between-primary-and-secondary-content#topics">help center article</see>
         /// </summary>
         [JsonProperty("secondary_topic", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public IEnumerable<TopicInfo> SecondaryTopic { get; set; }
@@ -43,21 +43,21 @@ namespace DataForSeo.Client.Models
 
         /// <summary>
         /// array of products displayed on the page
-        /// <br/>contains objects with information on products displayed on the page
+        /// <br/>            contains objects with information on products displayed on the page
         /// </summary>
         [JsonProperty("offers", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public IEnumerable<ContentOfferInfo> Offers { get; set; }
 
         /// <summary>
         /// array of comments displayed on the page
-        /// <br/>contains objects with information on comments related to displayed products
+        /// <br/>            contains objects with information on comments related to displayed products
         /// </summary>
         [JsonProperty("comments", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public IEnumerable<ContentCommentInfo> Comments { get; set; }
 
         /// <summary>
         /// contact information
-        /// <br/>contains contact information displayed on the page
+        /// <br/>            contains contact information displayed on the page
         /// </summary>
         [JsonProperty("contacts", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public Contacts Contacts { get; set; }

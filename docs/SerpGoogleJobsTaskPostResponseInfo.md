@@ -5,4 +5,4 @@
 
 | Name | Type | Description | Notes |
 |------------ | ------------- | ------------- | -------------|
-**Tasks** | **IEnumerable<SerpGoogleJobsTaskPostTaskInfo>** |  |[optional]|
+**Tasks** | **IEnumerable<SerpGoogleJobsTaskPostTaskInfo>** | <em>array of tasks</em> |[optional]|

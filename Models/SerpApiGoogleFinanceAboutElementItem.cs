@@ -11,8 +11,8 @@ namespace DataForSeo.Client.Models
 
         /// <summary>
         /// group rank in SERP
-        /// <br/>position within a group of elements with identical type values
-        /// <br/>positions of elements with different type values are omitted from rank_group
+        /// <br/>position within a group of elements with identical <c>type</c> values
+        /// <br/>positions of elements with different <c>type</c> values are omitted from <c>rank_group</c>
         /// </summary>
         [JsonProperty("rank_group", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public int? RankGroup { get; set; }
@@ -26,7 +26,7 @@ namespace DataForSeo.Client.Models
 
         /// <summary>
         /// displayed name of the market index
-        /// <br/>example: E-mini Dow ($5)
+        /// <br/>example: <c>E-mini Dow ($5)</c>
         /// </summary>
         [JsonProperty("displayed_name", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string DisplayedName { get; set; }
@@ -51,9 +51,9 @@ namespace DataForSeo.Client.Models
 
         /// <summary>
         /// date when the company was founded
-        /// <br/>in the format: “yyyy-mm-ddThh-mm-ssZ”
+        /// <br/>in the format: 'yyyy-mm-ddThh-mm-ssZ'
         /// <br/>example:
-        /// <br/>1993-04-05T00:00:00Z
+        /// <br/><c>1993-04-05T00:00:00Z</c>
         /// </summary>
         [JsonProperty("founded", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string Founded { get; set; }

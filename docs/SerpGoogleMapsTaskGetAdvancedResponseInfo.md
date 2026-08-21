@@ -5,4 +5,4 @@
 
 | Name | Type | Description | Notes |
 |------------ | ------------- | ------------- | -------------|
-**Tasks** | **IEnumerable<SerpGoogleMapsTaskGetAdvancedTaskInfo>** | array of tasks |[optional]|
+**Tasks** | **IEnumerable<SerpGoogleMapsTaskGetAdvancedTaskInfo>** | <em>array of tasks</em> |[optional]|

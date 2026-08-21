@@ -22,19 +22,22 @@ namespace DataForSeo.Client.Models
         public string SeedKeyword { get; set; }
 
         /// <summary>
-        /// keyword data for the seed keywordfields in this object are identical to those of the items array
+        /// keyword data for the seed keyword
+        /// <br/>fields in this object are identical to those of the <c>items</c> array
         /// </summary>
         [JsonProperty("seed_keyword_data", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public KeywordDataInfo SeedKeywordData { get; set; }
 
         /// <summary>
-        /// location code in a POST arrayif there is no data, then the value is_nulln
+        /// location code in a POST array
+        /// <br/>if there is no data, then the value is_<c>null</c>n
         /// </summary>
         [JsonProperty("location_code", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public int? LocationCode { get; set; }
 
         /// <summary>
-        /// language code in a POST arrayif there is no data, then the value is_nulln
+        /// language code in a POST array
+        /// <br/>if there is no data, then the value is_<c>null</c>n
         /// </summary>
         [JsonProperty("language_code", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string LanguageCode { get; set; }
@@ -46,7 +49,7 @@ namespace DataForSeo.Client.Models
         public long? TotalCount { get; set; }
 
         /// <summary>
-        /// the number of results returned in the items array
+        /// the number of results returned in the <c>items</c> array
         /// </summary>
         [JsonProperty("items_count", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public long? ItemsCount { get; set; }
@@ -58,7 +61,9 @@ namespace DataForSeo.Client.Models
         public int? Offset { get; set; }
 
         /// <summary>
-        /// offset token for subsequent requestsyou can use the string provided in this field to get the subsequent results of the initial task;note: offset_token values are unique for each subsequent task
+        /// offset token for subsequent requests
+        /// <br/>you can use the string provided in this field to get the subsequent results of the initial task;
+        /// <br/>note: <c>offset_token</c> values are unique for each subsequent task
         /// </summary>
         [JsonProperty("offset_token", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string OffsetToken { get; set; }

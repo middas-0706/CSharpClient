@@ -17,9 +17,9 @@ namespace DataForSeo.Client.Models
 
         /// <summary>
         /// date and time of the value readout
-        /// <br/>in the UTC format: “yyyy-mm-dd hh-mm-ss +00:00”
+        /// <br/>in the UTC format: 'yyyy-mm-dd hh-mm-ss +00:00'
         /// <br/>example:
-        /// <br/>2025-02-10 09:40:00 +00:00
+        /// <br/><c>2025-02-10 09:40:00 +00:00</c>
         /// </summary>
         [JsonProperty("timestamp", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string Timestamp { get; set; }
@@ -193,7 +193,7 @@ namespace DataForSeo.Client.Models
         public double? CashFromInvestingDelta { get; set; }
 
         /// <summary>
-        /// cash from financing
+        /// cash from financing/em&gt;
         /// </summary>
         [JsonProperty("cash_from_financing", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public double? CashFromFinancing { get; set; }

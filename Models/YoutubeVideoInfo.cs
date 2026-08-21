@@ -17,15 +17,15 @@ namespace DataForSeo.Client.Models
 
         /// <summary>
         /// group rank in SERP
-        /// <br/>position within a group of elements with identical type values
-        /// <br/>positions of elements with different type values are omitted from rank_group
+        /// <br/>            position within a group of elements with identical <c>type</c> values
+        /// <br/>            positions of elements with different <c>type</c> values are omitted from <c>rank_group</c>
         /// </summary>
         [JsonProperty("rank_group", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public int? RankGroup { get; set; }
 
         /// <summary>
         /// absolute rank in SERP for the target domain
-        /// <br/>absolute position among all the elements in SERP
+        /// <br/>            absolute position among all the elements in SERP
         /// </summary>
         [JsonProperty("rank_absolute", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public int? RankAbsolute { get; set; }
@@ -116,15 +116,16 @@ namespace DataForSeo.Client.Models
 
         /// <summary>
         /// date and time when the result is published
-        /// <br/>in the UTC format: “yyyy-mm-dd hh-mm-ss +00:00”
-        /// <br/>example:
-        /// <br/>2022-11-15 12:57:46 +00:00
+        /// <br/>            in the UTC format: “yyyy-mm-dd hh-mm-ss +00:00”
+        /// <br/>            example:
+        /// <br/>            <c>2022-11-15 12:57:46 +00:00</c>
         /// </summary>
         [JsonProperty("timestamp", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string Timestamp { get; set; }
 
         /// <summary>
         /// keywords relevant to the video
+        /// <br/>            also known as 'YouTube tags'
         /// </summary>
         [JsonProperty("keywords", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public IEnumerable<string> Keywords { get; set; }

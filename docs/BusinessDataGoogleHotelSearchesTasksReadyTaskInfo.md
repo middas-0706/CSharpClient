@@ -5,4 +5,4 @@
 
 | Name | Type | Description | Notes |
 |------------ | ------------- | ------------- | -------------|
-**Result** | **IEnumerable<BusinessDataGoogleHotelSearchesTasksReadyResultInfo>** | array of results |[optional]|
+**Result** | **IEnumerable<BusinessDataGoogleHotelSearchesTasksReadyResultInfo>** | <em>array of results</em> |[optional]|

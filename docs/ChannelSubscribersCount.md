@@ -5,5 +5,5 @@
 
 | Name | Type | Description | Notes |
 |------------ | ------------- | ------------- | -------------|
-**DisplayedCount** | **string** | displayed subscriber count<br>subscriber count as displayed on YouTube |[optional]|
-**Count** | **long?** | subscriber count |[optional]|
+**DisplayedCount** | **string** | <em>displayed subscriber count</em><br>            subscriber count as displayed on YouTube |[optional]|
+**Count** | **long?** | <em>subscriber count</em> |[optional]|

@@ -21,8 +21,8 @@ namespace DataForSeo.Client.Models
 
         /// <summary>
         /// group rank in SERP
-        /// <br/>position within a group of elements with identical type values
-        /// <br/>positions of elements with different type values are omitted from rank_group
+        /// <br/>position within a group of elements with identical <c>type</c> values
+        /// <br/>positions of elements with different <c>type</c> values are omitted from <c>rank_group</c>
         /// </summary>
         [JsonProperty("rank_group", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public int? RankGroup { get; set; }
@@ -35,7 +35,7 @@ namespace DataForSeo.Client.Models
         public int? RankAbsolute { get; set; }
 
         /// <summary>
-        /// the XPath of the element
+        /// the <see href="https://en.wikipedia.org/wiki/XPath">XPath</see> of the element
         /// </summary>
         [JsonProperty("xpath", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string Xpath { get; set; }

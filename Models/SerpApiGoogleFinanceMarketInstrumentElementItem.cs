@@ -11,7 +11,7 @@ namespace DataForSeo.Client.Models
 
         /// <summary>
         /// ticker of the market index
-        /// <br/>example: DAX
+        /// <br/>example: <c>DAX</c>
         /// </summary>
         [JsonProperty("ticker", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string Ticker { get; set; }
@@ -24,14 +24,14 @@ namespace DataForSeo.Client.Models
 
         /// <summary>
         /// change in price
-        /// <br/>change in price at a given timestamp
+        /// <br/>change in <c>price</c> at a given <c>timestamp</c>
         /// </summary>
         [JsonProperty("price_delta", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public double? PriceDelta { get; set; }
 
         /// <summary>
         /// price currency
-        /// <br/>example: USD
+        /// <br/>example: <c>USD</c>
         /// </summary>
         [JsonProperty("price_currency", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string PriceCurrency { get; set; }

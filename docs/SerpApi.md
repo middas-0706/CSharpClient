@@ -202,9 +202,7 @@ var result = await dfsClient.SerpApi.IdListAsync(new List<SerpIdListRequestInfo>
 {
     new()
     {
-        Limit = 100,
-        Offset = 0,
-        Sort = "desc",
+        Limit = 10,
         IncludeMetadata = true,
     }
 });

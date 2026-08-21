@@ -5,5 +5,5 @@
 
 | Name | Type | Description | Notes |
 |------------ | ------------- | ------------- | -------------|
-**Market** | **string** | financial market identifier<br>possible values: US, Europe, Asia, Currencies, Crypto, Futures |[optional]|
-**Items** | **IEnumerable<BaseSerpApiGoogleFinanceElementItem>** | elements of search results found in SERP |[optional]|
+**Market** | **string** | <em>financial market identifier</em><br>possible values: <code>US</code>, <code>Europe</code>, <code>Asia</code>, <code>Currencies</code>, <code>Crypto</code>, <code>Futures</code> |[optional]|
+**Items** | **IEnumerable<BaseSerpApiGoogleFinanceElementItem>** | <em>elements of search results found in SERP</em> |[optional]|

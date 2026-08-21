@@ -11,7 +11,7 @@ namespace DataForSeo.Client.Models
 
         /// <summary>
         /// financial market identifier
-        /// <br/>possible values: US, Europe, Asia, Currencies, Crypto, Futures
+        /// <br/>possible values: <c>US</c>, <c>Europe</c>, <c>Asia</c>, <c>Currencies</c>, <c>Crypto</c>, <c>Futures</c>
         /// </summary>
         [JsonProperty("market", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string Market { get; set; }

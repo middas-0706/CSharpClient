@@ -5,4 +5,4 @@
 
 | Name | Type | Description | Notes |
 |------------ | ------------- | ------------- | -------------|
-**Result** | **IEnumerable<SerpGoogleMapsLiveAdvancedResultInfo>** |  |[optional]|
+**Result** | **IEnumerable<SerpGoogleMapsLiveAdvancedResultInfo>** | <em>array of results</em> |[optional]|

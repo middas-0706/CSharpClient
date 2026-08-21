@@ -5,4 +5,4 @@
 
 | Name | Type | Description | Notes |
 |------------ | ------------- | ------------- | -------------|
-**Tasks** | **IEnumerable<SerpGoogleFinanceTickerSearchTaskGetAdvancedTaskInfo>** | array of tasks |[optional]|
+**Tasks** | **IEnumerable<SerpGoogleFinanceTickerSearchTaskGetAdvancedTaskInfo>** | <em>array of tasks</em> |[optional]|

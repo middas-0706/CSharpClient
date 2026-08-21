@@ -34,19 +34,19 @@ namespace DataForSeo.Client.Models
         public int? Height { get; set; }
 
         /// <summary>
-        /// bit rate of the video
+        /// <see href="https://en.wikipedia.org/wiki/Bit_rate">bit rate</see> of the video
         /// </summary>
         [JsonProperty("bitrate", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public int? Bitrate { get; set; }
 
         /// <summary>
-        /// media type of the video
+        /// <see href="https://en.wikipedia.org/wiki/Media_type">media type</see> of the video
         /// </summary>
         [JsonProperty("mime_type", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string MimeType { get; set; }
 
         /// <summary>
-        /// frame rate of the video
+        /// <see href="https://en.wikipedia.org/wiki/Frame_rate">frame rate</see> of the video
         /// </summary>
         [JsonProperty("fps", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public int? Fps { get; set; }

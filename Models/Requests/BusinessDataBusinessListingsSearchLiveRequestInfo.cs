@@ -54,6 +54,7 @@ namespace DataForSeo.Client.Models.Requests
         /// <br/>the maximum value for 'radius': <c>100000</c>
         /// <br/>example:
         /// <br/><c>53.476225,-2.243572,200</c>
+        /// <br/>learn more about how to set location parameters in this API on our <see href="https://dataforseo.com/help-center/how-to-specify-location-settings-in-business-listings-api">Help Center</see>
         /// </summary>
         [JsonProperty("location_coordinate", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string LocationCoordinate { get; set; }

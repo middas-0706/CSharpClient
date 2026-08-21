@@ -5,4 +5,4 @@
 
 | Name | Type | Description | Notes |
 |------------ | ------------- | ------------- | -------------|
-**Tasks** | **IEnumerable<OnPageContentParsingLiveTaskInfo>** | array of tasks |[optional]|
+**Tasks** | **IEnumerable<OnPageContentParsingLiveTaskInfo>** | <em>array of tasks</em> |[optional]|
