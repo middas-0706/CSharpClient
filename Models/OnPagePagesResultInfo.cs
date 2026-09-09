@@ -10,8 +10,7 @@ namespace DataForSeo.Client.Models
     {
 
         /// <summary>
-        /// status of the crawling session
-        /// <br/>possible values: <c>in_progress</c>, <c>finished</c>
+        /// status of the crawling sessionpossible values: in_progress, finished
         /// </summary>
         [JsonProperty("crawl_progress", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string CrawlProgress { get; set; }

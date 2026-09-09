@@ -14,7 +14,7 @@ namespace DataForSeo.Client.Models
         /// <br/>contains information about the rating a customer has given to the product
         /// </summary>
         [JsonProperty("rating", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public ContentRatingInfo Rating { get; set; }
+        public ContententRatingInfo Rating { get; set; }
 
         /// <summary>
         /// title of the customer’s comment

@@ -109,7 +109,7 @@ namespace DataForSeo.Client.Models
         /// <br/>all ratings found on the page based on microdata
         /// </summary>
         [JsonProperty("ratings", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public IEnumerable<ContentRatingInfo> Ratings { get; set; }
+        public IEnumerable<ContententRatingInfo> Ratings { get; set; }
 
         /// <summary>
         /// social media engagement metrics

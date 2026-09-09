@@ -16,15 +16,13 @@ namespace DataForSeo.Client.Models
         public string Title { get; set; }
 
         /// <summary>
-        /// <see href="https://en.wikipedia.org/wiki/Code_page">code page</see>
-        /// <br/>example: <c>65001</c>
+        /// code pageexample: 65001
         /// </summary>
         [JsonProperty("charset", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public int? Charset { get; set; }
 
         /// <summary>
-        /// indicates whether a page's 'meta robots' allows crawlers to follow the links on the page
-        /// <br/>if <c>false</c>, the page's 'meta robots' tag contains 'nofollow' parameter instructing crawlers not to follow the links on the page
+        /// indicates whether a page's 'meta robots' allows crawlers to follow the links on the pageif false, the page's 'meta robots' tag contains 'nofollow' parameter instructing crawlers not to follow the links on the page
         /// </summary>
         [JsonProperty("follow", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public bool? Follow { get; set; }
@@ -54,7 +52,7 @@ namespace DataForSeo.Client.Models
         public string Favicon { get; set; }
 
         /// <summary>
-        /// content of the <c>keywords</c> meta tag
+        /// content of the keywords meta tag
         /// </summary>
         [JsonProperty("meta_keywords", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string MetaKeywords { get; set; }
@@ -120,13 +118,13 @@ namespace DataForSeo.Client.Models
         public int? StylesheetsSize { get; set; }
 
         /// <summary>
-        /// length of the <c>title</c> tag in characters
+        /// length of the title tag in characters
         /// </summary>
         [JsonProperty("title_length", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public int? TitleLength { get; set; }
 
         /// <summary>
-        /// length of the <c>description</c> tag in characters
+        /// length of the description tag in characters
         /// </summary>
         [JsonProperty("description_length", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public int? DescriptionLength { get; set; }
@@ -144,15 +142,13 @@ namespace DataForSeo.Client.Models
         public long? RenderBlockingStylesheetsCount { get; set; }
 
         /// <summary>
-        /// Core Web Vitals metric measuring the layout stability of the page
-        /// <br/>measures the sum total of all individual layout shift scores for every unexpected layout shift that occurs during the entire lifespan of the page. <see href="https://web.dev/cls/">Learn more.</see>
+        /// Core Web Vitals metric measuring the layout stability of the pagemeasures the sum total of all individual layout shift scores for every unexpected layout shift that occurs during the entire lifespan of the page. Learn more.
         /// </summary>
         [JsonProperty("cumulative_layout_shift", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public double? CumulativeLayoutShift { get; set; }
 
         /// <summary>
-        /// meta title of the page
-        /// <br/>meta tag in the head section of an HTML document that defines the title of a page
+        /// meta title of the pagemeta tag in the head section of an HTML document that defines the title of a page
         /// </summary>
         [JsonProperty("meta_title", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string MetaTitle { get; set; }
@@ -176,16 +172,13 @@ namespace DataForSeo.Client.Models
         public IEnumerable<string> DuplicateMetaTags { get; set; }
 
         /// <summary>
-        /// spellcheck
-        /// <br/><see href="http://hunspell.github.io/">hunspell</see> spellcheck errors
+        /// spellcheckhunspell spellcheck errors
         /// </summary>
         [JsonProperty("spell", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public HunspellInfo Spell { get; set; }
 
         /// <summary>
-        /// object of social media tags found on the page
-        /// <br/>contains social media tags and their content
-        /// <br/>supported tags include but are not limited to <see href="https://ogp.me/">Open Graph</see> and <see href="https://developer.twitter.com/en/docs/twitter-for-websites/cards/guides/getting-started">Twitter card</see>
+        /// object of social media tags found on the pagecontains social media tags and their contentsupported tags include but are not limited to Open Graph and Twitter card
         /// </summary>
         [JsonProperty("social_media_tags", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public IDictionary<string, string> SocialMediaTags { get; set; }

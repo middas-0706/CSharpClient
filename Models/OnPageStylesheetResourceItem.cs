@@ -10,8 +10,7 @@ namespace DataForSeo.Client.Models
     {
 
         /// <summary>
-        /// page properties
-        /// <br/>the value depends on the <c>resource_type</c>
+        /// page propertiesthe value depends on the resource_type
         /// </summary>
         [JsonProperty("meta", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public ResourceMetaInfo Meta { get; set; }
@@ -23,10 +22,7 @@ namespace DataForSeo.Client.Models
         public FetchTiming FetchTiming { get; set; }
 
         /// <summary>
-        /// indicates the expected type of resource
-        /// <br/>for example, if <c>'resource_type': 'broken'</c>, <c>accept_type</c> will indicate the type of the broken resource
-        /// <br/>possible values:
-        /// <br/><c>any</c>, <c>none</c>, <c>image</c>, <c>sitemap</c>, <c>robots</c>, <c>script</c>, <c>stylesheet</c>, <c>redirect</c>, <c>html</c>, <c>text</c>, <c>other</c>, <c>font</c>
+        /// indicates the expected type of resourcefor example, if 'resource_type': 'broken', accept_type will indicate the type of the broken resourcepossible values:any, none, image, sitemap, robots, script, stylesheet, redirect, html, text, other, font
         /// </summary>
         [JsonProperty("accept_type", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string AcceptType { get; set; }

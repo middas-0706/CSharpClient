@@ -5,5 +5,5 @@
 
 | Name | Type | Description | Notes |
 |------------ | ------------- | ------------- | -------------|
-**Errors** | **IEnumerable<OnPageResourceIssueItemInfo>** | <em>resource errors</em> |[optional]|
-**Warnings** | **IEnumerable<OnPageResourceIssueItemInfo>** | <em>resource warnings</em> |[optional]|
+**Errors** | **IEnumerable<OnPageResourceIssueItemInfo>** | resource errors |[optional]|
+**Warnings** | **IEnumerable<OnPageResourceIssueItemInfo>** | resource warnings |[optional]|

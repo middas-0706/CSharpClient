@@ -133,7 +133,7 @@ namespace DataForSeo.Client.Models
         /// <br/>rating related to <c>content_info</c>
         /// </summary>
         [JsonProperty("rating", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public ContentRatingInfo Rating { get; set; }
+        public ContententRatingInfo Rating { get; set; }
 
         /// <summary>
         /// citation group date and time

@@ -10,7 +10,7 @@ namespace DataForSeo.Client.Models
     {
 
         /// <summary>
-        /// subdomain in SERP
+        /// domain in SERP
         /// </summary>
         [JsonProperty("domain", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string Domain { get; set; }
@@ -32,6 +32,10 @@ namespace DataForSeo.Client.Models
         /// </summary>
         [JsonProperty("breadcrumb", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string Breadcrumb { get; set; }
+
+        /// <summary>
+        /// name of the website in SERP
+        /// </summary>
         [JsonProperty("website_name", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string WebsiteName { get; set; }
 
@@ -128,7 +132,7 @@ namespace DataForSeo.Client.Models
 
         /// <summary>
         /// estimated traffic volume
-        /// <br/>            estimated organic monthly traffic to the domain
+        /// <br/>            estimated organic monthly traffic a featured URL delivers to the domain
         /// <br/>            calculated as the product of CTR (click-through-rate) and search volume values of the returned keyword
         /// <br/>            learn more about how the metric is calculated in <see href="https://dataforseo.com/help-center/how-is-etv-calculated">this help center article</see>
         /// </summary>
@@ -137,25 +141,19 @@ namespace DataForSeo.Client.Models
 
         /// <summary>
         /// estimated cost of converting organic search traffic into paid
-        /// <br/>            represents the estimated monthly cost of running ads (USD) for the returned keyword
+        /// <br/>            represents the estimated monthly cost of running ads for the returned keyword
         /// <br/>            the metric is calculated as the product of organic <c>etv</c> and paid <c>cpc</c> values and indicates the cost of driving the estimated volume of monthly organic traffic through PPC advertising in Google Search
         /// <br/>            learn more about how the metric is calculated in <see href="https://dataforseo.com/help-center/how-is-traffic-cost-calculated">this help center article</see>
         /// </summary>
         [JsonProperty("estimated_paid_traffic_cost", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public double? EstimatedPaidTrafficCost { get; set; }
-
-        /// <summary>
-        /// estimated traffic volume based on clickstream data
-        /// <br/>            calculated as the product of click-through-rate and clickstream search volume values of all keywords the domain ranks for
-        /// <br/>            to retrieve results for this field, the parameter <c>include_clickstream_data</c> must be set to <c>true</c>
-        /// <br/>            learn more about how the metric is calculated in this <see href="https://dataforseo.com/help-center/whats-clickstream-estimated-traffic-volume-and-how-is-it-calculated">help center article</see>
-        /// </summary>
         [JsonProperty("clickstream_etv", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public double? ClickstreamEtv { get; set; }
 
         /// <summary>
         /// changes in rankings
-        /// <br/>            contains information about the ranking changes of the SERP element since the <c>previous_updated_time</c>
+        /// <br/>            ranking changes of the SERP element compared to the preceding month;
+        /// <br/>            Note: the changes are calculated even if the preceding month is not included in a POST request
         /// </summary>
         [JsonProperty("rank_changes", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public RankChanges RankChanges { get; set; }

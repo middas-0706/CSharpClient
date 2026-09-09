@@ -16,8 +16,7 @@ namespace DataForSeo.Client.Models
         public bool? Cachable { get; set; }
 
         /// <summary>
-        /// time to live
-        /// <br/>the amount of time the browser caches a resource
+        /// time to livethe amount of time the browser caches a resource
         /// </summary>
         [JsonProperty("ttl", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public int? Ttl { get; set; }

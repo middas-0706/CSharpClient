@@ -39,7 +39,7 @@ namespace DataForSeo.Client.Models
         /// contains objects with rating information for the products displayed on the page
         /// </summary>
         [JsonProperty("ratings", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public IEnumerable<ContentRatingInfo> Ratings { get; set; }
+        public IEnumerable<ContententRatingInfo> Ratings { get; set; }
 
         /// <summary>
         /// array of products displayed on the page

@@ -6,7 +6,7 @@ using DataForSeo.Client.Models;
 namespace DataForSeo.Client.Models
 {
 
-    public class ContentRatingInfo 
+    public class ContententRatingInfo 
     {
 
         /// <summary>
@@ -20,25 +20,25 @@ namespace DataForSeo.Client.Models
         /// the value of the rating
         /// </summary>
         [JsonProperty("rating_value", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public string RatingValue { get; set; }
+        public double? RatingValue { get; set; }
 
         /// <summary>
         /// number of votes
         /// </summary>
         [JsonProperty("rating_count", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public string RatingCount { get; set; }
+        public long? RatingCount { get; set; }
 
         /// <summary>
         /// maximum value for the rating name
         /// </summary>
         [JsonProperty("max_rating_value", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public string MaxRatingValue { get; set; }
+        public double? MaxRatingValue { get; set; }
 
         /// <summary>
         /// relative rating
         /// </summary>
         [JsonProperty("relative_rating", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public string RelativeRating { get; set; }
+        public double? RelativeRating { get; set; }
 
         private IDictionary<string, object> _additionalProperties;
 

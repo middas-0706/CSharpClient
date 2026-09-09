@@ -18,6 +18,6 @@
 **Score** | **double?** | <em>citation prominence score</em><br>this value is based on <code>url_rank</code>, <code>domain_rank</code>, <code>keyword</code> presence in <code>title</code>, <code>main_title</code>, <code>url</code>, <code>snippet</code><br>the higher the <code>score</code>, the more value the related citation has |[optional]|
 **PageCategory** | **IEnumerable<int?>** | <em>contains all relevant page categories</em><br>product and service categories relevant for the page<br>to obtain a full list of available categories, refer to the <a href='/v3/content_analysis/categories/' rel='noopener noreferrer' target='_blank'>Categories</a> endpoint |[optional]|
 **PageTypes** | **IEnumerable<string>** | <em>page types</em> |[optional]|
-**Ratings** | **IEnumerable<ContentRatingInfo>** | <em>ratings found on the page</em><br>all ratings found on the page based on microdata |[optional]|
+**Ratings** | **IEnumerable<ContententRatingInfo>** | <em>ratings found on the page</em><br>all ratings found on the page based on microdata |[optional]|
 **SocialMetrics** | **IEnumerable<SocialMetricsInfo>** | <em>social media engagement metrics</em><br>data on social media interactions associated with the content based on website embeds developed and supported by social media platforms |[optional]|
 **ContentInfo** | **AnalysisContentInfo** | <em>contains data on citations from the given <code>url</code></em> |[optional]|

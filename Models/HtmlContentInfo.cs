@@ -29,52 +29,49 @@ namespace DataForSeo.Client.Models
         public int? PlainTextWordCount { get; set; }
 
         /// <summary>
-        /// <see href="https://en.wikipedia.org/wiki/Automated_readability_index">Automated Readability Index</see>
+        /// Automated Readability Index
         /// </summary>
         [JsonProperty("automated_readability_index", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public double? AutomatedReadabilityIndex { get; set; }
 
         /// <summary>
-        /// <see href="https://en.wikipedia.org/wiki/Coleman%E2%80%93Liau_index">Coleman–Liau Index</see>
+        /// Coleman–Liau Index
         /// </summary>
         [JsonProperty("coleman_liau_readability_index", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public double? ColemanLiauReadabilityIndex { get; set; }
 
         /// <summary>
-        /// <see href="https://en.wikipedia.org/wiki/Dale%E2%80%93Chall_readability_formula">Dale–Chall Readability Index</see>
+        /// Dale–Chall Readability Index
         /// </summary>
         [JsonProperty("dale_chall_readability_index", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public double? DaleChallReadabilityIndex { get; set; }
 
         /// <summary>
-        /// <see href="https://en.wikipedia.org/wiki/Flesch%E2%80%93Kincaid_readability_tests">Flesch–Kincaid Readability Index</see>
+        /// Flesch–Kincaid Readability Index
         /// </summary>
         [JsonProperty("flesch_kincaid_readability_index", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public double? FleschKincaidReadabilityIndex { get; set; }
 
         /// <summary>
-        /// <see href="https://en.wikipedia.org/wiki/SMOG">SMOG Readability Index</see>
+        /// SMOG Readability Index
         /// </summary>
         [JsonProperty("smog_readability_index", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public double? SmogReadabilityIndex { get; set; }
 
         /// <summary>
-        /// consistency of the meta <c>description</c> tag with the page content
-        /// <br/>measured from 0 to 1
+        /// consistency of the meta description tag with the page contentmeasured from 0 to 1
         /// </summary>
         [JsonProperty("description_to_content_consistency", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public double? DescriptionToContentConsistency { get; set; }
 
         /// <summary>
-        /// consistency of the meta <c>title</c> tag with the page content
-        /// <br/>measured from 0 to 1
+        /// consistency of the meta title tag with the page contentmeasured from 0 to 1
         /// </summary>
         [JsonProperty("title_to_content_consistency", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public double? TitleToContentConsistency { get; set; }
 
         /// <summary>
-        /// consistency of meta <c>keywords</c>tag with the page content
-        /// <br/>measured from 0 to 1
+        /// consistency of meta keywordstag with the page contentmeasured from 0 to 1
         /// </summary>
         [JsonProperty("meta_keywords_to_content_consistency", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public double? MetaKeywordsToContentConsistency { get; set; }

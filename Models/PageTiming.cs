@@ -10,56 +10,49 @@ namespace DataForSeo.Client.Models
     {
 
         /// <summary>
-        /// <see href="https://web.dev/interactive/">Time To Interactive (TTI)</see> metric
-        /// <br/>the time it takes until the user can interact with a page (in milliseconds)
+        /// Time To Interactive (TTI) metricthe time it takes until the user can interact with a page (in milliseconds)
         /// </summary>
         [JsonProperty("time_to_interactive", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public int? TimeToInteractive { get; set; }
 
         /// <summary>
-        /// time to load resources
-        /// <br/>the time it takes until the page and all of its subresources are downloaded (in milliseconds)
+        /// time to load resourcesthe time it takes until the page and all of its subresources are downloaded (in milliseconds)
         /// </summary>
         [JsonProperty("dom_complete", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public int? DomComplete { get; set; }
 
         /// <summary>
-        /// Core Web Vitals metric measuring how fast the largest above-the-fold content element is displayed
-        /// <br/>The amount of time (in milliseconds) to render the largest content element visible in the viewport, from when the user requests the URL. <see href="https://web.dev/lcp/">Learn more</see>.
+        /// Core Web Vitals metric measuring how fast the largest above-the-fold content element is displayedThe amount of time (in milliseconds) to render the largest content element visible in the viewport, from when the user requests the URL. Learn more.
         /// </summary>
         [JsonProperty("largest_contentful_paint", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public double? LargestContentfulPaint { get; set; }
 
         /// <summary>
-        /// Core Web Vitals metric indicating the responsiveness of a page
-        /// <br/>The time (in milliseconds) from when a user first interacts with your page to the time when the browser responds to that interaction. <see href="https://web.dev/fid/">Learn more</see>.
+        /// Core Web Vitals metric indicating the responsiveness of a pageThe time (in milliseconds) from when a user first interacts with your page to the time when the browser responds to that interaction. Learn more.
         /// </summary>
         [JsonProperty("first_input_delay", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public double? FirstInputDelay { get; set; }
 
         /// <summary>
-        /// time to connect to a server
-        /// <br/>the time it takes until the connection with a server is established (in milliseconds)
+        /// time to connect to a serverthe time it takes until the connection with a server is established (in milliseconds)
         /// </summary>
         [JsonProperty("connection_time", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public int? ConnectionTime { get; set; }
 
         /// <summary>
-        /// time to establish a secure connection
-        /// <br/>the time it takes until the secure connection with a server is established (in milliseconds)
+        /// time to establish a secure connectionthe time it takes until the secure connection with a server is established (in milliseconds)
         /// </summary>
         [JsonProperty("time_to_secure_connection", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public int? TimeToSecureConnection { get; set; }
 
         /// <summary>
-        /// time to send a request to a server
-        /// <br/>the time it takes until the request to a server is sent (in milliseconds)
+        /// time to send a request to a serverthe time it takes until the request to a server is sent (in milliseconds)
         /// </summary>
         [JsonProperty("request_sent_time", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public int? RequestSentTime { get; set; }
 
         /// <summary>
-        /// time to first byte <see href="https://en.wikipedia.org/wiki/Time_to_first_byte">(TTFB)</see> in milliseconds
+        /// time to first byte (TTFB) in milliseconds
         /// </summary>
         [JsonProperty("waiting_time", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public int? WaitingTime { get; set; }
@@ -77,15 +70,13 @@ namespace DataForSeo.Client.Models
         public int? DurationTime { get; set; }
 
         /// <summary>
-        /// time to start downloading the HTML resource
-        /// <br/>the amount of time the browser needs to start downloading a page
+        /// time to start downloading the HTML resourcethe amount of time the browser needs to start downloading a page
         /// </summary>
         [JsonProperty("fetch_start", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public int? FetchStart { get; set; }
 
         /// <summary>
-        /// time to complete downloading the HTML resource
-        /// <br/>the amount of time the browser needs to complete downloading a page
+        /// time to complete downloading the HTML resourcethe amount of time the browser needs to complete downloading a page
         /// </summary>
         [JsonProperty("fetch_end", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public int? FetchEnd { get; set; }
