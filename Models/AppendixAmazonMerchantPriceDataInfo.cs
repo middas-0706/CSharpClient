@@ -6,7 +6,7 @@ using DataForSeo.Client.Models;
 namespace DataForSeo.Client.Models
 {
 
-    public class AppendixHotelInfoGoogleBusinessDataPriceData 
+    public class AppendixAmazonMerchantPriceDataInfo 
     {
         [JsonProperty("live", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public AppendixTaskGetProductGoogleMerchantPriceDataInfo Live { get; set; }

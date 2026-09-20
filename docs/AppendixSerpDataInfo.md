@@ -15,4 +15,6 @@
 **TasksFixed** | **double?** |  |[optional]|
 **Jobs** | **AppendixJobsSerpLimitsRatesDataInfo** |  |[optional]|
 **Screenshot** | **double?** |  |[optional]|
+**IdList** | **double?** |  |[optional]|
+**AiSummary** | **double?** |  |[optional]|
 **TasksReadyQueue** | **double?** |  |[optional]|

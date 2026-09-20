@@ -3,17 +3,15 @@ using System;
 using System.Collections.Generic;
 using DataForSeo.Client.Models;
 
-namespace DataForSeo.Client.Models.Responses
+namespace DataForSeo.Client.Models
 {
 
-    public class SerpGoogleEventsTaskPostResponseInfo  : BaseResponseInfo 
+    public class AppendixTrBusinessDataDayLimitsRatesDataInfo 
     {
-
-        /// <summary>
-        /// array of tasks
-        /// </summary>
-        [JsonProperty("tasks", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public IEnumerable<SerpGoogleEventsTaskPostTaskInfo> Tasks { get; set; }
+        [JsonProperty("reviews", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
+        public AppendixInfo Reviews { get; set; }
+        [JsonProperty("search", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
+        public AppendixInfo Search { get; set; }
 
         private IDictionary<string, object> _additionalProperties;
 

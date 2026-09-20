@@ -5,6 +5,6 @@
 
 | Name | Type | Description | Notes |
 |------------ | ------------- | ------------- | -------------|
-**Advanced** | **AppendixTaskKeywordsDataPriceDataInfo** |  |[optional]|
-**Regular** | **AppendixTaskKeywordsDataPriceDataInfo** |  |[optional]|
 **Html** | **AppendixTaskKeywordsDataPriceDataInfo** |  |[optional]|
+**Regular** | **AppendixTaskKeywordsDataPriceDataInfo** |  |[optional]|
+**Advanced** | **AppendixTaskKeywordsDataPriceDataInfo** |  |[optional]|

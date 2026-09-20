@@ -16,16 +16,16 @@ namespace DataForSeo.Client.Models
         public double? Languages { get; set; }
         [JsonProperty("errors", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public double? Errors { get; set; }
-        [JsonProperty("yelp", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public AppendixBusinessDataDayLimitsRatesDataInfo Yelp { get; set; }
-        [JsonProperty("social_media", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public AppendixSocialMediaBusinessDataLimitsRatesDataInfo SocialMedia { get; set; }
         [JsonProperty("tripadvisor", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public AppendixBusinessDataDayLimitsRatesDataInfo Tripadvisor { get; set; }
+        public AppendixTrBusinessDataDayLimitsRatesDataInfo Tripadvisor { get; set; }
         [JsonProperty("trustpilot", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public AppendixBusinessDataDayLimitsRatesDataInfo Trustpilot { get; set; }
+        public AppendixTrBusinessDataDayLimitsRatesDataInfo Trustpilot { get; set; }
+        [JsonProperty("id_list", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
+        public double? IdList { get; set; }
         [JsonProperty("business_listings", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public AppendixBusinessListingsBusinessDataLimitsRatesDataInfo BusinessListings { get; set; }
+        [JsonProperty("available_filters", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
+        public double? AvailableFilters { get; set; }
         [JsonProperty("tasks_ready", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public double? TasksReady { get; set; }
 

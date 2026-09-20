@@ -6,6 +6,7 @@
 | Name | Type | Description | Notes |
 |------------ | ------------- | ------------- | -------------|
 **Anchors** | **AppendixBingKeywordsDataPriceDataInfo** |  |[optional]|
+**AvailableFilters** | **AppendixTaskKeywordsDataPriceDataInfo** |  |[optional]|
 **Backlinks** | **AppendixBingKeywordsDataPriceDataInfo** |  |[optional]|
 **BulkBacklinks** | **AppendixBingKeywordsDataPriceDataInfo** |  |[optional]|
 **BulkNewLostBacklinks** | **AppendixBingKeywordsDataPriceDataInfo** |  |[optional]|
@@ -16,11 +17,14 @@
 **BulkSpamScore** | **AppendixBingKeywordsDataPriceDataInfo** |  |[optional]|
 **Competitors** | **AppendixBingKeywordsDataPriceDataInfo** |  |[optional]|
 **ContentDuplicates** | **AppendixBingKeywordsDataPriceDataInfo** |  |[optional]|
+**DomainBacklinks** | **AppendixBingKeywordsDataPriceDataInfo** |  |[optional]|
 **DomainIntersection** | **AppendixBingKeywordsDataPriceDataInfo** |  |[optional]|
 **DomainPages** | **AppendixBingKeywordsDataPriceDataInfo** |  |[optional]|
 **DomainPagesSummary** | **AppendixBingKeywordsDataPriceDataInfo** |  |[optional]|
 **Errors** | **AppendixTaskKeywordsDataPriceDataInfo** |  |[optional]|
 **History** | **AppendixBingKeywordsDataPriceDataInfo** |  |[optional]|
+**IdList** | **AppendixTaskKeywordsDataPriceDataInfo** |  |[optional]|
+**LinksIntersection** | **AppendixBingKeywordsDataPriceDataInfo** |  |[optional]|
 **PageIntersection** | **AppendixBingKeywordsDataPriceDataInfo** |  |[optional]|
 **ReferringDomains** | **AppendixBingKeywordsDataPriceDataInfo** |  |[optional]|
 **ReferringNetworks** | **AppendixBingKeywordsDataPriceDataInfo** |  |[optional]|

@@ -10,6 +10,8 @@ namespace DataForSeo.Client.Models
     {
         [JsonProperty("whois", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public AppendixWhoisDomainAnalyticsPriceData Whois { get; set; }
+        [JsonProperty("available_filters", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
+        public AppendixTaskKeywordsDataPriceDataInfo AvailableFilters { get; set; }
         [JsonProperty("technologies", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public AppendixTechnologiesDomainAnalyticsPriceData Technologies { get; set; }
         [JsonProperty("errors", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]

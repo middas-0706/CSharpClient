@@ -28,6 +28,8 @@ namespace DataForSeo.Client.Models
         public AppendixBingKeywordsDataPriceDataInfo CategoriesForKeywords { get; set; }
         [JsonProperty("competitors_domain", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public AppendixBingKeywordsDataPriceDataInfo CompetitorsDomain { get; set; }
+        [JsonProperty("available_filters", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
+        public AppendixTaskKeywordsDataPriceDataInfo AvailableFilters { get; set; }
         [JsonProperty("domain_intersection", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public AppendixBingKeywordsDataPriceDataInfo DomainIntersection { get; set; }
         [JsonProperty("domain_metrics_by_categories", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
@@ -44,10 +46,10 @@ namespace DataForSeo.Client.Models
         public AppendixBingKeywordsDataPriceDataInfo HistoricalKeywordData { get; set; }
         [JsonProperty("historical_rank_overview", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public AppendixBingKeywordsDataPriceDataInfo HistoricalRankOverview { get; set; }
-        [JsonProperty("historical_search_volume", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public AppendixBingKeywordsDataPriceDataInfo HistoricalSearchVolume { get; set; }
         [JsonProperty("historical_serps", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public AppendixBingKeywordsDataPriceDataInfo HistoricalSerps { get; set; }
+        [JsonProperty("id_list", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
+        public AppendixTaskKeywordsDataPriceDataInfo IdList { get; set; }
         [JsonProperty("keyword_ideas", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public AppendixBingKeywordsDataPriceDataInfo KeywordIdeas { get; set; }
         [JsonProperty("keyword_overview", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]

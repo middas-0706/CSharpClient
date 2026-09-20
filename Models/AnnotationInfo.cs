@@ -16,10 +16,18 @@ namespace DataForSeo.Client.Models
         public string Title { get; set; }
 
         /// <summary>
-        /// URL of the quoted source
+        /// redirect URL to the quoted source
+        /// <br/>contains a Vertex AI redirect that leads to the original source
         /// </summary>
         [JsonProperty("url", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public string Url { get; set; }
+
+        /// <summary>
+        /// direct URL to the quoted source
+        /// <br/>contains the original source URL that the Vertex AI redirect in the `url` field leads to
+        /// </summary>
+        [JsonProperty("direct_url", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
+        public string DirectUrl { get; set; }
 
         /// <summary>
         /// start of the annotation indexing

@@ -637,7 +637,6 @@ var result = await dfsClient.DataforseoLabsApi.GoogleSearchIntentLiveAsync(new L
 {
     new()
     {
-        LanguageCode = "en",
         Keywords = new List<string>()
         {
             "login page",

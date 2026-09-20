@@ -6,16 +6,18 @@ using DataForSeo.Client.Models;
 namespace DataForSeo.Client.Models
 {
 
-    public class AppendixGoogleBusinessDataPriceDataInfo 
+    public class AppendixLlmResponsesAiOptimizationLimitsRatesDataInfo 
     {
         [JsonProperty("live", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public AppendixTaskKeywordsDataPriceDataInfo Live { get; set; }
-        [JsonProperty("task_get", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public AppendixTaskKeywordsDataPriceDataInfo TaskGet { get; set; }
+        public double? Live { get; set; }
         [JsonProperty("task_post", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public AppendixTaskKeywordsDataPriceDataInfo TaskPost { get; set; }
+        public double? TaskPost { get; set; }
         [JsonProperty("tasks_ready", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public AppendixTaskKeywordsDataPriceDataInfo TasksReady { get; set; }
+        public double? TasksReady { get; set; }
+        [JsonProperty("task_get", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
+        public double? TaskGet { get; set; }
+        [JsonProperty("models", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
+        public double? Models { get; set; }
 
         private IDictionary<string, object> _additionalProperties;
 

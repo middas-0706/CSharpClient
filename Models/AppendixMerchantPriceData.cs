@@ -14,6 +14,8 @@ namespace DataForSeo.Client.Models
         public AppendixAmazonMerchantPriceData Amazon { get; set; }
         [JsonProperty("errors", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public AppendixTaskKeywordsDataPriceDataInfo Errors { get; set; }
+        [JsonProperty("id_list", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
+        public AppendixTaskKeywordsDataPriceDataInfo IdList { get; set; }
         [JsonProperty("languages", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public AppendixTaskKeywordsDataPriceDataInfo Languages { get; set; }
         [JsonProperty("locations", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]

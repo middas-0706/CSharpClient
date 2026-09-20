@@ -36,6 +36,8 @@ namespace DataForSeo.Client.Models
         public double? LocationsAndLanguages { get; set; }
         [JsonProperty("google_ads", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public AppendixGoogleAdsKeywordsDataLimitsRatesDataInfo GoogleAds { get; set; }
+        [JsonProperty("id_list", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
+        public double? IdList { get; set; }
         [JsonProperty("dataforseo_trends", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public AppendixDataforseoTrendsKeywordsDataLimitsRatesDataInfo DataforseoTrends { get; set; }
         [JsonProperty("clickstream_data", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]

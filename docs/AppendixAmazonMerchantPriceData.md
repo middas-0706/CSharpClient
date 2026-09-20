@@ -5,6 +5,6 @@
 
 | Name | Type | Description | Notes |
 |------------ | ------------- | ------------- | -------------|
-**Asin** | **AppendixProductGoogleMerchantPriceDataInfo** |  |[optional]|
-**Products** | **AppendixProductGoogleMerchantPriceDataInfo** |  |[optional]|
-**Sellers** | **AppendixProductGoogleMerchantPriceDataInfo** |  |[optional]|
+**Asin** | **AppendixAmazonMerchantPriceDataInfo** |  |[optional]|
+**Products** | **AppendixAmazonMerchantPriceDataInfo** |  |[optional]|
+**Sellers** | **AppendixAmazonMerchantPriceDataInfo** |  |[optional]|

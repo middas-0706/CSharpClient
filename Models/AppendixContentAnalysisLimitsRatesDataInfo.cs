@@ -28,6 +28,10 @@ namespace DataForSeo.Client.Models
         public double? Categories { get; set; }
         [JsonProperty("errors", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public double? Errors { get; set; }
+        [JsonProperty("available_filters", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
+        public double? AvailableFilters { get; set; }
+        [JsonProperty("id_list", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
+        public double? IdList { get; set; }
 
         private IDictionary<string, object> _additionalProperties;
 

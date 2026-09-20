@@ -9,9 +9,9 @@
 **Locations** | **double?** |  |[optional]|
 **Languages** | **double?** |  |[optional]|
 **Errors** | **double?** |  |[optional]|
-**Yelp** | **AppendixBusinessDataDayLimitsRatesDataInfo** |  |[optional]|
-**SocialMedia** | **AppendixSocialMediaBusinessDataLimitsRatesDataInfo** |  |[optional]|
-**Tripadvisor** | **AppendixBusinessDataDayLimitsRatesDataInfo** |  |[optional]|
-**Trustpilot** | **AppendixBusinessDataDayLimitsRatesDataInfo** |  |[optional]|
+**Tripadvisor** | **AppendixTrBusinessDataDayLimitsRatesDataInfo** |  |[optional]|
+**Trustpilot** | **AppendixTrBusinessDataDayLimitsRatesDataInfo** |  |[optional]|
+**IdList** | **double?** |  |[optional]|
 **BusinessListings** | **AppendixBusinessListingsBusinessDataLimitsRatesDataInfo** |  |[optional]|
+**AvailableFilters** | **double?** |  |[optional]|
 **TasksReady** | **double?** |  |[optional]|

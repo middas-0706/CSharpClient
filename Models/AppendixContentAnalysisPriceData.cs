@@ -12,8 +12,12 @@ namespace DataForSeo.Client.Models
         public AppendixTaskKeywordsDataPriceDataInfo Categories { get; set; }
         [JsonProperty("category_trends", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public AppendixBingKeywordsDataPriceDataInfo CategoryTrends { get; set; }
+        [JsonProperty("available_filters", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
+        public AppendixTaskKeywordsDataPriceDataInfo AvailableFilters { get; set; }
         [JsonProperty("errors", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public AppendixTaskKeywordsDataPriceDataInfo Errors { get; set; }
+        [JsonProperty("id_list", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
+        public AppendixTaskKeywordsDataPriceDataInfo IdList { get; set; }
         [JsonProperty("languages", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public AppendixTaskKeywordsDataPriceDataInfo Languages { get; set; }
         [JsonProperty("locations", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]

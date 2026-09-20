@@ -5,4 +5,4 @@
 
 | Name | Type | Description | Notes |
 |------------ | ------------- | ------------- | -------------|
-**Result** | **object** | <em>array of results</em> |[optional]|
+**Result** | **IEnumerable<BusinessDataGoogleQuestionsAndAnswersLiveResultInfo>** | <em>array of results</em> |[optional]|

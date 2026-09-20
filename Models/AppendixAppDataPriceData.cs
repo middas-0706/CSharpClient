@@ -11,17 +11,21 @@ namespace DataForSeo.Client.Models
         [JsonProperty("app_info", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public AppendixProductGoogleMerchantPriceDataInfo AppInfo { get; set; }
         [JsonProperty("app_listings", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public AppendixAppListingsAppDataPriceData AppListings { get; set; }
+        public AppendixLlmMentionsAiOptimizationPriceData AppListings { get; set; }
         [JsonProperty("app_list", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public AppendixProductGoogleMerchantPriceDataInfo AppList { get; set; }
         [JsonProperty("app_reviews", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public AppendixPriceDataInfo AppReviews { get; set; }
         [JsonProperty("app_searches", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public AppendixProductGoogleMerchantPriceDataInfo AppSearches { get; set; }
+        [JsonProperty("pp_listings", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
+        public AppendixLlmMentionsAiOptimizationPriceData PpListings { get; set; }
         [JsonProperty("categories", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public AppendixTaskKeywordsDataPriceDataInfo Categories { get; set; }
         [JsonProperty("errors", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public AppendixTaskKeywordsDataPriceDataInfo Errors { get; set; }
+        [JsonProperty("id_list", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
+        public AppendixTaskKeywordsDataPriceDataInfo IdList { get; set; }
         [JsonProperty("languages", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public AppendixTaskKeywordsDataPriceDataInfo Languages { get; set; }
         [JsonProperty("locations", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]

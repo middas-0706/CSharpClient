@@ -10,8 +10,12 @@ namespace DataForSeo.Client.Models
     {
         [JsonProperty("errors", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public AppendixTaskKeywordsDataPriceDataInfo Errors { get; set; }
+        [JsonProperty("id_list", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
+        public AppendixTaskKeywordsDataPriceDataInfo IdList { get; set; }
         [JsonProperty("lighthouse", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public AppendixGoogleBusinessDataPriceDataInfo Lighthouse { get; set; }
+        public AppendixLlmResponsesAiOptimizationPriceData Lighthouse { get; set; }
+        [JsonProperty("available_filters", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
+        public AppendixTaskKeywordsDataPriceDataInfo AvailableFilters { get; set; }
         [JsonProperty("content_parsing", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public AppendixTaskKeywordsDataPriceDataInfo ContentParsing { get; set; }
         [JsonProperty("content_parsing_live", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
@@ -46,6 +50,8 @@ namespace DataForSeo.Client.Models
         public AppendixTaskKeywordsDataPriceDataInfo TaskPost { get; set; }
         [JsonProperty("tasks_ready", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public AppendixTaskKeywordsDataPriceDataInfo TasksReady { get; set; }
+        [JsonProperty("uncrawlable_resources", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
+        public AppendixTaskKeywordsDataPriceDataInfo UncrawlableResources { get; set; }
         [JsonProperty("waterfall", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public AppendixTaskKeywordsDataPriceDataInfo Waterfall { get; set; }
 

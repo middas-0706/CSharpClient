@@ -10,8 +10,12 @@ namespace DataForSeo.Client.Models
     {
         [JsonProperty("tasks_fixed", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public AppendixTaskKeywordsDataPriceDataInfo TasksFixed { get; set; }
+        [JsonProperty("ai_summary", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
+        public AppendixTaskKeywordsDataPriceDataInfo AiSummary { get; set; }
         [JsonProperty("errors", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public AppendixTaskKeywordsDataPriceDataInfo Errors { get; set; }
+        [JsonProperty("id_list", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
+        public AppendixTaskKeywordsDataPriceDataInfo IdList { get; set; }
         [JsonProperty("jobs", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public AppendixAKeywordsDataPriceDataInfo Jobs { get; set; }
         [JsonProperty("languages", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]

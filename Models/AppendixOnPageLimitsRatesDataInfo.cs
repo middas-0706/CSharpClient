@@ -40,6 +40,8 @@ namespace DataForSeo.Client.Models
         public double? RedirectChains { get; set; }
         [JsonProperty("lighthouse", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public AppendixInfo Lighthouse { get; set; }
+        [JsonProperty("available_filters", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
+        public double? AvailableFilters { get; set; }
         [JsonProperty("keyword_density", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public double? KeywordDensity { get; set; }
         [JsonProperty("page_screenshot", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
@@ -48,6 +50,10 @@ namespace DataForSeo.Client.Models
         public double? ContentParsing { get; set; }
         [JsonProperty("content_parsing_live", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public double? ContentParsingLive { get; set; }
+        [JsonProperty("id_list", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
+        public double? IdList { get; set; }
+        [JsonProperty("uncrawlable_resources", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
+        public double? UncrawlableResources { get; set; }
 
         private IDictionary<string, object> _additionalProperties;
 

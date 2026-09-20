@@ -28,10 +28,8 @@
 **TotalAppData** | **double?** |  |[optional]|
 **ContentAnalysis** | **AppendixContentAnalysisLimitsRatesDataInfo** |  |[optional]|
 **TotalContentAnalysis** | **double?** |  |[optional]|
-**ContentGeneration** | **AppendixContentGenerationLimitsRatesDataInfo** |  |[optional]|
-**TotalContentGeneration** | **double?** |  |[optional]|
-**TotalTrafficAnalytics** | **double?** |  |[optional]|
-**TrafficAnalytics** | **AppendixSerpDaysRatesDataInfo** |  |[optional]|
+**AiOptimization** | **AppendixAiOptimizationLimitsRatesDataInfo** |  |[optional]|
+**TotalAiOptimization** | **double?** |  |[optional]|
 **TotalReviews** | **double?** |  |[optional]|
 **Reviews** | **AppendixSerpDaysRatesDataInfo** |  |[optional]|
 **TotalSocial** | **double?** |  |[optional]|

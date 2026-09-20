@@ -20,6 +20,8 @@ namespace DataForSeo.Client.Models
         public double? Errors { get; set; }
         [JsonProperty("reviews", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public AppendixSerpDaysRatesDataInfo Reviews { get; set; }
+        [JsonProperty("id_list", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
+        public double? IdList { get; set; }
         [JsonProperty("tasks_ready", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public double? TasksReady { get; set; }
 

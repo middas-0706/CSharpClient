@@ -58,14 +58,10 @@ namespace DataForSeo.Client.Models
         public AppendixContentAnalysisLimitsRatesDataInfo ContentAnalysis { get; set; }
         [JsonProperty("total_content_analysis", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public double? TotalContentAnalysis { get; set; }
-        [JsonProperty("content_generation", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public AppendixContentGenerationLimitsRatesDataInfo ContentGeneration { get; set; }
-        [JsonProperty("total_content_generation", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public double? TotalContentGeneration { get; set; }
-        [JsonProperty("total_traffic_analytics", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public double? TotalTrafficAnalytics { get; set; }
-        [JsonProperty("traffic_analytics", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public AppendixSerpDaysRatesDataInfo TrafficAnalytics { get; set; }
+        [JsonProperty("ai_optimization", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
+        public AppendixAiOptimizationLimitsRatesDataInfo AiOptimization { get; set; }
+        [JsonProperty("total_ai_optimization", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
+        public double? TotalAiOptimization { get; set; }
         [JsonProperty("total_reviews", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public double? TotalReviews { get; set; }
         [JsonProperty("reviews", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]

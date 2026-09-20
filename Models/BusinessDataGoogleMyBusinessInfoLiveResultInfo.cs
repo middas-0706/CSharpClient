@@ -75,7 +75,7 @@ namespace DataForSeo.Client.Models
         /// <br/>possible item types: <c>google_business_info</c>
         /// </summary>
         [JsonProperty("items", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public IEnumerable<ItemsGoogleBusinessInfo> Items { get; set; }
+        public IEnumerable<GoogleBusinessInfo> Items { get; set; }
 
         private IDictionary<string, object> _additionalProperties;
 

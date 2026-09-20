@@ -58,10 +58,10 @@ namespace DataForSeo.Client.Models
         public AppendixContentAnalysisLimitsRatesDataInfo ContentAnalysis { get; set; }
         [JsonProperty("total_content_analysis", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public double? TotalContentAnalysis { get; set; }
-        [JsonProperty("content_generation", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public AppendixContentGenerationLimitsRatesDataInfo ContentGeneration { get; set; }
-        [JsonProperty("total_content_generation", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public double? TotalContentGeneration { get; set; }
+        [JsonProperty("ai_optimization", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
+        public AppendixAiOptimizationLimitsRatesDataInfo AiOptimization { get; set; }
+        [JsonProperty("total_ai_optimization", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
+        public double? TotalAiOptimization { get; set; }
 
         /// <summary>
         /// time period for grouping

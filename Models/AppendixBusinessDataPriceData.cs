@@ -8,14 +8,16 @@ namespace DataForSeo.Client.Models
 
     public class AppendixBusinessDataPriceData 
     {
+        [JsonProperty("available_filters", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
+        public AppendixTaskKeywordsDataPriceDataInfo AvailableFilters { get; set; }
         [JsonProperty("business_listings", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public AppendixBusinessListingsBusinessDataPriceData BusinessListings { get; set; }
         [JsonProperty("errors", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public AppendixTaskKeywordsDataPriceDataInfo Errors { get; set; }
         [JsonProperty("google", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public AppendixGoogleBusinessDataPriceData Google { get; set; }
-        [JsonProperty("social_media", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public AppendixSocialMediaBusinessDataPriceData SocialMedia { get; set; }
+        [JsonProperty("id_list", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
+        public AppendixTaskKeywordsDataPriceDataInfo IdList { get; set; }
         [JsonProperty("languages", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public AppendixTaskKeywordsDataPriceDataInfo Languages { get; set; }
         [JsonProperty("locations", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
@@ -24,8 +26,6 @@ namespace DataForSeo.Client.Models
         public AppendixTrBusinessDataPriceDataInfo Tripadvisor { get; set; }
         [JsonProperty("trustpilot", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public AppendixTrBusinessDataPriceDataInfo Trustpilot { get; set; }
-        [JsonProperty("yelp", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public AppendixTrBusinessDataPriceDataInfo Yelp { get; set; }
         [JsonProperty("tasks_ready", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public AppendixTaskKeywordsDataPriceDataInfo TasksReady { get; set; }
 

@@ -24,6 +24,8 @@ namespace DataForSeo.Client.Models
         public AppendixTaskKeywordsDataPriceDataInfo Errors { get; set; }
         [JsonProperty("google_ads", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public AppendixGoogleAdsKeywordsDataPriceData GoogleAds { get; set; }
+        [JsonProperty("id_list", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
+        public AppendixTaskKeywordsDataPriceDataInfo IdList { get; set; }
         [JsonProperty("keyword_performance", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public AppendixAKeywordsDataPriceDataInfo KeywordPerformance { get; set; }
         [JsonProperty("keywords_for_keywords", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]

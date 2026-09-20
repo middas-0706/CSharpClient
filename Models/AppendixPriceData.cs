@@ -12,6 +12,8 @@ namespace DataForSeo.Client.Models
         public AppendixKeywordsDataPriceData KeywordsData { get; set; }
         [JsonProperty("merchant", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public AppendixMerchantPriceData Merchant { get; set; }
+        [JsonProperty("ai_optimization", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
+        public AppendixAiOptimizationPriceData AiOptimization { get; set; }
         [JsonProperty("serp", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public AppendixSerpPriceData Serp { get; set; }
         [JsonProperty("appendix", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
@@ -24,8 +26,6 @@ namespace DataForSeo.Client.Models
         public AppendixBusinessDataPriceData BusinessData { get; set; }
         [JsonProperty("content_analysis", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public AppendixContentAnalysisPriceData ContentAnalysis { get; set; }
-        [JsonProperty("content_generation", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public AppendixContentGenerationPriceData ContentGeneration { get; set; }
         [JsonProperty("dataforseo_labs", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public AppendixDataforseoLabsPriceData DataforseoLabs { get; set; }
         [JsonProperty("domain_analytics", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]

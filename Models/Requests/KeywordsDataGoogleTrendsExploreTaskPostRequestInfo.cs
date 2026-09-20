@@ -11,7 +11,7 @@ namespace DataForSeo.Client.Models.Requests
 
         /// <summary>
         /// keywords
-        /// <br/>required field
+        /// <br/>required field if you don't specify `category_code`
         /// <br/>the maximum number of keywords you can specify: 5
         /// <br/>the maximum number of characters you can specify in a keyword: 100
         /// <br/>the minimum number of characters must be greater than 1
@@ -81,11 +81,12 @@ namespace DataForSeo.Client.Models.Requests
 
         /// <summary>
         /// google trends search category
-        /// <br/>optional field
-        /// <br/>if you don't specify this field, the <c>0</c> value will be applied by default and the search will be carried out across all available categories
+        /// <br/>required field if you don't specify `keywords`
+        /// <br/>if you don't specify `keywords`, the value of this field must be greater than `0`
+        /// <br/>if you specify `keywords` and don't specify this field, the <c>0</c> value will be applied by default and the search will be carried out across all available categories
         /// <br/>you can receive the list of available categories with their <c>category_code</c> by making a separate request to the <c>https://api.dataforseo.com/v3/keywords_data/google_trends/categories</c>
         /// </summary>
-        [JsonProperty("category_code", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
+        [JsonProperty("category_code", Required = Required.DisallowNull, NullValueHandling = NullValueHandling.Ignore)]
         public int? CategoryCode { get; set; }
 
         /// <summary>

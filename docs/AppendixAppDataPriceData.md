@@ -6,12 +6,14 @@
 | Name | Type | Description | Notes |
 |------------ | ------------- | ------------- | -------------|
 **AppInfo** | **AppendixProductGoogleMerchantPriceDataInfo** |  |[optional]|
-**AppListings** | **AppendixAppListingsAppDataPriceData** |  |[optional]|
+**AppListings** | **AppendixLlmMentionsAiOptimizationPriceData** |  |[optional]|
 **AppList** | **AppendixProductGoogleMerchantPriceDataInfo** |  |[optional]|
 **AppReviews** | **AppendixPriceDataInfo** |  |[optional]|
 **AppSearches** | **AppendixProductGoogleMerchantPriceDataInfo** |  |[optional]|
+**PpListings** | **AppendixLlmMentionsAiOptimizationPriceData** |  |[optional]|
 **Categories** | **AppendixTaskKeywordsDataPriceDataInfo** |  |[optional]|
 **Errors** | **AppendixTaskKeywordsDataPriceDataInfo** |  |[optional]|
+**IdList** | **AppendixTaskKeywordsDataPriceDataInfo** |  |[optional]|
 **Languages** | **AppendixTaskKeywordsDataPriceDataInfo** |  |[optional]|
 **Locations** | **AppendixTaskKeywordsDataPriceDataInfo** |  |[optional]|
 **TasksReady** | **AppendixTaskKeywordsDataPriceDataInfo** |  |[optional]|

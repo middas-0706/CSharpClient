@@ -11,9 +11,12 @@
 **DomainIntersection** | **AppendixInfo** |  |[optional]|
 **Backlinks** | **AppendixInfo** |  |[optional]|
 **DomainPages** | **AppendixInfo** |  |[optional]|
+**DomainBacklinks** | **AppendixInfo** |  |[optional]|
 **Anchors** | **AppendixInfo** |  |[optional]|
 **ReferringDomains** | **AppendixInfo** |  |[optional]|
+**LinksIntersection** | **AppendixInfo** |  |[optional]|
 **PageIntersection** | **AppendixInfo** |  |[optional]|
+**AvailableFilters** | **double?** |  |[optional]|
 **ReferringNetworks** | **AppendixInfo** |  |[optional]|
 **BulkRanks** | **AppendixInfo** |  |[optional]|
 **BulkBacklinks** | **AppendixInfo** |  |[optional]|
@@ -26,4 +29,5 @@
 **TimeseriesNewLostSummary** | **AppendixInfo** |  |[optional]|
 **Competitors** | **AppendixInfo** |  |[optional]|
 **BulkSpamScore** | **AppendixInfo** |  |[optional]|
+**IdList** | **double?** |  |[optional]|
 **BulkPagesSummary** | **AppendixInfo** |  |[optional]|

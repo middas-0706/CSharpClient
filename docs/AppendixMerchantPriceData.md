@@ -8,6 +8,7 @@
 **Google** | **AppendixGoogleMerchantPriceData** |  |[optional]|
 **Amazon** | **AppendixAmazonMerchantPriceData** |  |[optional]|
 **Errors** | **AppendixTaskKeywordsDataPriceDataInfo** |  |[optional]|
+**IdList** | **AppendixTaskKeywordsDataPriceDataInfo** |  |[optional]|
 **Languages** | **AppendixTaskKeywordsDataPriceDataInfo** |  |[optional]|
 **Locations** | **AppendixTaskKeywordsDataPriceDataInfo** |  |[optional]|
 **Reviews** | **AppendixProductGoogleMerchantPriceDataInfo** |  |[optional]|

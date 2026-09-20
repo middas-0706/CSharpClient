@@ -28,6 +28,10 @@ namespace DataForSeo.Client.Models
         public AppendixJobsSerpLimitsRatesDataInfo Jobs { get; set; }
         [JsonProperty("screenshot", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public double? Screenshot { get; set; }
+        [JsonProperty("id_list", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
+        public double? IdList { get; set; }
+        [JsonProperty("ai_summary", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
+        public double? AiSummary { get; set; }
         [JsonProperty("tasks_ready_queue", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public double? TasksReadyQueue { get; set; }
 

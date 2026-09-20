@@ -13,7 +13,7 @@ namespace DataForSeo.Client.Models
         /// array of results
         /// </summary>
         [JsonProperty("result", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public object Result { get; set; }
+        public IEnumerable<BusinessDataGoogleQuestionsAndAnswersLiveResultInfo> Result { get; set; }
 
         private IDictionary<string, object> _additionalProperties;
 

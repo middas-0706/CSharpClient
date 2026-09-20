@@ -21,7 +21,10 @@
 **InstantPages** | **double?** |  |[optional]|
 **RedirectChains** | **double?** |  |[optional]|
 **Lighthouse** | **AppendixInfo** |  |[optional]|
+**AvailableFilters** | **double?** |  |[optional]|
 **KeywordDensity** | **double?** |  |[optional]|
 **PageScreenshot** | **double?** |  |[optional]|
 **ContentParsing** | **double?** |  |[optional]|
 **ContentParsingLive** | **double?** |  |[optional]|
+**IdList** | **double?** |  |[optional]|
+**UncrawlableResources** | **double?** |  |[optional]|

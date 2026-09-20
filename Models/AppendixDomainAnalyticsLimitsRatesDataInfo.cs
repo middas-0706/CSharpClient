@@ -16,6 +16,8 @@ namespace DataForSeo.Client.Models
         public AppendixWhoisDomainAnalyticsLimitsRatesDataInfo Whois { get; set; }
         [JsonProperty("technologies", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public AppendixTechnologiesDomainAnalyticsLimitsRatesDataInfo Technologies { get; set; }
+        [JsonProperty("available_filters", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
+        public double? AvailableFilters { get; set; }
 
         private IDictionary<string, object> _additionalProperties;
 

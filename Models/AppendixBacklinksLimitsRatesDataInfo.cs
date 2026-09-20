@@ -20,12 +20,18 @@ namespace DataForSeo.Client.Models
         public AppendixInfo Backlinks { get; set; }
         [JsonProperty("domain_pages", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public AppendixInfo DomainPages { get; set; }
+        [JsonProperty("domain_backlinks", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
+        public AppendixInfo DomainBacklinks { get; set; }
         [JsonProperty("anchors", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public AppendixInfo Anchors { get; set; }
         [JsonProperty("referring_domains", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public AppendixInfo ReferringDomains { get; set; }
+        [JsonProperty("links_intersection", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
+        public AppendixInfo LinksIntersection { get; set; }
         [JsonProperty("page_intersection", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public AppendixInfo PageIntersection { get; set; }
+        [JsonProperty("available_filters", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
+        public double? AvailableFilters { get; set; }
         [JsonProperty("referring_networks", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public AppendixInfo ReferringNetworks { get; set; }
         [JsonProperty("bulk_ranks", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
@@ -50,6 +56,8 @@ namespace DataForSeo.Client.Models
         public AppendixInfo Competitors { get; set; }
         [JsonProperty("bulk_spam_score", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public AppendixInfo BulkSpamScore { get; set; }
+        [JsonProperty("id_list", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
+        public double? IdList { get; set; }
         [JsonProperty("bulk_pages_summary", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public AppendixInfo BulkPagesSummary { get; set; }
 

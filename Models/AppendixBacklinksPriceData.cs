@@ -10,6 +10,8 @@ namespace DataForSeo.Client.Models
     {
         [JsonProperty("anchors", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public AppendixBingKeywordsDataPriceDataInfo Anchors { get; set; }
+        [JsonProperty("available_filters", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
+        public AppendixTaskKeywordsDataPriceDataInfo AvailableFilters { get; set; }
         [JsonProperty("backlinks", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public AppendixBingKeywordsDataPriceDataInfo Backlinks { get; set; }
         [JsonProperty("bulk_backlinks", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
@@ -30,6 +32,8 @@ namespace DataForSeo.Client.Models
         public AppendixBingKeywordsDataPriceDataInfo Competitors { get; set; }
         [JsonProperty("content_duplicates", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public AppendixBingKeywordsDataPriceDataInfo ContentDuplicates { get; set; }
+        [JsonProperty("domain_backlinks", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
+        public AppendixBingKeywordsDataPriceDataInfo DomainBacklinks { get; set; }
         [JsonProperty("domain_intersection", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public AppendixBingKeywordsDataPriceDataInfo DomainIntersection { get; set; }
         [JsonProperty("domain_pages", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
@@ -40,6 +44,10 @@ namespace DataForSeo.Client.Models
         public AppendixTaskKeywordsDataPriceDataInfo Errors { get; set; }
         [JsonProperty("history", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public AppendixBingKeywordsDataPriceDataInfo History { get; set; }
+        [JsonProperty("id_list", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
+        public AppendixTaskKeywordsDataPriceDataInfo IdList { get; set; }
+        [JsonProperty("links_intersection", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
+        public AppendixBingKeywordsDataPriceDataInfo LinksIntersection { get; set; }
         [JsonProperty("page_intersection", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public AppendixBingKeywordsDataPriceDataInfo PageIntersection { get; set; }
         [JsonProperty("referring_domains", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]

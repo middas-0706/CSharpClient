@@ -11,17 +11,17 @@ namespace DataForSeo.Client.Models
         [JsonProperty("extended_reviews", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public AppendixAKeywordsDataPriceDataInfo ExtendedReviews { get; set; }
         [JsonProperty("hotel_info", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public AppendixHotelInfoGoogleBusinessDataPriceData HotelInfo { get; set; }
+        public AppendixAmazonMerchantPriceDataInfo HotelInfo { get; set; }
         [JsonProperty("hotel_searches", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public AppendixGoogleBusinessDataPriceDataInfo HotelSearches { get; set; }
+        public AppendixLlmResponsesAiOptimizationPriceData HotelSearches { get; set; }
         [JsonProperty("my_business_info", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public AppendixGoogleBusinessDataPriceDataInfo MyBusinessInfo { get; set; }
+        public AppendixLlmResponsesAiOptimizationPriceData MyBusinessInfo { get; set; }
         [JsonProperty("my_business_updates", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public AppendixGoogleBusinessDataPriceDataInfo MyBusinessUpdates { get; set; }
+        public AppendixLlmResponsesAiOptimizationPriceData MyBusinessUpdates { get; set; }
         [JsonProperty("questions_and_answers", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public AppendixGoogleBusinessDataPriceDataInfo QuestionsAndAnswers { get; set; }
+        public AppendixLlmResponsesAiOptimizationPriceData QuestionsAndAnswers { get; set; }
         [JsonProperty("reviews", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public AppendixGoogleBusinessDataPriceDataInfo Reviews { get; set; }
+        public AppendixLlmResponsesAiOptimizationPriceData Reviews { get; set; }
 
         private IDictionary<string, object> _additionalProperties;
 

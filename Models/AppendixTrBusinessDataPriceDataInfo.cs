@@ -9,9 +9,9 @@ namespace DataForSeo.Client.Models
     public class AppendixTrBusinessDataPriceDataInfo 
     {
         [JsonProperty("reviews", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public AppendixGoogleBusinessDataPriceDataInfo Reviews { get; set; }
+        public AppendixLlmResponsesAiOptimizationPriceData Reviews { get; set; }
         [JsonProperty("search", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public AppendixGoogleBusinessDataPriceDataInfo Search { get; set; }
+        public AppendixLlmResponsesAiOptimizationPriceData Search { get; set; }
 
         private IDictionary<string, object> _additionalProperties;
 

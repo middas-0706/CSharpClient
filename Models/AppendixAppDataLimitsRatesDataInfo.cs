@@ -24,8 +24,12 @@ namespace DataForSeo.Client.Models
         public double? Locations { get; set; }
         [JsonProperty("categories", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public double? Categories { get; set; }
+        [JsonProperty("id_list", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
+        public double? IdList { get; set; }
         [JsonProperty("app_listings", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
-        public AppendixBusinessListingsBusinessDataLimitsRatesDataInfo AppListings { get; set; }
+        public AppendixTrBusinessDataDayLimitsRatesDataInfo AppListings { get; set; }
+        [JsonProperty("pp_listings", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
+        public AppendixDataforseoLabsLimitsRatesDataInfo PpListings { get; set; }
         [JsonProperty("tasks_ready", Required = Required.Default, NullValueHandling = NullValueHandling.Ignore)]
         public double? TasksReady { get; set; }
 
